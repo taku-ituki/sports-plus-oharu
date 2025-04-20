@@ -1,0 +1,75 @@
+@use 'global' as *;
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    opacity: 1;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .loading.is-hide {
+    transform: scale(1.1);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .loading__img {
+    width: 300px;
+    animation: slideIn 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      clip-path: inset(0 100% 0 0);
+      opacity: 0;
+    }
+    100% {
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+    }
+  }
+  
+  .loading__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .mv {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: url(./../images/mv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .mv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .mv h1,
+  .mv p {
+    position: relative;
+    z-index: 1;
+  }
