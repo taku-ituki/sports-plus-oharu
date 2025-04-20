@@ -120,10 +120,12 @@
   border-top: rem(2) solid #333;
   border-right: rem(2) solid #333;
   transform: translateY(-50%) rotate(45deg);
-  transition: 0.3s;
+  transition: transform 0.3s ease; // transformに限定して滑らかに
 }
 
+//「>」ホバー時に右へ動く
 .header__nav-modal-item a:hover::before {
+  transform: translateY(-50%) translateX(rem(4)) rotate(45deg);
   @include mq("md") {
     opacity: 0.8;
   }
