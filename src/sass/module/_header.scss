@@ -76,6 +76,30 @@
   color: #333;
 }
 
+//spanで単語の真下にホバー線//
+.header__nav-item > a span{
+  position: relative;
+}
+
+.header__nav-item > a span::after{
+  position: relative;
+  content: "";
+  position: absolute;
+  bottom: rem(-8); // 文字の真下に線を表示
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: rem(1);
+  background-color: #333;
+  transition: transform 0.3s ease;
+}
+
+.header__nav-item:hover > a span::after {
+  transform: translateX(-50%) scaleX(1);
+}
+////
+
 .header__nav-modal-wrap > p {
   transition: 0.3s;
 }
