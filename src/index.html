@@ -1,155 +1,148 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="robots" content="noindex" />
-  <!-- meta情報 -->
-  <title>総合型地域スポーツクラブ | 大治町</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <!-- ファビコン -->
-  <link rel="”icon”" href="#" />
-  <!-- css -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- JavaScript -->
-  <script src="./assets/js/jquery-3.7.1.js"></script>
-  <script defer src="./assets/js/script.js"></script>
-</head>
-<body>
-  <div class="loading js-loading">
-    <div class="loading__img">
-      <img src="./assets/images/common/logo.png" alt="" loading="lazy">
-    </div>
-  </div>
-  <!-- header PC-->
-  <header class="header layout-header">
-    <div class="header__inner">
-      <h1 class="header__logo">
-        <a href="#">
-          <img src="./images/common/logo.svg" alt="省略">
-        </a>
-      </h1>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a href="#"><span>スポーツプラスおおはる</span></a>
-          </li>
-          <li class="header__nav-modal-wrap">
-            <p>講座</p>
-            <ul class="header__nav-modal">
-              <li class="header__nav-modal-item">
-                <a href="#"><span>長期講座</span></a>
-              </li>
-              <li class="header__nav-modal-item">
-                <a href="#"><span>短期講座</span></a>
-              </li>
-            </ul>
-          </li>
-          <li class="header__nav-item">
-            <a href="#">施工医実績</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#">お知らせ</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#">お客様の声</a>
-          </li>
-          <li class="header__nav-item header__nav-item--contact">
-            <a href="#">お問い合わせ</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__hamburger js-hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="header__drawer js-drawer">
-        <nav class="header__drawer-nav">
-          <ul class="header__drawer-list">
-            <li class="header__drawer-item">
-              <a href="#">私たちについて</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>総合型地域スポーツクラブ | 大治町</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="#" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JavaScript -->
+    <script src="./assets/js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- ローディングアニメーション-->
+    <!-- <div class="loading js-loading">
+      <div class="loading__img">
+        <img src="./assets/images/common/logo.gif" alt="ロゴ" loading="lazy" />
+      </div>
+    </div> -->
+    <!-- header PC-->
+    <header class="header layout-header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="#">
+            <img src="./assets/images/common/logo.gif" alt="ロゴ" />
+          </a>
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#"><span>スポーツプラスおおはる</span></a>
             </li>
-            <li class="header__drawer-item">
-              <p class="header__drawer-accordion-title js-drawer-accordion">事業内容</p>
-              <ul class="header__drawer-accordion-list">
-                <li class="header__drawer-accordion-item">
-                  <a href="#">不動産賃貸事業</a>
+            <li class="header__nav-modal-wrap">
+              <p>講座</p>
+              <ul class="header__nav-modal">
+                <li class="header__nav-modal-item">
+                  <a href="#"><span>長期講座</span></a>
                 </li>
-                <li class="header__drawer-accordion-item">
-                  <a href="#">不動産仲介事業</a>
-                </li>
-                <li class="header__drawer-accordion-item">
-                  <a href="#">不動産コンサルティング事業</a>
+                <li class="header__nav-modal-item">
+                  <a href="#"><span>短期講座</span></a>
                 </li>
               </ul>
             </li>
-            <li class="header__drawer-item">
-              <a href="#">施工実績</a>
+            <li class="header__nav-item">
+              <a href="#"><span>施工医実績</span></a>
             </li>
-            <li class="header__drawer-item">
-              <a href="#">お知らせ</a>
+            <li class="header__nav-item">
+              <a href="#"><span>お知らせ</span></a>
             </li>
-            <li class="header__drawer-item">
-              <a href="#">お客様の声</a>
+            <li class="header__nav-item">
+              <a href="#"><span>お客様の声</span></a>
             </li>
-            <li class="header__drawer-item header__drawer-item--contact">
+            <li class="header__nav-item header__nav-item--contact">
               <a href="#">お問い合わせ</a>
             </li>
           </ul>
         </nav>
+        <button class="header__hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__drawer js-drawer">
+          <nav class="header__drawer-nav">
+            <ul class="header__drawer-list">
+              <li class="header__drawer-item">
+                <a href="#">私たちについて</a>
+              </li>
+              <li class="header__drawer-item">
+                <p class="header__drawer-accordion-title js-drawer-accordion">事業内容</p>
+                <ul class="header__drawer-accordion-list">
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">不動産賃貸事業</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">不動産仲介事業</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">不動産コンサルティング事業</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__drawer-item">
+                <a href="#">施工実績</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="#">お知らせ</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="#">お客様の声</a>
+              </li>
+              <li class="header__drawer-item header__drawer-item--contact">
+                <a href="#">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-     <!-- メインビュー -->
-     <section class="fv fv-layout js-fv">
-      <div class="fv__inner">
-        <div class="fv__swiper swiper js-fv-swiper">
-          <div class="swiper-wrapper">
-            <picture class="swiper-slide">
-              <source srcset="./assets/images/common//fv-turtle-sp.jpg" media="(max-width: 767px)" />
-              <img src="./assets/images/common/fv-turtle-pc.jpg" alt="turtle" />
-            </picture>
-            <div class="swiper-slide">
-              <picture class="swiper-slide">
-                <source srcset="./assets/images/common//fv-diving-sp.jpg" media="(max-width: 767px)" />
-                <img src="./assets/images/common/fv-diving-pc.jpg" alt="turtle" />
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture class="swiper-slide">
-                <source srcset="./assets/images/common//fv-boat-sp.jpg" media="(max-width: 767px)" />
-                <img src="./assets/images/common/fv-boat-pc.jpg" alt="boat" />
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture class="swiper-slide">
-                <source srcset="./assets/images/common//fv-beach-sp.jpg" media="(max-width: 767px)" />
-                <img src="./assets/images/common/fv-beach-pc.jpg" alt="beach" />
-              </picture>
+    </header>
+    <main>
+      <!-- メインビュー -->
+      <section class="mv">
+        <div class="mv__inner">
+          <div class="mv__title-wrap">
+            <h2 class="mv__main-title">メインタイトル</h2>
+            <p class="mv__sub-title">ここにサブタイトルが入ります。<br />ここにサブタイトルが入ります。</p>
+          </div>
+          <div class="mv__swiper swiper js-mv-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-img">
+                  <img src="./assets/images/common/mv01.jpg" alt="省略" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-img">
+                  <img src="./assets/images/common/mv02.jpg" alt="省略" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-img">
+                  <img src="./assets/images/common/mv03.jpg" alt="省略" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <h2 class="fv__title">
-        <span class="fv__title-main">DIVING</span>
-        <span class="fv__title-sub">into the ocean</span>
-      </h2>
-    </section>
-  </main>
-  <footer>
-
-  </footer>
-</body>
-
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

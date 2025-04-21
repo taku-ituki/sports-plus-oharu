@@ -42,23 +42,19 @@ jQuery(function ($) {
     $(this).toggleClass('is-open');
   });
   //
-  //  //メインビューのスワイパー
-  var swipeOption = {
+  
+  //MVのスワイパー
+  const mv_swiper = new Swiper(".js-mv-swiper", {
     loop: true,
+    speed: 2000,
     effect: "fade",
     fadeEffect: {
-      crossFade: true
+      
+        crossFade: true,
     },
     autoplay: {
-      delay: 4000,
-      disableOnInteraction: false
+        delay: 4000,
+        disableOnInteraction: false,
     },
-    speed: 1000,
-    allowTouchMove: false
-  };
-  // フォント読み込み完了後にSwiperを初期化
-  document.fonts.ready.then(function () {
-    new Swiper(".js-fv-swiper", swipeOption);
-  });
-  //
+});
 });
