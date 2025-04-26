@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.top-about__title {
+  text-align: center;
+  font-size: rem(40);
+}
+
+.top-about__text {
+  font-size: rem(24);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}
