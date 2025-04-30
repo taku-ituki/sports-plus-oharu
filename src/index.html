@@ -30,12 +30,12 @@
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
-    <!-- ローディングアニメーション-->
-    <div class="loading js-loading">
+    <!-- ローディングアニメーション -->
+    <!-- <div class="loading js-loading">
       <div class="loading__img">
         <img src="./assets/images/common/logo.gif" alt="ロゴ" loading="lazy" />
       </div>
-    </div>
+    </div> -->
     <!-- header PC-->
     <header class="header layout-header">
       <div class="header__inner">
@@ -61,6 +61,9 @@
               <a href="school-club.html"><span>部活動地域連携</span></a>
             </li>
             <li class="header__nav-item">
+              <a href="#"><span>授業後スポーツチャレンジ</span></a>
+            </li>
+            <li class="header__nav-item">
               <a href="#"><span>お知らせ</span></a>
             </li>
             <li class="header__nav-item">
@@ -69,7 +72,7 @@
             <li class="header__nav-item">
               <a href="#"><span>料金</span></a>
             </li>
-            <li class="header__nav-item header__nav-item--contact">
+            <li class="header__nav-item header__nav-item--top-contact">
               <a href="#">お問い合わせ</a>
             </li>
           </ul>
@@ -97,6 +100,9 @@
                 <a href="school-club.html">部活動地域連携</a>
               </li>
               <li class="header__drawer-item">
+                <a href="#"><span>授業後スポーツチャレンジ</span></a>
+              </li>
+              <li class="header__drawer-item">
                 <a href="#">お知らせ</a>
               </li>
               <li class="header__drawer-item">
@@ -105,7 +111,7 @@
               <li class="header__drawer-item">
                 <a href="#">料金</a>
               </li>
-              <li class="header__drawer-item header__drawer-item--contact">
+              <li class="header__drawer-item header__drawer-item--top-contact">
                 <a href="#">お問い合わせ</a>
               </li>
             </ul>
@@ -118,7 +124,7 @@
       <section class="mv">
         <div class="mv__inner">
           <div class="mv__title-wrap">
-            <h2 class="mv__main-title">動いてつながる、笑顔がひろがる</h2>
+            <h2 class="mv__main-title">動いてつながる、<br />笑顔がひろがる</h2>
           </div>
           <div class="mv__swiper swiper js-mv-swiper">
             <div class="swiper-wrapper">
@@ -141,33 +147,45 @@
           </div>
         </div>
       </section>
-      <section class="top-information">
+      <section class="top-information top-information-layout">
         <div class="top-information__inner inner">
           <h2 class="top-information__title">お知らせ</h2>
           <!-- お知らせのカテゴリー切り替え -->
           <div class="top-information__news-nav">
-            <nav class="top-information__news-category">
+            <nav class="top-information__news-nav-category">
               <a href="#">最新</a>
+              <a href="#">連絡事項</a>
               <a href="#">募集</a>
-              <a href="#">活動状況</a>
             </nav>
           </div>
           <!-- お知らせ記事 -->
           <ul class="top-information__news-list">
             <li class="top-information__news-item">
-              <span class="top-information__date">2025.4.1</span>
-              <span class="top-information__category">募集（仮）</span>
-              <span class="top-information__category">管理画面からテキスト入力</span>
+              <a href="#">
+                <div class="top-information__news-meta">
+                  <time class="top-information__news-date" datetime="2023-05-10">2023.05.10</time>
+                  <p class="top-information__news-category">お知らせ</p>
+                </div>
+                <p class="top-information__news-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+              </a>
             </li>
             <li class="top-information__news-item">
-              <span class="top-information__date">2025.4.1</span>
-              <span class="top-information__category">募集（仮）</span>
-              <span class="top-information__category">管理画面からテキスト入力</span>
+              <a href="#">
+                <div class="top-information__news-meta">
+                  <time class="top-information__news-date" datetime="2023-05-10">2023.05.10</time>
+                  <p class="top-information__news-category">お知らせ</p>
+                </div>
+                <p class="top-information__news-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+              </a>
             </li>
             <li class="top-information__news-item">
-              <span class="top-information__date">2025.4.1</span>
-              <span class="top-information__category">募集（仮）</span>
-              <span class="top-information__category">管理画面からテキスト入力</span>
+              <a href="#">
+                <div class="top-information__news-meta">
+                  <time class="top-information__news-date" datetime="2023-05-10">2023.05.10</time>
+                  <p class="top-information__news-category">お知らせ</p>
+                </div>
+                <p class="top-information__news-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+              </a>
             </li>
           </ul>
         </div>
@@ -175,7 +193,7 @@
       <!-- スポーツプラスおおはるについて -->
       <section class="top-about top-about-layout">
         <div class="top-about__inner inner">
-          <h2 class="top-about__title">スポーツプラスおおはる</h2>
+          <h2 class="top-about__title">スポーツプラス<br />おおはる</h2>
           <p class="top-about__text">
             「大治町総合型地域スポーツクラブ スポーツプラスおおはる」は国が提唱している地域住民のための新しいタイプのスポーツクラブ（総合型地域スポーツクラブ）です。 子どもから高齢者まで幅広い年齢層が自分にあった種目を選択でき、初心者から上級者までそれぞれの志向・レベルに合わせて参加できます。
             地域住民の健康・体力づくりだけではなく、交流を深める場・豊かなコミュニティ形成の場にもなっています。
@@ -186,60 +204,59 @@
       <section class="top-about top-about-layout">
         <div class="top-about__inner inner">
           <h2 class="top-about__title">事業内容</h2>
-          <ul>
-            <li>講座</li>
-            <li>部活動地域連携</li>
-            <li></li>
-          </ul>
+          <h3 class="top-about__sub-title">講座</h3>
+          <div class="top-about__school-list">
+            <ul>
+              <li>長期講座</li>
+              <li>短期講座</li>
+            </ul>
+          </div>
+          <h3 class="top-about__sub-title">部活動地域連携</h3>
         </div>
       </section>
       <!-- アクセス -->
-      <section class="contact contact-layout">
-        <div class="contact__inner">
-          <h2 class="contact__title">アクセス</h2>
-          <ul class="contact__lists">
-            <li class="contact__list-left">
-              <div class="contact__address-block">
-                <ul class="contact__adress-list">
-                  <li class="contact__address-item">愛知県海部郡大治町大字北間島字藤田33-1</li>
-                  <li class="contact__address-item contact__address-item--tel">TEL:052-217-6211</li>
-                  <li class="contact__address-item contact__address-item--time">営業時間：月 ・ 木 9:00～17:00</li>
-                  <li class="contact__address-item contact__address-item--time">日 ・ 火 ・ 金9:00～12:00</li>
-                  <li class="contact__address-item">定休日:水・土・祝日の翌日・年末年始（１２/２９～１/３）</li>
+      <section class="top-contact top-contact-layout">
+        <div class="top-contact__inner inner">
+          <h2 class="top-contact__title">施設案内</h2>
+          <ul class="top-contact__lists">
+            <li class="top-contact__list-left">
+              <div class="top-contact__address-block">
+                <ul class="top-contact__address-list">
+                  <li class="top-contact__address-item">愛知県海部郡大治町大字北間島字藤田33-1</li>
+                  <li class="top-contact__address-item top-contact__address-item--tel">TEL:052-217-6211</li>
+                  <!-- 営業時間だけまとめる -->
+                  <li class="top-contact__address-item top-contact__address-item--time">
+                    <div class="top-contact__label">営業時間：月・木　9:00～17:00日<br />・火・金　9:00～12:00</div>
+                  </li>
+                  <li class="top-contact__address-item">
+                    <div class="top-contact__label">定休日：</div>
+                    <div class="top-contact__time">
+                      <p>水・土・祝日の翌日・年末年始（12/29～1/3）</p>
+                    </div>
+                  </li>
                 </ul>
-                <div class="contact__google">
-                  <!-- Googleマップの埋め込み -->
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d104356.13417767828!2d136.74727927241562!3d35.17833239743069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x600375fe84667bb7%3A0xbf161128c5c6ac81!2z44CSNDkwLTExMzIg5oSb55-l55yM5rW36YOo6YOh5aSn5rK755S65YyX6ZaT5bO26Jek55Sw77yT77yT4oiS77yR!3m2!1d35.178408!2d136.8292716!5e0!3m2!1sja!2sjp!4v1745458847635!5m2!1sja!2sjp"
-                    width="600"
-                    height="450"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                  <!-- 別タブでGoogleマップを開くリンク -->
-                  <p class="contact__google-link">
-                    <a href="https://maps.app.goo.gl/32KPFxVEVTZfRRNu7" target="_blank" rel="noopener noreferrer"> Googleマップで開く </a>
-                  </p>
-                </div>
               </div>
             </li>
-            <li class="contact__list-right">
-              <div class="section-title">
-                <h2 class="section-title__en section-title__en--contact">contact</h2>
-                <p class="section-title__ja">お問い合わせ</p>
-              </div>
-              <div class="contact__text">ご予約・お問い合わせはコチラ</div>
-              <div class="contact__btn-wrap">
-                <a class="common-btn" href="contact.html">
-                  <span>view more</span>
-                </a>
+            <li class="top-contact__list-right">
+              <div class="top-contact__google">
+                <!-- Googleマップの埋め込み -->
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d104356.13417767828!2d136.74727927241562!3d35.17833239743069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x600375fe84667bb7%3A0xbf161128c5c6ac81!2z44CSNDkwLTExMzIg5oSb55-l55yM5rW36YOo6YOh5aSn5rK755S65YyX6ZaT5bO26Jek55Sw77yT77yT4oiS77yR!3m2!1d35.178408!2d136.8292716!5e0!3m2!1sja!2sjp!4v1745458847635!5m2!1sja!2sjp"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </li>
           </ul>
         </div>
       </section>
+
+      アクセス 公共交通機関をご利用の場合 名古屋方面から【バス乗車所要時間は約20分】 名鉄バスセンター【3番のりば】 津島駅行、大坪行(ともに安松経由)に乗車し「東条（ひがしじょう）」下車　北へ徒歩10分 中村公園方面から【バス乗車所要時間は約10分】 　名古屋市営地下鉄東山線「中村公園駅」下車後
+      市バスターミナル(中村公園)【3番のりば】 　大治西条行(14系統)に乗車 中村公園(西)バス停【5・6番のりば】 　名鉄バス　津島駅（安松経由）に乗車 　名鉄バス　大坪行（安松経由）に乗車 　名古屋市営バス　大治西条行（14系統）に乗車 　ともに「東条（ひがしじょう）」下車　北へ徒歩10分
+      津島方面から【バス乗車所要時間は約25分】 名鉄津島駅 名鉄バスセンターまたは栄行(ともに安松経由)に乗車し「東条（ひがしじょう）」下車　北へ徒歩10分 名鉄電車　甚目寺駅から タクシー　約15分 徒歩　　　約30分 自家用車利用の場合 高速自動車道
+      名古屋第二環状自動車道（東名阪）「大治北」「甚目寺南」出口より約5分 名古屋高速自動車道（万場線）「千音寺」出口より約10分 一般道 県道79号あま愛西線　「坂牧東」交差点南下数分 （旧）県道68号名古屋津島線　「東條」交差点北上数分
     </main>
     <footer></footer>
   </body>

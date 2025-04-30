@@ -1,94 +1,28 @@
 @use "global" as *;
 
-.contact {
-  position: relative;
-}
-
-.contact__inner {
-  max-width: rem(680);
-  width: 100%;
-  padding: 0 rem(40);
-  margin-left: auto;
-  margin-right: auto;
-  @include mq(md) {
-    max-width: rem(1120);
-    padding-left: $padding-pc;
-    padding-right: $padding-pc;
-  }
-}
-
-// 画像配置
-.contact::before {
-  content: "";
-  background: url("./../images/common/contact-fish.png") center center / cover no-repeat;
-  /*絶対配置で線の位置を決める*/
-  display: block;
-  position: absolute;
-  top: -4%;
-  // right: 10%;
-  right: calc(50% - (min(46.8vw, rem(630))));
-  /*線の形状*/
-  width: rem(110);
-  height: rem(50);
-  z-index: 5;
-  @include mq(md) {
-    max-width: rem(301);
-    width: 100%;
-    height: rem(138);
-    top: -9%;
-    right: calc(50% - (min(48.111vw, rem(672))));
-  }
-}
-
-.inner.contact__inner {
+.inner.top-contact__inner {
   padding: 0 rem(30);
   @include mq(md) {
-    padding: 0 $padding-pc;
   }
 }
 
-.contact__title {
+.top-contact__title {
   text-align: center;
   font-size: rem(40);
 }
 
-.contact__lists {
+.top-contact__lists {
   @include mq(md) {
     padding: rem(75) rem(110) rem(75) rem(50);
     display: flex;
     gap: rem(80);
     justify-content: space-between;
     align-items: center;
-    max-width: rem(1180);
-    width: 100%;
     box-shadow: rem(4) rem(4) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   }
 }
 
-.contact-logo {
-  position: relative;
-}
-
-.contact-logo img {
-  width: rem(174);
-  margin: auto;
-  @include mq(md) {
-    width: rem(200);
-  }
-}
-
-.contact-logo::after {
-  content: "";
-  /*絶対配置で線の位置を決める*/
-  position: absolute;
-  bottom: rem(-4);
-  left: 0;
-  /*線の形状*/
-  width: 100%;
-  height: rem(1);
-}
-
-.contact__address-block {
+.top-contact__address-block {
   margin-top: rem(20);
   @include mq(md) {
     display: flex;
@@ -96,14 +30,14 @@
   }
 }
 
-.contact__adress-list {
+.top-contact__address-list {
   @include mq(md) {
     max-width: rem(146);
     width: 100%;
   }
 }
 
-.contact__list-left {
+.top-contact__list-left {
   @include mq(md) {
     text-align: left;
     padding-right: rem(87);
@@ -112,13 +46,13 @@
   }
 }
 
-.contact__list-right {
+.top-contact__list-right {
   @include mq(md) {
     text-align: left;
   }
 }
 
-.contact__address-item {
+.top-contact__address-item {
   font-family: $second-font-family;
   text-align: center;
   margin-top: rem(4);
@@ -127,23 +61,26 @@
   }
 }
 
-.contact__text {
+.top-contact__address-item.top-contact__address-item--time {
+  display: flex;
+}
+
+.top-contact__text {
   font-size: rem(14);
   text-align: center;
   font-family: $second-font-family;
 }
 
-.contact__google {
+.top-contact__google {
   margin-top: rem(16);
   @include mq(md) {
-    max-width: rem(273);
     width: 100%;
     margin-top: rem(0);
     margin-left: rem(20);
   }
 }
 
-.contact__google iframe {
+.top-contact__google iframe {
   aspect-ratio: 295/160;
   width: 100%;
   height: 100%;
@@ -151,9 +88,4 @@
   @include mq(md) {
     aspect-ratio: 273/148;
   }
-}
-
-.contact__btn-wrap {
-  text-align: center;
-  margin-top: rem(37);
 }

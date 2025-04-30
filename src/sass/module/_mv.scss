@@ -26,8 +26,16 @@
 .mv__main-title {
   font-family: $second-font-family;
   font-size: rem(40);
+  text-indent: rem(33);
   @include mq(md) {
     font-size: rem(60);
+    text-indent: 0;
+  }
+}
+
+.mv__main-title br {
+  @include mq(md) {
+    display: none;
   }
 }
 

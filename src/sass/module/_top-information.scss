@@ -1,6 +1,133 @@
 @use "global" as *;
 
+.top-information__title {
+  font-size: rem(32);
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
 
-.top-information__title{
-    font-size:rem(40);
+.top-information__news-list {
+  font-size: rem(24);
+  margin-top: rem(30);
+}
+
+.top-information__news-nav {
+  margin-top: rem(60);
+  @include mq(md) {
+  }
+  font-size: rem(24);
+}
+
+.top-information__news-nav-category {
+  display: flex;
+}
+
+.top-information__news-nav-category a {
+  display: block;
+  position: relative;
+  width: 33%;
+  text-align: center;
+  cursor: pointer;
+  @include mq(md) {
+    width: 20%;
+  }
+}
+
+//カテゴリーホバー時の線//
+//初期の線
+.top-information__news-nav-category a::before {
+  left: 0;
+  width: 100%;
+  background-color: pink;
+  content: "";
+  display: block;
+  position: absolute;
+  padding-top: rem(3);
+  padding-bottom: rem(3);
+  bottom: 0;
+}
+
+.top-information__news-nav-category a:hover::before {
+  left: 50%;
+  width: 0;
+  opacity: 0.5;
+  transition: left, 0.3s ease, width 0.3s ease;
+}
+
+//ホバー時の線
+.top-information__news-nav-category a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 0;
+  opacity: 0.5;
+  bottom: 0;
+}
+
+.top-information__news-nav-category a:hover::after {
+  left: 0;
+  width: 100%;
+  background-color: blueviolet;
+  padding-top: rem(3);
+  padding-bottom: rem(3);
+  transition: right, 0.5s ease, width 0.5s ease;
+  opacity: 0.5;
+}
+
+//お知らせ記事CSS//
+.top-information__news-item a {
+  padding: rem(20) 0;
+  display: block;
+  @include mq(md) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.top-information__news-meta {
+  display: flex;
+  align-items: center;
+}
+
+.top-information__news-date {
+  font-size: rem(16);
+  line-height: 1;
+}
+
+.top-information__news-category {
+  margin-left: rem(30);
+  padding: rem(5);
+  //ボックス幅の最低ラインの確保
+  min-width: rem(80);
+  //
+  //中の文字量に合わせてボックスの幅を伸び縮みさせる
+  width: fit-content;
+  //
+  font-size: rem(14);
+  line-height: 1;
+  color: #fff;
+  background-color: #73b2c8;
+  text-align: center;
+}
+
+//ホバー時にテキストにホバー表示（擬似要素では不可能）
+
+.top-information__news-title {
+  margin-top: rem(12);
+  font-size: rem(16);
+  line-height: 1.5;
+  position: relative;
+  text-decoration: none; /* 最初は下線なし */
+  text-underline-offset: rem(4); /* 下線と文字の間にスペースを作る */
+  @include mq(md) {
+    margin-top: 0;
+    margin-left: rem(60);
+  }
+}
+
+.top-information__news-item a:hover .top-information__news-title {
+  text-decoration: underline; /* ホバー時に下線表示 */
 }

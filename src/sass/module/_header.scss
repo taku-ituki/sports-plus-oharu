@@ -59,7 +59,7 @@
   height: inherit;
 }
 
-.header__nav-item.header__nav-item--contact {
+.header__nav-item.header__nav-item--top-contact {
   margin-left: rem(15);
   display: flex;
   align-items: center;
@@ -180,7 +180,7 @@
   }
 }
 
-.header__nav-item.header__nav-item--contact a {
+.header__nav-item.header__nav-item--top-contact a {
   padding: 0 rem(50);
   position: relative;
   position: relative;
@@ -189,7 +189,7 @@
   background-color: #234f5e;
 }
 
-.header__nav-item.header__nav-item--contact a::before {
+.header__nav-item.header__nav-item--top-contact a::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -204,7 +204,7 @@
   background-size: contain;
 }
 
-.header__nav-item.header__nav-item--contact a::after {
+.header__nav-item.header__nav-item--top-contact a::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -233,7 +233,6 @@
   z-index: 999;
   width: rem(64);
   height: inherit;
-  background-color: #fce4ec;
   cursor: pointer;
   transition: 0.3s;
   @include mq("md") {
@@ -304,7 +303,7 @@
   border-bottom: 1px solid #fff;
 }
 
-.header__drawer-item.header__drawer-item--contact {
+.header__drawer-item.header__drawer-item--top-contact {
   margin-top: rem(40);
   margin-left: rem(32);
   border-bottom: none;
@@ -321,7 +320,7 @@
   cursor: pointer;
 }
 
-.header__drawer-item.header__drawer-item--contact a {
+.header__drawer-item.header__drawer-item--top-contact a {
   padding: rem(15) 0;
   position: relative;
   max-width: rem(180);
@@ -331,7 +330,7 @@
   background-color: #234f5e;
 }
 
-.header__drawer-item.header__drawer-item--contact a::before {
+.header__drawer-item.header__drawer-item--top-contact a::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -346,7 +345,7 @@
   background-size: contain;
 }
 
-.header__drawer-item.header__drawer-item--contact a::after {
+.header__drawer-item.header__drawer-item--top-contact a::after {
   content: "";
   position: absolute;
   top: 50%;
