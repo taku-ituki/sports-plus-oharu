@@ -1,0 +1,68 @@
+@use "global" as *;
+
+.faq-item {
+  border: rem(1) solid green;
+  @include mq(md) {
+    border: none;
+  }
+}
+
+/*アコーディオンタイトル*/
+.faq-item__accordion-title {
+  position: relative; /*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-size: rem(16);
+  font-weight: normal;
+  padding: rem(16) rem(100) rem(16) rem(16); // 右側に余白追加して + アイコンと分離
+  transition: all 0.5s ease;
+  color: $white;
+  background-color: green;
+  @include mq(md) {
+    padding: rem(24) rem(40);
+  }
+}
+
+// 質問の文章が増えた時のための対応
+.faq-item__accordion-title-text {
+  max-width: 85%;
+  width: 100%;
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+/*アイコンの＋と×*/
+/* アコーディオンタイトルの疑似要素 */
+.faq-item__accordion-title::before,
+.faq-item__accordion-title::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: rem(28); // 横線の長さ
+  height: rem(1); // 線の太さ
+  background-color: whitesmoke;
+  transition: transform 0.3s ease;
+  // 右端に固定（右から16px程度内側）
+  right: rem(30);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 横線：常に表示 */
+.faq-item__accordion-title::before {
+  right: rem(30);
+  top: 50%;
+  transform: rotate(0deg); // 回転しない
+}
+
+/* 縦線：初期状態では表示（＋）、close時に非表示（−）になる */
+.faq-item__accordion-title::after {
+  right: rem(30);
+  top: 50%;
+  transform: rotate(90deg); // ← これを通常は縦に
+}
+
+/* クローズ状態（開いているとき）→ 縦線を非表示（回転させて重ねる） */
+.faq-item__accordion-title.close::after {
+  transform: rotate(180deg); // 回転させて縦線を見えなくする（横線と重なる）
+}

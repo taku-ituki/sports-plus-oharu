@@ -2,7 +2,7 @@
 
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
-  //ローディングアニメーション　
+  //ローディングアニメーション
   function loading() {
     setTimeout(function () {
       $(".js-loading").addClass("is-hide");
@@ -28,7 +28,7 @@ jQuery(function ($) {
     });
 
     // resizeイベント
-    $(window).on('resize', function () {
+    $(window).on("resize", function () {
       if (window.matchMedia("(min-width: 768px)").matches) {
         $(".js-hamburger").removeClass("is-open");
         $(".js-drawer").fadeOut();
@@ -37,24 +37,66 @@ jQuery(function ($) {
   });
   //
   // ヘッダーのアコーディオン
-  $('.js-drawer-accordion').on('click', function () {
+  $(".js-drawer-accordion").on("click", function () {
     $(this).next().slideToggle();
-    $(this).toggleClass('is-open');
+    $(this).toggleClass("is-open");
   });
   //
-  
+
+  //  ヘッダーのドロワー展開時に背面のスクロールを止める
+  var drawer = document.querySelector(".js-drawer");
+  var overlay = document.querySelector(".js-header-overlay");
+
+  function openDrawer() {
+    drawer.classList.add("is-open");
+    overlay.style.display = "block";
+    document.body.style.overflow = "hidden"; // ドロワーが開いている間は本体のスクロールを無効にする
+  }
+
+  function closeDrawer() {
+    drawer.classList.remove("is-open");
+    overlay.style.display = "none";
+    document.body.style.overflow = ""; // ドロワーが閉じられたら本体のスクロールを有効にする
+  }
+
+  document.querySelector(".js-hamburger").addEventListener("click", function () {
+    if (drawer.classList.contains("is-open")) {
+      closeDrawer();
+    } else {
+      openDrawer();
+    }
+  });
+
+  if (overlay) {
+    overlay.addEventListener("click", closeDrawer);
+  } else {
+    console.warn("Overlay element not found.");
+  }
+  //
   //MVのスワイパー
   const mv_swiper = new Swiper(".js-mv-swiper", {
     loop: true,
     speed: 2000,
     effect: "fade",
     fadeEffect: {
-      
-        crossFade: true,
+      crossFade: true,
     },
     autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
+      delay: 4000,
+      disableOnInteraction: false,
     },
-});
+  });
+
+  /////FAQアコーディオン/////
+  // アコーディオンのタイトルがクリックされたときの動き
+  // FAQのタイトルがクリックされたら開閉する
+  $(".js-faq-accordion-title").on("click", function () {
+    var $box = $(this).next(".js-faq-accordion-box");
+
+    // 表示/非表示の切り替え
+    $box.slideToggle();
+
+    // 「close」クラスで「＋／−」を切り替える
+    $(this).toggleClass("close");
+  });
 });

@@ -1,0 +1,45 @@
+@use "global" as *;
+.faq {
+  position: relative;
+}
+
+
+.faq__inner.inner{
+  @include mq(md){
+    max-width:rem(740);
+    width:100%;
+  }
+}
+
+/*アコーディオン全体*/
+.faq__accordion-area {
+  list-style: none;
+  max-width: rem(700);
+  margin: 0 auto;
+}
+
+
+/*アコーディオンで現れるエリア*/
+.faq__accordion-box {
+  display: none; // ← 追加：最初は非表示
+  background: whitesmoke;
+  padding: rem(19) rem(19);
+  @include mq(md) {
+    padding: rem(37) rem(37) rem(16) rem(45);
+    margin-top: rem(16);
+    border: rem(1) solid green;
+    @include mq(md) {
+      margin-top: rem(19);
+      padding-bottom: rem(33);
+    }
+  }
+}
+
+.faq__accordion-title-text{
+  max-width:rem(270);
+  width:100%;
+  @include mq(md){
+    max-width:90%
+  }
+}
+
