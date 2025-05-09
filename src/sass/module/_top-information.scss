@@ -1,13 +1,5 @@
 @use "global" as *;
 
-.top-information__title {
-  font-size: rem(32);
-  text-align: center;
-  @include mq(md) {
-    font-size: rem(40);
-  }
-}
-
 .top-information__news-list {
   font-size: rem(24);
   margin-top: rem(30);
@@ -40,7 +32,7 @@
 .top-information__news-nav-category a::before {
   left: 0;
   width: 100%;
-  background-color: pink;
+  background-color: #ff7f50;
   content: "";
   display: block;
   position: absolute;
@@ -70,7 +62,7 @@
 .top-information__news-nav-category a:hover::after {
   left: 0;
   width: 100%;
-  background-color: blueviolet;
+  background-color: #009966;
   padding-top: rem(3);
   padding-bottom: rem(3);
   transition: right, 0.5s ease, width 0.5s ease;

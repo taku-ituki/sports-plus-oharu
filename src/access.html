@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>総合型地域スポーツクラブ | 大治町</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" />
+    <!-- google フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- header PC-->
+    <header class="header layout-header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="index.html">
+            <img src="./assets/images/common/logo.gif" alt="ロゴ" />
+          </a>
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-modal-wrap">
+              <p>実施事業</p>
+              <ul class="header__nav-modal">
+                <li class="header__nav-modal-item">
+                  <a href="#"><span>スポーツ講座</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="#"><span>部活動地域連携</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="#"><span>授業後スポーツチャレンジ</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-modal-wrap">
+              <p>施設案内</p>
+              <ul class="header__nav-modal">
+                <li class="header__nav-modal-item">
+                  <a href="#"><span>スポーツプラスおおはるとは</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="access.html"><span>アクセス</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="faq.html"><span>よくある質問</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span>申込方法</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span>料金</span></a>
+            </li>
+            <li class="header__nav-item header__nav-item--access">
+              <a href="＃">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__drawer js-drawer">
+          <nav class="header__drawer-nav">
+            <ul class="header__drawer-list">
+              <li class="header__drawer-item">
+                <p class="header__drawer-accordion-title js-drawer-accordion">実施事業</p>
+                <ul class="header__drawer-accordion-list">
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">スポーツ講座</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">部活動地域連携</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">授業後スポーツチャレンジ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__drawer-item">
+                <p class="header__drawer-accordion-title js-drawer-accordion">施設案内</p>
+                <ul class="header__drawer-accordion-list">
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">スポーツプラスおおはるとは</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">アクセス</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="faq.html"><span>よくある質問</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__drawer-item">
+                <a href="#">申込方法</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="#">料金</a>
+              </li>
+              <li class="header__drawer-item header__drawer-item--access">
+                <a href="#">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- ドロワー　下要素スクロール禁止 -->
+          <div class="header__overlay js-header-overlay"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+     <!-- 施設案内 -->
+<section class="access access-layout">
+  <div class="access__inner inner">
+    <h2 class="access__title section-title">アクセス</h2>
+
+    <!-- 施設情報 -->
+    <div class="access__info access__info--page">
+      <table class="access__table">
+        <tbody class="access__body">
+          <tr class="access__row access__row--page">
+            <th class="access__label">住所</th>
+            <td class="access__data">
+              <div class="access__address">
+                <span>愛知県海部郡大治町大字北間島字藤田33-1</span>
+                <span>（大治町スポーツセンター内 1階）</span>
+              </div>
+            </td>
+          </tr>
+          <tr class="access__row access__row--page">
+            <th class="access__label">TEL</th>
+            <td class="access__data">052-217-6211</td>
+          </tr>
+          <tr class="access__row access__row--page">
+            <th class="access__label">営業時間</th>
+            <td class="access__data">
+              <div class="access__time">
+                <span class="access__day">月・木</span>
+                <span class="access__hour">9:00～17:00</span>
+              </div>
+              <div class="access__time">
+                <span class="access__day">日・火・金</span>
+                <span class="access__hour">9:00～12:00</span>
+              </div>
+            </td>
+          </tr>
+          <tr class="access__row access__row--page">
+            <th class="access__label">休日</th>
+            <td class="access__data">水 ・ 土 ・ 祝日の翌日 ・ 年末年始（１２/２９～１/３）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Google Map -->
+    <div class="access__google access__google--page">
+      <iframe src="https://www.google.com/maps/embed?..." style="border: 0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- 公共交通機関 -->
+    <div class="access__list-wrap">
+      <h3 class="access__sub-title">公共交通機関でお越しの方</h3>
+      <ul class="access__list">
+        <li class="access__item">
+          <div class="access__item-img">
+            <img src="./assets/images/common/works.jpg" alt="省略" />
+          </div>
+          <div class="access__item-text-block">
+            <h4 class="access__item-title">バス停留所</h4>
+            <div class="access__item-text">
+              <p><a href="https://kotsu.city.nagoya.jp/jp/pc/BUS/stand_top.html?name=%E6%9D%B1%E6%9D%A1">名古屋市営バス</a>・名鉄バスの東条バス停で下車</p>
+              <p>名古屋市営バスの方は、<a href="https://www.kotsu.city.nagoya.jp/jp/pc/subway/station_bus.html?name=%E4%B8%AD%E6%9D%91%E5%85%AC%E5%9C%92">中村公園６番のりば</a>から大治西条行きに乗車します。</p>
+              <p>名鉄バスの方は、<a href="https://www.meitetsu-bus.co.jp/rosen/meibc">名鉄バスセンター３階３番のりば</a>から津島行き（安松経由）か大坪行き（安松経由）に乗車します。</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="access__item access__item--arrow">
+          <div class="access__item-img">
+            <img src="./assets/images/common/arrow.jpg" alt="省略" />
+          </div>
+        </li>
+
+        <li class="access__item">
+          <div class="access__item-img">
+            <img src="./assets/images/common/works.jpg" alt="省略" />
+          </div>
+          <div class="access__item-text-block">
+            <h4 class="access__item-title">スポーツセンター南側</h4>
+            <p class="access__item-text">スポーツセンター南側 東条信号機から北へ10分ほど向かいます。銀色のドーム型の屋根が目印です。</p>
+          </div>
+        </li>
+
+        <li class="access__item access__item--arrow">
+          <div class="access__item-img">
+            <img src="./assets/images/common/arrow.jpg" alt="省略" />
+          </div>
+        </li>
+
+        <li class="access__item">
+          <div class="access__item-img">
+            <img src="./assets/images/common/works.jpg" alt="省略" />
+          </div>
+          <div class="access__item-text-block">
+            <h4 class="access__item-title">スポーツセンター西側</h4>
+            <p class="access__item-text">スポーツセンターの西側が正面玄関です。入館後すぐに事務局があります。</p>
+          </div>
+        </li>
+
+        <li class="access__item access__item--arrow">
+          <div class="access__item-img">
+            <img src="./assets/images/common/arrow.jpg" alt="省略" />
+          </div>
+        </li>
+
+        <li class="access__item">
+          <div class="access__item-img">
+            <img src="./assets/images/common/works.jpg" alt="省略" />
+          </div>
+          <div class="access__item-text-block">
+            <h4 class="access__item-title">スポーツプラス事務局</h4>
+            <p class="access__item-text">スポーツプラスおおはるの事務局です。大きな旗が目印です！</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </main>
+  </body>
+</html>

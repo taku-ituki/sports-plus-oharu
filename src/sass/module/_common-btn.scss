@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.common-btn {
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+  }
+}
+
+.common-btn__link {
+  padding: rem(10) rem(37);
+  display: inline-block;
+  font-size: rem(14);
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $black;
+  border: rem(1) solid $black;
+  border-radius: rem(5);
+  box-shadow: 0 rem(5) 0 $black;
+  transition: box-shadow 0.3s, transform 0.3s;
+  @include mq(md) {
+    padding: rem(14) rem(55);
+    font-size: rem(15);
+  }
+}
+
+.common-btn__link:hover {
+  box-shadow: none;
+  transform: translateY(rem(5));
+}
+
+//トップページ「実施事業」
+.common-btn.works-list__item-btn-wrap {
+  margin-top: rem(40);
+}
+
+//トップページ「アクセス」
+
+.access__btn.common-btn {
+  margin-top: rem(40);
+  text-align: center;
+}
+
+.access__sub-title {
+  margin-top: rem(30);
+  font-size: rem(24);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(50);
+    font-size: rem(32);
+  }
+}

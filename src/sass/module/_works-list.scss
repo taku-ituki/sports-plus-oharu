@@ -1,0 +1,116 @@
+@use "global" as *;
+
+.works-list__item {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.works-list__item:nth-of-type(even) {
+  @include mq(md) {
+    flex-direction: row-reverse;
+  }
+}
+
+.works-list__item + .works-list__item {
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.works-list__item-img {
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  @include mq(md) {
+    margin: initial;
+    max-width: rem(860);
+    width: 100%;
+  }
+}
+
+.works-list__item-img img {
+  width: 100%;
+  aspect-ratio: 375/280;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 860/650;
+  }
+}
+
+.works-list__item-content-bg {
+  margin: rem(-30) auto 0;
+  padding: rem(30) rem(20);
+  position: relative;
+  width: 88%;
+  background-color: #a8d5ba;
+  @include mq(md) {
+    margin-top: 0;
+    margin-right: calc(50% - 50vw);
+    margin-left: rem(-50);
+    padding: rem(50) rem(30);
+    width: 100vw;
+  }
+}
+
+.works-list__item:nth-of-type(even) .works-list__item-content-bg {
+  @include mq(md) {
+    margin-right: rem(-50);
+    margin-left: calc(50% - 50vw);
+  }
+}
+
+.works-list__item-content {
+  @include mq(md) {
+    max-width: rem(600);
+    width: 100%;
+  }
+}
+
+.works-list__item:nth-of-type(even) .works-list__item-content {
+  @include mq(md) {
+    margin-left: auto;
+  }
+}
+
+.works-list__item-title {
+  font-size: rem(20);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #fff;
+  @include mq(md) {
+    font-size: rem(25);
+  }
+}
+
+.works-list__item-text {
+  margin-top: rem(30);
+  font-size: rem(16);
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  color: #5c4033;
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.works-list__item-btn-wrap {
+  margin-top: rem(40);
+}
+
+// .works-list__item-btn {
+//   padding: rem(10) rem(37);
+//   display: inline-block;
+//   font-size: rem(14);
+//   line-height: 1;
+//   letter-spacing: 0.1em;
+//   text-transform: uppercase;
+//   color: #fff;
+//   border: 1px solid #fff;
+//   border-radius: rem(5);
+//   @include mq(md) {
+//     padding: rem(14) rem(55);
+//     font-size: rem(15);
+//   }
+// }

@@ -47,33 +47,38 @@
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-modal-wrap">
-              <p>講座案内</p>
+              <p>実施事業</p>
               <ul class="header__nav-modal">
                 <li class="header__nav-modal-item">
-                  <a href="#"><span>年間講座</span></a>
+                  <a href="#"><span>スポーツ講座</span></a>
                 </li>
                 <li class="header__nav-modal-item">
-                  <a href="#"><span>短期講座</span></a>
+                  <a href="#"><span>部活動地域連携</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="#"><span>授業後スポーツチャレンジ</span></a>
                 </li>
               </ul>
             </li>
-            <li class="header__nav-item">
-              <a href="school-club.html"><span>部活動地域連携</span></a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#"><span>授業後スポーツチャレンジ</span></a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#"><span>お知らせ</span></a>
+            <li class="header__nav-modal-wrap">
+              <p>施設案内</p>
+              <ul class="header__nav-modal">
+                <li class="header__nav-modal-item">
+                  <a href="#"><span>スポーツプラスおおはるとは</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="access.html"><span>アクセス</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="faq.html"><span>よくある質問</span></a>
+                </li>
+              </ul>
             </li>
             <li class="header__nav-item">
               <a href="#"><span>申込方法</span></a>
             </li>
             <li class="header__nav-item">
               <a href="#"><span>料金</span></a>
-            </li>
-            <li class="header__nav-item">
-              <a href="faq.html"><span>よくある質問</span></a>
             </li>
             <li class="header__nav-item header__nav-item--access">
               <a href="＃">お問い合わせ</a>
@@ -89,24 +94,32 @@
           <nav class="header__drawer-nav">
             <ul class="header__drawer-list">
               <li class="header__drawer-item">
-                <p class="header__drawer-accordion-title js-drawer-accordion">講座</p>
+                <p class="header__drawer-accordion-title js-drawer-accordion">実施事業</p>
                 <ul class="header__drawer-accordion-list">
                   <li class="header__drawer-accordion-item">
-                    <a href="#">長期講座</a>
+                    <a href="#">スポーツ講座</a>
                   </li>
                   <li class="header__drawer-accordion-item">
-                    <a href="#">短期講座</a>
+                    <a href="#">部活動地域連携</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">授業後スポーツチャレンジ</a>
                   </li>
                 </ul>
               </li>
               <li class="header__drawer-item">
-                <a href="school-club.html">部活動地域連携</a>
-              </li>
-              <li class="header__drawer-item">
-                <a href="#"><span>授業後スポーツチャレンジ</span></a>
-              </li>
-              <li class="header__drawer-item">
-                <a href="#">お知らせ</a>
+                <p class="header__drawer-accordion-title js-drawer-accordion">施設案内</p>
+                <ul class="header__drawer-accordion-list">
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">スポーツプラスおおはるとは</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="access.html">アクセス</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="faq.html"><span>よくある質問</span></a>
+                  </li>
+                </ul>
               </li>
               <li class="header__drawer-item">
                 <a href="#">申込方法</a>
@@ -157,7 +170,7 @@
       </section>
       <section class="top-information top-information-layout">
         <div class="top-information__inner inner">
-          <h2 class="top-information__title">お知らせ</h2>
+          <h2 class="top-information__title section-title">お知らせ</h2>
           <!-- お知らせのカテゴリー切り替え -->
           <div class="top-information__news-nav">
             <nav class="top-information__news-nav-category">
@@ -201,7 +214,7 @@
       <!-- スポーツプラスおおはるについて -->
       <section class="top-about top-about-layout">
         <div class="top-about__inner inner">
-          <h2 class="top-about__title">スポーツプラス<br />おおはる</h2>
+          <h2 class="top-about__title section-title">「スポーツプラス<br />おおはる」とは</h2>
           <p class="top-about__text">
             「大治町総合型地域スポーツクラブ スポーツプラスおおはる」は国が提唱している地域住民のための新しいタイプのスポーツクラブ（総合型地域スポーツクラブ）です。 子どもから高齢者まで幅広い年齢層が自分にあった種目を選択でき、初心者から上級者までそれぞれの志向・レベルに合わせて参加できます。
             地域住民の健康・体力づくりだけではなく、交流を深める場・豊かなコミュニティ形成の場にもなっています。
@@ -209,26 +222,75 @@
         </div>
       </section>
       <!-- 事業内容 -->
-      <section class="top-about top-about-layout">
-        <div class="top-about__inner inner">
-          <h2 class="top-about__title">事業内容</h2>
-          <h3 class="top-about__sub-title">講座</h3>
-          <div class="top-about__school-list">
-            <ul>
-              <li>長期講座</li>
-              <li>短期講座</li>
-            </ul>
-          </div>
-          <h3 class="top-about__sub-title">部活動地域連携</h3>
+      <section class="works works-layout">
+        <div class="works__inner inner">
+          <h2 class="works__title section-title">実施事業</h2>
+          <ul class="works__list works-list">
+            <li class="works-list__item">
+              <div class="works-list__item-img">
+                <img src="./assets/images/common/works.jpg" alt="省略" />
+              </div>
+              <div class="works-list__item-content-bg">
+                <div class="works-list__item-content">
+                  <h3 class="works-list__item-title">スポーツ講座</h3>
+                  <p class="works-list__item-text">年間講座 、短期講座、イベントがあり、自分に合った運動を楽しむことができます。複数の講座が受講できます。</p>
+                  <div class="works-list__item-btn-wrap common-btn">
+                    <a class="works-list__item-btn common-btn__link" href="#">view more</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="works-list__item">
+              <div class="works-list__item-img">
+                <img src="./assets/images/common/works.jpg" alt="省略" />
+              </div>
+              <div class="works-list__item-content-bg">
+                <div class="works-list__item-content">
+                  <h3 class="works-list__item-title">部活動地域連携</h3>
+                  <p class="works-list__item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                  <div class="works-list__item-btn-wrap common-btn">
+                    <a class="works-list__item-btn common-btn__link" href="#">view more</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="works-list__item">
+              <div class="works-list__item-img">
+                <img src="./assets/images/common/works.jpg" alt="省略" />
+              </div>
+              <div class="works-list__item-content-bg">
+                <div class="works-list__item-content">
+                  <h3 class="works-list__item-title">授業後スポーツチャレンジ</h3>
+                  <p class="works-list__item-text">子どもたちの体力やコミュニケーション力向上を目指して、球技を中心に様々なレクリエーションをします！</p>
+                  <div class="works-list__item-btn-wrap common-btn">
+                    <a class="works-list__item-btn common-btn__link" href="#">view more</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="works-list__item">
+              <div class="works-list__item-img">
+                <img src="./assets/images/common/works.jpg" alt="省略" />
+              </div>
+              <div class="works-list__item-content-bg">
+                <div class="works-list__item-content">
+                  <h3 class="works-list__item-title">タイトルが入ります。</h3>
+                  <p class="works-list__item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                  <div class="works-list__item-btn-wrap common-btn">
+                    <a class="works-list__item-btn common-btn__link" href="#">view more</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- 施設案内 -->
       <section class="access access-layout">
         <div class="access__inner inner">
-          <h2 class="access__title">アクセス</h2>
-      
-          <!-- 施設情報 -->
-          <div class="access__wrapper">
+          <h2 class="access__title section-title">アクセス</h2>
+          <div class="access__wrap">
+            <!-- 施設情報 -->
             <div class="access__info">
               <table class="access__table">
                 <tbody class="access__body">
@@ -269,74 +331,68 @@
               <iframe src="https://www.google.com/maps/embed?...（省略）" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
-      
-          <!-- アクセス -->
-          <div class="access__route">
-            <h3 class="access__route-title">公共交通機関をご利用の場合</h3>
-            <div class="access__route-list">
-              <dl class="access__route-group">
-                <div class="access__route-item">
-                  <dt class="access__route-label">名古屋方面から</dt>
-                  <dd class="access__route-data">
-                    【バス乗車所要時間は約20分】 名鉄バスセンター【3番のりば】<br>
-                    津島駅行、大坪行（ともに安松経由）に乗車し「東条（ひがしじょう）」下車 北へ徒歩10分
-                  </dd>
-                </div>
-      
-                <div class="access__route-item">
-                  <dt class="access__route-label">中村公園方面から</dt>
-                  <dd class="access__route-data">
-                    【バス乗車所要時間は約10分】名古屋市営地下鉄東山線「中村公園駅」下車後、市バスターミナル（中村公園）【3番のりば】より<br>
-                    - 大治西条行（14系統）<br>
-                    中村公園(西)バス停【5・6番のりば】より<br>
-                    - 名鉄バス 津島駅行（安松経由）<br>
-                    - 名鉄バス 大坪行（安松経由）<br>
-                    - 名古屋市営バス 大治西条行（14系統）<br>
-                    ※いずれも「東条（ひがしじょう）」下車 北へ徒歩10分
-                  </dd>
-                </div>
-      
-                <div class="access__route-item">
-                  <dt class="access__route-label">津島方面から</dt>
-                  <dd class="access__route-data">
-                    【バス乗車所要時間は約25分】名鉄津島駅より、名鉄バスセンターまたは栄行（ともに安松経由）に乗車、「東条（ひがしじょう）」下車 北へ徒歩10分<br>
-                    名鉄電車「甚目寺駅」から<br>
-                    - タクシー：約15分<br>
-                    - 徒歩：約30分
-                  </dd>
-                </div>
-              </dl>
-            </div>
-      
-            <h3 class="access__route-title">自家用車をご利用の場合</h3>
-            <div class="access__route-list">
-              <dl class="access__route-group">
-                <div class="access__route-item">
-                  <dt class="access__route-label">高速道路</dt>
-                  <dd class="access__route-data">
-                    名古屋第二環状自動車道（東名阪）「大治北」「甚目寺南」出口より約5分<br>
-                    名古屋高速自動車道（万場線）「千音寺」出口より約10分
-                  </dd>
-                </div>
-      
-                <div class="access__route-item">
-                  <dt class="access__route-label">一般道</dt>
-                  <dd class="access__route-data">
-                    県道79号あま愛西線「坂牧東」交差点 南下 数分<br>
-                    （旧）県道68号名古屋津島線「東條」交差点 北上 数分
-                  </dd>
-                </div>
-              </dl>
-            </div>
+          <div class="access__btn common-btn">
+            <a class="access__btn-link common-btn__link" href="access.html">view more</a>
           </div>
         </div>
       </section>
-      
-      アクセス 公共交通機関をご利用の場合 名古屋方面から【バス乗車所要時間は約20分】 名鉄バスセンター【3番のりば】 津島駅行、大坪行(ともに安松経由)に乗車し「東条（ひがしじょう）」下車　北へ徒歩10分 中村公園方面から【バス乗車所要時間は約10分】 　名古屋市営地下鉄東山線「中村公園駅」下車後
-      市バスターミナル(中村公園)【3番のりば】 　大治西条行(14系統)に乗車 中村公園(西)バス停【5・6番のりば】 　名鉄バス　津島駅（安松経由）に乗車 　名鉄バス　大坪行（安松経由）に乗車 　名古屋市営バス　大治西条行（14系統）に乗車 　ともに「東条（ひがしじょう）」下車　北へ徒歩10分
-      津島方面から【バス乗車所要時間は約25分】 名鉄津島駅 名鉄バスセンターまたは栄行(ともに安松経由)に乗車し「東条（ひがしじょう）」下車　北へ徒歩10分 名鉄電車　甚目寺駅から タクシー　約15分 徒歩　　　約30分 自家用車利用の場合 高速自動車道
-      名古屋第二環状自動車道（東名阪）「大治北」「甚目寺南」出口より約5分 名古屋高速自動車道（万場線）「千音寺」出口より約10分 一般道 県道79号あま愛西線　「坂牧東」交差点南下数分 （旧）県道68号名古屋津島線　「東條」交差点北上数分
     </main>
-    <footer></footer>
+    <footer class="footer footer-layout">
+      <div class="footer__inner inner">
+        <div class="footer__box-wrap">
+          <div class="footer__box">
+            <div class="footer__box-left">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__item-link" href="index.html">トップページ</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">実施事業</a>
+                  <ul class="footer__sub-list">
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">スポーツ講座</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">部活動地域連携</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">授業後スポーツチャレンジ</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">施設案内</a>
+                  <ul class="footer__sub-list">
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">スポーツおおはるとは</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">アクセス</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">よくある質問</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__box-right">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">申込方法</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">料金</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__logo">
+            <a href="index.html"> <img src="./assets/images/common/logo.gif" alt="ロゴ" /></a>
+          </div>
+        </div>
+      </div>
+      <small class="footer__copy-right">Copyright &copy; 2015 - 2025 Sports plus Oharu.</small>
+    </footer>
   </body>
 </html>

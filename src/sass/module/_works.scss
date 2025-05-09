@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.works {
+  overflow-x: hidden;
+}
+
+.works__list {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}

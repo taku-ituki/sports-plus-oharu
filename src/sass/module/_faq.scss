@@ -22,7 +22,7 @@
 /*アコーディオンで現れるエリア*/
 .faq__accordion-box {
   display: none; // ← 追加：最初は非表示
-  background: whitesmoke;
+  background: #F9F9F9;
   padding: rem(19) rem(19);
   @include mq(md) {
     padding: rem(37) rem(37) rem(16) rem(45);

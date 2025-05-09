@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.section-title {
+  text-align: center;
+  font-size: rem(32);
+  color: $white;
+  background: $title;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
