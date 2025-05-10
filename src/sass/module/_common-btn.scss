@@ -46,8 +46,21 @@
   margin-top: rem(30);
   font-size: rem(24);
   text-align: center;
+  color: $white;
+  background: $bg-green;
   @include mq(md) {
     margin-top: rem(50);
     font-size: rem(32);
+  }
+}
+
+.access__google-street {
+  margin-top: rem(20);
+  width: 100%;
+  aspect-ratio: 16 / 9; /* 高さもレスポンシブにしたい場合 */
+  iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 }

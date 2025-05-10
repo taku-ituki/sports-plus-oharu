@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>総合型地域スポーツクラブ | 大治町</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" />
+    <!-- google フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- header PC-->
+    <header class="header layout-header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="index.html">
+            <img src="./assets/images/common/logo.gif" alt="ロゴ" />
+          </a>
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-modal-wrap">
+              <p>実施事業</p>
+              <ul class="header__nav-modal">
+                <li class="header__nav-modal-item">
+                  <a href="#"><span>スポーツ講座</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="#"><span>部活動地域連携</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="#"><span>授業後スポーツチャレンジ</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-modal-wrap">
+              <p>施設案内</p>
+              <ul class="header__nav-modal">
+                <li class="header__nav-modal-item">
+                  <a href="#"><span>スポーツプラスおおはるとは</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="access.html"><span>アクセス</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="faq.html"><span>よくある質問</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span>申込・料金</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span>仮</span></a>
+            </li>
+            <li class="header__nav-item header__nav-item--access">
+              <a href="＃">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__drawer js-drawer">
+          <nav class="header__drawer-nav">
+            <ul class="header__drawer-list">
+              <li class="header__drawer-item">
+                <p class="header__drawer-accordion-title js-drawer-accordion">実施事業</p>
+                <ul class="header__drawer-accordion-list">
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">スポーツ講座</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">部活動地域連携</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">授業後スポーツチャレンジ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__drawer-item">
+                <p class="header__drawer-accordion-title js-drawer-accordion">施設案内</p>
+                <ul class="header__drawer-accordion-list">
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">スポーツプラスおおはるとは</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="access.html">アクセス</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="faq.html"><span>よくある質問</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__drawer-item">
+                <a href="#">申込・料金</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="#">仮</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="faq.html">よくある質問</a>
+              </li>
+              <li class="header__drawer-item header__drawer-item--access">
+                <a href="#">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- ドロワー　下要素スクロール禁止 -->
+          <div class="header__overlay js-header-overlay"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+       <!-- メインビュー -->
+       <section class="sub-fv sub-fv-layout">
+        <picture class="sub-fv__img">
+          <source srcset="./assets/images/common//faq-sp.jpg" media="(max-width: 767px)" />
+          <img src="./assets/images/common/faq-pc.jpg" alt="dummy" />
+        </picture>
+        <h2 class="sub-fv__title sub-fv__title--faq"><span>faq</span></h2>
+      </section>
+
+      <!-- パンくずリスト -->
+      <div class="breadcrumbs breadcrumbs-blog-layout">
+        <div class="breadcrumbs__inner inner">
+          <span class="breadcrumbs__top"><a href="index.html">TOP</a></span>
+          >
+          <span class="breadcrumbs__page-title">よくある質問</span>
+        </div>
+      </div>
+      
+      <section class="entry">
+        <div class="entry__inner inner">
+          <h2 class="entry__title section-title">お申込みからご参加までの流れ</h2>
+          <p class="entry__lead">
+            初めての方も安心してお手続きいただけるよう、参加までの流れを4つのステップに分けてご案内します。
+          </p>     
+          <ul class="entry__steps">
+            <li class="entry__step">
+              <div class="entry__step-label">STEP 1</div>
+              <div class="entry__step-content">
+                <h3 class="entry__step-heading">講座を選ぶ・内容を確認する</h3>
+                <p class="entry__step-text">
+                  パンフレットやホームページで講座をチェックし、受講したい講座を決めます。<br>
+                  開講日・対象者・時間なども事前に確認しましょう。
+                </p>
+              </div>
+            </li>    
+            <li class="entry__step">
+              <div class="entry__step-label">STEP 2</div>
+              <div class="entry__step-content">
+                <h3 class="entry__step-heading">申込み手続きをする</h3>
+                <p class="entry__step-text">
+                  継続会員は1月30日〜、新規会員は2月3日〜申込み開始。<br>
+                  窓口またはホームページから申込書を提出します。抽選講座もあるので要確認。
+                </p>
+              </div>
+            </li>
+            <li class="entry__step">
+              <div class="entry__step-label">STEP 3</div>
+              <div class="entry__step-content">
+                <h3 class="entry__step-heading">年会費・参加費を支払う</h3>
+                <p class="entry__step-text">
+                  年会費（一般3,000円／65歳以上2,200円）と、講座の参加費（月・3ヶ月単位）を支払います。<br>
+                  ※納入後の返金はできません。
+                </p>
+              </div>
+            </li>     
+            <li class="entry__step">
+              <div class="entry__step-label">STEP 4</div>
+              <div class="entry__step-content">
+                <h3 class="entry__step-heading">講座に参加する</h3>
+                <p class="entry__step-text">
+                  決められた日時・場所に参加し、動きやすい服装で準備を整えましょう。<br>
+                  楽しく健康づくりと地域交流を始めましょう！
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer-layout">
+      <div class="footer__inner inner">
+        <div class="footer__box-wrap">
+          <div class="footer__box">
+            <div class="footer__box-left">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__item-link" href="index.html">トップページ</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">実施事業</a>
+                  <ul class="footer__sub-list">
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">スポーツ講座</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">部活動地域連携</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">授業後スポーツチャレンジ</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">施設案内</a>
+                  <ul class="footer__sub-list">
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">スポーツおおはるとは</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">アクセス</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">よくある質問</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__box-right">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">申込方法</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">料金</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__logo">
+            <a href="index.html"> <img src="./assets/images/common/logo.gif" alt="ロゴ" /></a>
+          </div>
+        </div>
+      </div>
+      <small class="footer__copy-right">Copyright &copy; 2015 - 2025 Sports plus Oharu.</small>
+    </footer>
+  </body>
+</html>
