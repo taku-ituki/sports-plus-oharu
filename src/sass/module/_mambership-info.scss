@@ -1,0 +1,128 @@
+@use "global" as *;
+
+.membership-info {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.membership-info__section {
+  padding: rem(24);
+  margin-bottom: rem(32);
+  border-radius: rem(8);
+}
+
+.membership-info__section--blue {
+  margin-top: rem(20);
+  background-color: #d5efff;
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.membership-info__section--orange {
+  background-color: #ffe5cc;
+}
+
+.membership-info__section--pink {
+  background-color: #fbd3e2;
+}
+
+.membership-info__section--green {
+  background-color: #d3f2d3;
+}
+
+.membership-info__title {
+  font-size: rem(22);
+  margin-bottom: rem(16);
+  font-weight: bold;
+}
+
+.membership-info__list,
+.membership-info__support-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.membership-info__item,
+.membership-info__support-item {
+  margin-bottom: rem(8);
+}
+
+.membership-info__label {
+  font-weight: bold;
+}
+
+.membership-info__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.membership-info__table th,
+.membership-info__table td {
+  border: rem(1) solid #ccc;
+  padding: rem(8);
+  text-align: left;
+}
+
+.membership-info__contact p {
+  margin: rem(5) 0;
+}
+
+.membership-info__definition-list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(12);
+}
+
+.membership-info__definition {
+  display: flex;
+  align-items: flex-start;
+}
+
+.membership-info__term {
+  flex: 0 0 rem(150); // ラベルの幅固定
+  font-weight: bold;
+  white-space: pre; // 全角スペース維持
+}
+
+.membership-info__desc {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.membership-info__definition-list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8);
+  margin-top: rem(10);
+}
+
+.membership-info__definition {
+  display: block;
+  @include mq(md) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+//テキスト両端揃え
+.membership-info__term {
+  position: relative;
+  width: rem(120);
+  text-align-last: justify;
+}
+
+.membership-info__term::before {
+  @include mq(md) {
+    position: absolute;
+    content: ":";
+    right: 0;
+    top: rem(-1);
+  }
+}
+
+.membership-info__desc {
+  @include mq(md) {
+    padding-left: rem(10);
+  }
+}

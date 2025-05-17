@@ -63,10 +63,10 @@
 }
 
 .footer__box {
-  width: 60%;
   border-top: rem(0.5) solid $white;
   margin-top: rem(24);
   @include mq(md) {
+    width: 60%;
     display: flex;
     border-top: 0;
     border-right: rem(0.5) solid $white;

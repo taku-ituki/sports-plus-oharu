@@ -1,0 +1,7 @@
+@use "global" as *;
+.membership-info-layout {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}

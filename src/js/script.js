@@ -99,4 +99,13 @@ jQuery(function ($) {
     // 「close」クラスで「＋／−」を切り替える
     $(this).toggleClass("close");
   });
+
+  //フェードインアニメーション
+  $(window).on("scroll", function () {
+    $(".js-fadeIn").each(function () {
+        if ($(this).offset().top < $(window).scrollTop() + $(window).height() * 0.75) {
+            $(this).addClass("is-active");
+        }
+    });
+}).trigger("scroll");
 });

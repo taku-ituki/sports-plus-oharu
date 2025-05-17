@@ -1,11 +1,29 @@
 @use "global" as *;
 
 .works-list__item {
+  opacity: 0;
   @include mq(md) {
     display: flex;
     align-items: center;
   }
 }
+
+//フェードインアニメーション
+.works-list__item.is-active {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+//
 
 .works-list__item:nth-of-type(even) {
   @include mq(md) {
@@ -19,6 +37,9 @@
     margin-top: rem(40);
   }
 }
+
+
+
 
 .works-list__item-img {
   margin: 0 calc(50% - 50vw);
