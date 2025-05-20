@@ -30,11 +30,111 @@
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
-    <header>
-
+    <header class="header layout-header">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="./assets/images/common/logo.gif" alt="ロゴ" />
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-modal-wrap">
+              <p>実施事業</p>
+              <ul class="header__nav-modal">
+                <li class="header__nav-modal-item">
+                  <a href="program.html"><span>スポーツ講座</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="partnership.html">部活動地域連携</a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="challenge.html"><span>授業後スポーツチャレンジ</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-modal-wrap">
+              <p>施設案内</p>
+              <ul class="header__nav-modal">
+                <li class="header__nav-modal-item">
+                  <a href="aboutus.html"><span>スポーツプラスおおはるとは</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="access.html"><span>アクセス</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="faq.html"><span>よくある質問</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item">
+              <a href="entry.html"><span>申込・料金</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="archive-blog.html"><span>ブログ</span></a>
+            </li>
+            <li class="header__nav-item header__nav-item--access">
+              <a href="mailto:spplus-oharu@clovernet.ne.jp">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__drawer js-drawer">
+          <nav class="header__drawer-nav">
+            <ul class="header__drawer-list">
+              <li class="header__drawer-item">
+                <p class="header__drawer-accordion-title js-drawer-accordion">実施事業</p>
+                <ul class="header__drawer-accordion-list">
+                  <li class="header__drawer-accordion-item">
+                    <a href="program.html">スポーツ講座</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="#">部活動地域連携</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="challenge.html">授業後スポーツチャレンジ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__drawer-item">
+                <p class="header__drawer-accordion-title js-drawer-accordion">施設案内</p>
+                <ul class="header__drawer-accordion-list">
+                  <li class="header__drawer-accordion-item">
+                    <a href="aboutus.html">スポーツプラスおおはるとは</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="access.html">アクセス</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="faq.html"><span>よくある質問</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__drawer-item">
+                <a href="entry.html">申込・料金</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="archive-blog.html">ブログ</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="faq.html">よくある質問</a>
+              </li>
+              <li class="header__drawer-item header__drawer-item--access">
+                <a href="mailto:spplus-oharu@clovernet.ne.jp">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- ドロワー　下要素スクロール禁止 -->
+          <div class="header__overlay js-header-overlay"></div>
+        </div>
+      </div>
     </header>
     <main>
-  <!-- メインビュー -->
+      <!-- メインビュー -->
       <section class="sub-fv sub-fv-layout">
         <picture class="sub-fv__img">
           <source srcset="./assets/images/common/faq-sp.jpg" media="(max-width: 767px)" />
@@ -63,7 +163,7 @@
                   <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトルタイトル</h3>
                 </div>
                 <div class="archive-blog__img">
-                  <img src="./images/common/archive-blog01.jpg" alt="省略">
+                  <img src="./images/common/archive-blog01.jpg" alt="省略" />
                 </div>
               </a>
             </article>
@@ -77,7 +177,7 @@
                   <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
                 </div>
                 <div class="archive-blog__img">
-                  <img src="./images/common/archive-blog02.jpg" alt="省略">
+                  <img src="./images/common/archive-blog02.jpg" alt="省略" />
                 </div>
               </a>
             </article>
@@ -91,7 +191,7 @@
                   <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトル</h3>
                 </div>
                 <div class="archive-blog__img">
-                  <img src="./images/common/archive-blog01.jpg" alt="省略">
+                  <img src="./images/common/archive-blog01.jpg" alt="省略" />
                 </div>
               </a>
             </article>
@@ -105,7 +205,7 @@
                   <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
                 </div>
                 <div class="archive-blog__img">
-                  <img src="./images/common/archive-blog02.jpg" alt="省略">
+                  <img src="./images/common/archive-blog02.jpg" alt="省略" />
                 </div>
               </a>
             </article>
@@ -119,154 +219,153 @@
                   <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトル</h3>
                 </div>
                 <div class="archive-blog__img">
-                  <img src="./images/common/archive-blog01.jpg" alt="省略">
+                  <img src="./images/common/archive-blog01.jpg" alt="省略" />
                 </div>
               </a>
             </article>
-                      <article class="archive-blog__item">
-          <a class="archive-blog__link" href="#">
-            <div class="archive-blog__content">
-              <div class="archive-blog__meta">
-                <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
-                <p class="archive-blog__category">カテゴリ</p>
-              </div>
-              <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
-            </div>
-            <div class="archive-blog__img">
-              <img src="./images/common/archive-blog02.jpg" alt="省略">
-            </div>
-          </a>
-        </article>
-        <article class="archive-blog__item">
-          <a class="archive-blog__link" href="#">
-            <div class="archive-blog__content">
-              <div class="archive-blog__meta">
-                <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
-                <p class="archive-blog__category">カテゴリ</p>
-              </div>
-              <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトル</h3>
-            </div>
-            <div class="archive-blog__img">
-              <img src="./images/common/archive-blog01.jpg" alt="省略">
-            </div>
-          </a>
-        </article>
-        <article class="archive-blog__item">
-          <a class="archive-blog__link" href="#">
-            <div class="archive-blog__content">
-              <div class="archive-blog__meta">
-                <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
-                <p class="archive-blog__category">カテゴリ</p>
-              </div>
-              <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
-            </div>
-            <div class="archive-blog__img">
-              <img src="./images/common/archive-blog02.jpg" alt="省略">
-            </div>
-          </a>
-        </article>
-      </div>
-              <aside class="archive-blog__sidebar">
-        <ul class="archive-blog__sidebar-list">
-          <li class="archive-blog__sidebar-item">
-            <h3 class="archive-blog__sidebar-title">ランキング</h3>
-            <ul class="archive-blog__ranking-list">
-              <li class="archive-blog__ranking-item">
-                <article class="archive-blog__ranking">
-                  <a class="archive-blog__ranking-link" href="#">
-                    <p class="archive-blog__ranking-title">タイトルタイトルタイトルタイトルタイトルタイトル</p>
-                    <div class="archive-blog__ranking-img-wrap">
-                      <div class="archive-blog__ranking-img">
-                        <img src="./images/common/archive-blog01.jpg" alt="省略">
-                      </div>
-                      <p class="archive-blog__ranking-number">1</p>
-                    </div>
-                  </a>
-                </article>
+            <article class="archive-blog__item">
+              <a class="archive-blog__link" href="#">
+                <div class="archive-blog__content">
+                  <div class="archive-blog__meta">
+                    <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
+                    <p class="archive-blog__category">カテゴリ</p>
+                  </div>
+                  <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                </div>
+                <div class="archive-blog__img">
+                  <img src="./images/common/archive-blog02.jpg" alt="省略" />
+                </div>
+              </a>
+            </article>
+            <article class="archive-blog__item">
+              <a class="archive-blog__link" href="#">
+                <div class="archive-blog__content">
+                  <div class="archive-blog__meta">
+                    <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
+                    <p class="archive-blog__category">カテゴリ</p>
+                  </div>
+                  <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトル</h3>
+                </div>
+                <div class="archive-blog__img">
+                  <img src="./images/common/archive-blog01.jpg" alt="省略" />
+                </div>
+              </a>
+            </article>
+            <article class="archive-blog__item">
+              <a class="archive-blog__link" href="#">
+                <div class="archive-blog__content">
+                  <div class="archive-blog__meta">
+                    <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
+                    <p class="archive-blog__category">カテゴリ</p>
+                  </div>
+                  <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                </div>
+                <div class="archive-blog__img">
+                  <img src="./images/common/archive-blog02.jpg" alt="省略" />
+                </div>
+              </a>
+            </article>
+          </div>
+          <aside class="archive-blog__sidebar">
+            <ul class="archive-blog__sidebar-list">
+              <li class="archive-blog__sidebar-item">
+                <h3 class="archive-blog__sidebar-title">ランキング</h3>
+                <ul class="archive-blog__ranking-list">
+                  <li class="archive-blog__ranking-item">
+                    <article class="archive-blog__ranking">
+                      <a class="archive-blog__ranking-link" href="#">
+                        <p class="archive-blog__ranking-title">タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                        <div class="archive-blog__ranking-img-wrap">
+                          <div class="archive-blog__ranking-img">
+                            <img src="./images/common/archive-blog01.jpg" alt="省略" />
+                          </div>
+                          <p class="archive-blog__ranking-number">1</p>
+                        </div>
+                      </a>
+                    </article>
+                  </li>
+                  <li class="archive-blog__ranking-item">
+                    <article class="archive-blog__ranking">
+                      <a class="archive-blog__ranking-link" href="#">
+                        <p class="archive-blog__ranking-title">タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                        <div class="archive-blog__ranking-img-wrap">
+                          <div class="archive-blog__ranking-img">
+                            <img src="./images/common/archive-blog02.jpg" alt="省略" />
+                          </div>
+                          <p class="archive-blog__ranking-number">2</p>
+                        </div>
+                      </a>
+                    </article>
+                  </li>
+                  <li class="archive-blog__ranking-item">
+                    <article class="archive-blog__ranking">
+                      <a class="archive-blog__ranking-link" href="#">
+                        <p class="archive-blog__ranking-title">タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                        <div class="archive-blog__ranking-img-wrap">
+                          <div class="archive-blog__ranking-img">
+                            <img src="./images/common/archive-blog01.jpg" alt="省略" />
+                          </div>
+                          <p class="archive-blog__ranking-number">3</p>
+                        </div>
+                      </a>
+                    </article>
+                  </li>
+                  <li class="archive-blog__ranking-item">
+                    <article class="archive-blog__ranking">
+                      <a class="archive-blog__ranking-link" href="#">
+                        <p class="archive-blog__ranking-title">タイトルタイトルタイトルタイトルタイトルタイトル</p>
+                        <div class="archive-blog__ranking-img-wrap">
+                          <div class="archive-blog__ranking-img">
+                            <img src="./images/common/archive-blog02.jpg" alt="省略" />
+                          </div>
+                          <p class="archive-blog__ranking-number">4</p>
+                        </div>
+                      </a>
+                    </article>
+                  </li>
+                </ul>
               </li>
-              <li class="archive-blog__ranking-item">
-                <article class="archive-blog__ranking">
-                  <a class="archive-blog__ranking-link" href="#">
-                    <p class="archive-blog__ranking-title">タイトルタイトルタイトルタイトルタイトルタイトル</p>
-                    <div class="archive-blog__ranking-img-wrap">
-                      <div class="archive-blog__ranking-img">
-                        <img src="./images/common/archive-blog02.jpg" alt="省略">
-                      </div>
-                      <p class="archive-blog__ranking-number">2</p>
-                    </div>
-                  </a>
-                </article>
+              <li class="archive-blog__sidebar-item">
+                <h3 class="archive-blog__sidebar-title">カテゴリー</h3>
+                <ul class="archive-blog__category-list">
+                  <li class="archive-blog__category-item">
+                    <a class="archive-blog__category-link" href="#">講座</a>
+                  </li>
+                  <li class="archive-blog__category-item">
+                    <a class="archive-blog__category-link" href="#">部活動地域連携</a>
+                  </li>
+                  <li class="archive-blog__category-item">
+                    <a class="archive-blog__category-link" href="#">授業後スポーツチャレンジ</a>
+                  </li>
+                </ul>
               </li>
-              <li class="archive-blog__ranking-item">
-                <article class="archive-blog__ranking">
-                  <a class="archive-blog__ranking-link" href="#">
-                    <p class="archive-blog__ranking-title">タイトルタイトルタイトルタイトルタイトルタイトル</p>
-                    <div class="archive-blog__ranking-img-wrap">
-                      <div class="archive-blog__ranking-img">
-                        <img src="./images/common/archive-blog01.jpg" alt="省略">
-                      </div>
-                      <p class="archive-blog__ranking-number">3</p>
-                    </div>
-                  </a>
-                </article>
-              </li>
-                              <li class="archive-blog__ranking-item">
-                <article class="archive-blog__ranking">
-                  <a class="archive-blog__ranking-link" href="#">
-                    <p class="archive-blog__ranking-title">タイトルタイトルタイトルタイトルタイトルタイトル</p>
-                    <div class="archive-blog__ranking-img-wrap">
-                      <div class="archive-blog__ranking-img">
-                        <img src="./images/common/archive-blog02.jpg" alt="省略">
-                      </div>
-                      <p class="archive-blog__ranking-number">4</p>
-                    </div>
-                  </a>
-                </article>
+              <li class="archive-blog__sidebar-item">
+                <h3 class="archive-blog__sidebar-title">タグ</h3>
+                <ul class="archive-blog__tag-list">
+                  <li class="archive-blog__tag-item">
+                    <a class="archive-blog__tag-link" href="#">#コーディング</a>
+                  </li>
+                  <li class="archive-blog__tag-item">
+                    <a class="archive-blog__tag-link" href="#">#デザイン</a>
+                  </li>
+                  <li class="archive-blog__tag-item">
+                    <a class="archive-blog__tag-link" href="#">#キーワード</a>
+                  </li>
+                  <li class="archive-blog__tag-item">
+                    <a class="archive-blog__tag-link" href="#">#キーワード</a>
+                  </li>
+                  <li class="archive-blog__tag-item">
+                    <a class="archive-blog__tag-link" href="#">#キーワード</a>
+                  </li>
+                  <li class="archive-blog__tag-item">
+                    <a class="archive-blog__tag-link" href="#">#キーワード</a>
+                  </li>
+                </ul>
               </li>
             </ul>
-          </li>
-                      <li class="archive-blog__sidebar-item">
-            <h3 class="archive-blog__sidebar-title">カテゴリー</h3>
-            <ul class="archive-blog__category-list">
-              <li class="archive-blog__category-item">
-                <a class="archive-blog__category-link" href="#">Web制作</a>
-              </li>
-              <li class="archive-blog__category-item">
-                <a class="archive-blog__category-link" href="#">マーケティング</a>
-              </li>
-              <li class="archive-blog__category-item">
-                <a class="archive-blog__category-link" href="#">カテゴリカテゴリカテゴリ</a>
-              </li>
-            </ul>
-          </li>
-                      <li class="archive-blog__sidebar-item">
-            <h3 class="archive-blog__sidebar-title">タグ</h3>
-            <ul class="archive-blog__tag-list">
-              <li class="archive-blog__tag-item">
-                <a class="archive-blog__tag-link" href="#">#コーディング</a>
-              </li>
-              <li class="archive-blog__tag-item">
-                <a class="archive-blog__tag-link" href="#">#デザイン</a>
-              </li>
-              <li class="archive-blog__tag-item">
-                <a class="archive-blog__tag-link" href="#">#キーワード</a>
-              </li>
-                              <li class="archive-blog__tag-item">
-                <a class="archive-blog__tag-link" href="#">#キーワード</a>
-              </li>
-              <li class="archive-blog__tag-item">
-                <a class="archive-blog__tag-link" href="#">#キーワード</a>
-              </li>
-              <li class="archive-blog__tag-item">
-                <a class="archive-blog__tag-link" href="#">#キーワード</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </aside>
-    </div>
-  </section>
-
+          </aside>
+        </div>
+      </section>
     </main>
   </body>
-  </html>
+</html>

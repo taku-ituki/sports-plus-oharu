@@ -2,7 +2,7 @@
 
 .header {
   height: rem(64);
-  background-color: #fff;
+  background-color: $white;
   @include mq("md") {
     height: rem(80);
   }
@@ -74,7 +74,7 @@
   font-size: rem(15);
   font-weight: 500;
   line-height: 1;
-  color: #333;
+  color: $header-nav;
 }
 
 //spanで単語の真下にホバー線//
@@ -93,7 +93,7 @@
   transform-origin: center;
   width: 100%;
   height: rem(1);
-  background-color: #333;
+  background-color: $header-nav;
   transition: transform 0.3s ease;
 }
 
@@ -116,7 +116,7 @@
   transform-origin: center;
   width: 100%;
   height: rem(1);
-  background-color: #333;
+  background-color: $header-nav;
   transition: transform 0.3s ease;
 }
 
@@ -156,7 +156,7 @@
   font-size: rem(15);
   font-weight: 500;
   line-height: 1;
-  color: #333;
+  color: $header-nav;
 }
 
 .header__nav-modal-item a::before {
@@ -166,25 +166,25 @@
   right: rem(40);
   width: rem(8);
   height: rem(8);
-  border-top: rem(2) solid #333;
-  border-right: rem(2) solid #333;
+  border-top: rem(2) solid $header-nav;
+  border-right: rem(2) solid $header-nav;
   transform: translateY(-50%) rotate(45deg);
   transition: transform 0.3s ease; // transformに限定して滑らかに
 }
 
 //「>」ホバー時に右へ動く
-.header__nav-modal-item a:hover::before {
-  transform: translateY(-50%) translateX(rem(4)) rotate(45deg);
-  @include mq("md") {
-    opacity: 0.8;
-  }
-}
+// .header__nav-modal-item a:hover::before {
+//   transform: translateY(-50%) translateX(rem(4)) rotate(45deg);
+//   @include mq("md") {
+//     opacity: 0.8;
+//   }
+// }
 
 .header__nav-item.header__nav-item--access a {
   padding: 0 rem(50);
   position: relative;
   position: relative;
-  color: #fff;
+  color: $white;
   text-align: center;
   background-color:$accent;
 }
@@ -211,8 +211,8 @@
   right: rem(20);
   width: rem(5);
   height: rem(5);
-  border-top: rem(2) solid #fff;
-  border-right: rem(2) solid #fff;
+  border-top: rem(2) solid $white;
+  border-right: rem(2) solid $white;
   transform: translateY(-50%) rotate(45deg);
   transition: 0.3s;
   @include mq("md") {
@@ -247,7 +247,7 @@
   display: block;
   width: rem(25);
   height: rem(1);
-  background-color: black;
+  background-color: $black;
   transition: 0.5s;
 }
 
@@ -300,7 +300,7 @@
 }
 
 .header__drawer-item {
-  border-bottom: rem(1) solid #fff;
+  border-bottom: rem(1) solid $white;
 }
 
 .header__drawer-item.header__drawer-item--access {
@@ -325,7 +325,7 @@
   position: relative;
   max-width: rem(180);
   width: 100%;
-  color: #fff;
+  color: $white;
   text-align: center;
   background-color: $accent;
 }
@@ -352,8 +352,8 @@
   right: rem(20);
   width: rem(8);
   height: rem(8);
-  border-top: rem(2) solid #fff;
-  border-right: rem(2) solid #fff;
+  border-top: rem(2) solid $white;
+  border-right: rem(2) solid $white;
   transform: translateY(-50%) rotate(45deg);
   transition: 0.3s;
 }
@@ -371,7 +371,7 @@
   width: rem(12);
   height: rem(2);
   display: block;
-  background: #333;
+  background: $header-nav;
   transition: 0.3s;
 }
 
