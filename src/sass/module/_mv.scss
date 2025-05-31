@@ -24,7 +24,6 @@
 }
 
 .mv__main-title {
-  font-family: $second-font-family;
   font-size: rem(40);
   text-indent: rem(33);
   @include mq(md) {
@@ -39,13 +38,6 @@
   }
 }
 
-.mv__sub-title {
-  margin-top: rem(20);
-  font-size: rem(20);
-  @include mq(md) {
-    font-size: rem(35);
-  }
-}
 
 .mv__swiper,
 .mv__swiper .swiper-img,

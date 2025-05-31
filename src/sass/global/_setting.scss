@@ -14,7 +14,7 @@ $padding-sp: 15px;
 ////////////////////
 
 $base-font-family: "Noto Sans JP", "sans-serif";
-$second-font-family:  "Lato","sans-serif";
+$en-title: "Lato", "sans-serif";
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
@@ -33,8 +33,9 @@ $bold: 700;
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #111;
 $white: #fff;
-$bg-green:#32CD32FF;
-$text-green:#A8D5BA;
-$title:linear-gradient(45deg, #00b87b 0%, #00c00a 50%, #a4da00 100%);
-$accent:#ff8c42;
-$header-nav:#333;
+$bg: linear-gradient(135deg, #e0f7ff 0%, #add8e6 50%, #87cefa 100%);
+$text-green: #a8d5ba;
+$title: linear-gradient(90deg, #add8e6 0%, /* ライトブルー（親しみ） */ #87cefa 50%, /* SkyBlue（やや鮮やか） */ #b0e0e6 100% /* PowderBlue（柔らかさ） */);
+// $title:#87CEEB;
+$accent: #ff8c42;
+$header-nav: #333;

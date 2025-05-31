@@ -1,0 +1,105 @@
+@use "global" as *;
+
+.partnership__text {
+  margin-top: rem(20);
+  font-size: rem(14);
+  @include mq(md) {
+    margin-top: rem(40);
+    font-size: rem(18);
+  }
+}
+
+.partnership__img {
+  margin-top: rem(20);
+}
+
+.partnership__sub-title {
+  background: $bg;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* 可読性を高める影 */
+  color: $white;
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+// .main-view {
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   //   gap: 10px;
+//   overflow: hidden;
+//   min-height: rem(400);
+// }
+
+// .row {
+//   display: flex;
+//   width: fit-content;
+//   //   gap: 10px;
+//   animation: scroll-horizontal 20s linear infinite;
+// }
+
+// .row img {
+//   width: 400px;
+//   aspect-ratio: 16 / 9;
+//   object-fit: cover;
+//   display: block;
+// }
+
+.main-view {
+  overflow: hidden;
+  width: 100%;
+  background-color: #000;
+  padding-top: rem(80);
+
+  .scroll-track {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    .row {
+      display: flex;
+      width: fit-content;
+
+      img {
+        width: 400px;
+        height: 200px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .row1 {
+      animation: scroll-left 30s linear infinite;
+    }
+
+    .row2 {
+      animation: scroll-right 40s linear infinite;
+    }
+
+    .row3 {
+      animation: scroll-left 35s linear infinite;
+    }
+  }
+}
+
+// 左方向へループ
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+// 右方向へループ（逆再生）
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

@@ -62,7 +62,7 @@
 .top-information__news-nav-category a:hover::after {
   left: 0;
   width: 100%;
-  background-color: $bg-green;
+  background-color: $bg;
   padding-top: rem(3);
   padding-bottom: rem(3);
   transition: right, 0.5s ease, width 0.5s ease;

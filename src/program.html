@@ -46,7 +46,7 @@
                   <a href="program.html"><span>スポーツ講座</span></a>
                 </li>
                 <li class="header__nav-modal-item">
-                  <a href="partnership.html">部活動地域連携</a>
+                  <a href="partnership.html"><span>部活動地域連携</span></a>
                 </li>
                 <li class="header__nav-modal-item">
                   <a href="challenge.html"><span>授業後スポーツチャレンジ</span></a>
@@ -110,7 +110,7 @@
                     <a href="access.html">アクセス</a>
                   </li>
                   <li class="header__drawer-accordion-item">
-                    <a href="faq.html"><span>よくある質問</span></a>
+                    <a href="faq.html">よくある質問</a>
                   </li>
                 </ul>
               </li>
@@ -119,9 +119,6 @@
               </li>
               <li class="header__drawer-item">
                 <a href="archive-blog.html">ブログ</a>
-              </li>
-              <li class="header__drawer-item">
-                <a href="faq.html">よくある質問</a>
               </li>
               <li class="header__drawer-item header__drawer-item--access">
                 <a href="mailto:spplus-oharu@clovernet.ne.jp">お問い合わせ</a>
@@ -140,7 +137,7 @@
           <source srcset="./assets/images/common/faq-sp.jpg" media="(max-width: 767px)" />
           <img src="./assets/images/common/faq-pc.jpg" alt="diving" />
         </picture>
-        <h1 class="sub-fv__title sub-fv__title--program"><span>program</span></h1>
+        <h1 class="sub-fv__title sub-fv__title--program">sports program<span>スポーツ講座</span></h1>
       </section>
       <!-- パンくずリスト -->
       <div class="breadcrumbs breadcrumbs-blog-layout">
@@ -158,11 +155,11 @@
             <ul class="category__list">
               <li class="category__menu category__menu--current"><a>年間講座</a></li>
               <li class="category__menu"><a>短期講座</a></li>
-              <li class="category__menu"><a>親子講座</a></li>
+              <li class="category__menu"><a>イベント</a></li>
             </ul>
           </div>
           <ul class="program__list intro-cards">
-            <li class="program__list-card intro-card">
+            <li class="program__list-card intro-card js-modal-trigger" data-modal-id="modal1">
               <figure class="intro-card__image">
                 <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
               </figure>
@@ -193,7 +190,7 @@
               </div>
             </li>
             <!-- 2件目以降も同様に繰り返し -->
-            <li class="program__list-card intro-card">
+            <li class="program__list-card intro-card js-modal-trigger" data-modal-id="modal2">
               <figure class="intro-card__image">
                 <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
               </figure>
@@ -223,37 +220,7 @@
                 </dl>
               </div>
             </li>
-            <li class="program__list-card intro-card">
-              <figure class="intro-card__image">
-                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
-              </figure>
-              <div class="intro-card__content">
-                <div class="intro-card__header">
-                  <span class="intro-card__number"></span>
-                  <!-- 自動連番 -->
-                  <h3 class="intro-card__title">のびのびちびっこ体操 コアラ</h3>
-                </div>
-                <dl class="intro-card__details">
-                  <div class="intro-card__detail">
-                    <dt class="intro-card__label">開催日</dt>
-                    <dd class="intro-card__text">第1・3金曜日</dd>
-                  </div>
-                  <div class="intro-card__detail">
-                    <dt class="intro-card__label">時間</dt>
-                    <dd class="intro-card__text">10:45〜11:45</dd>
-                  </div>
-                  <div class="intro-card__detail">
-                    <dt class="intro-card__label">対象年齢</dt>
-                    <dd class="intro-card__text">親子（原則2・3歳児）1歳児でも歩行できれば参加可</dd>
-                  </div>
-                  <div class="intro-card__detail">
-                    <dt class="intro-card__label">講師</dt>
-                    <dd class="intro-card__text">NPO法人ママ・ぷらす 認定講師</dd>
-                  </div>
-                </dl>
-              </div>
-            </li>
-            <li class="program__list-card intro-card">
+            <li class="program__list-card intro-card js-modal-trigger" data-modal-id="modal3">
               <figure class="intro-card__image">
                 <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
               </figure>
@@ -284,6 +251,51 @@
               </div>
             </li>
           </ul>
+          <!-- モーダル部分（繰り返し可能） -->
+          <div class="modal" id="modal1">
+            <div class="modal__overlay js-modal-close"></div>
+            <div class="modal__content">
+              <button class="modal__close js-modal-close" aria-label="閉じる">×</button>
+              <div class="modal__wrap">
+                <figure class="modal__image">
+                  <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+                </figure>
+                <div class="modal__body">
+                  <p class="modal__text">モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- モーダル部分（繰り返し可能） -->
+          <div class="modal" id="modal2">
+            <div class="modal__overlay js-modal-close"></div>
+            <div class="modal__content">
+              <button class="modal__close js-modal-close" aria-label="閉じる">×</button>
+              <div class="modal__wrap">
+                <figure class="modal__image">
+                  <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+                </figure>
+                <div class="modal__body">
+                  <p class="modal__text">モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- モーダル部分（繰り返し可能） -->
+          <div class="modal" id="modal3">
+            <div class="modal__overlay js-modal-close"></div>
+            <div class="modal__content">
+              <button class="modal__close js-modal-close" aria-label="閉じる">×</button>
+              <div class="modal__wrap">
+                <figure class="modal__image">
+                  <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+                </figure>
+                <div class="modal__body">
+                  <p class="modal__text">モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

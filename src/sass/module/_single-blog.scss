@@ -1,0 +1,216 @@
+@use 'global' as *;
+
+.single-blog__inner {
+    margin: auto;
+    padding: 0 prem(20);
+    max-width: prem(600);
+    width: 100%;
+    @include mq(md){
+        padding: 0 prem(25);
+        max-width: prem(1200);
+    }
+}
+
+.single-blog__meta {
+    display: flex;
+    align-items: center;
+}
+
+.single-blog__date {
+    font-size: prem(14);
+    line-height: 1;
+}
+
+.single-blog__category {
+    margin-left: prem(24);
+    padding: prem(4) prem(8);
+    font-size: prem(12);
+    line-height: 1;
+    color: #fff;
+    background-color: #73B2C8;
+}
+
+.single-blog__title {
+    margin-top: prem(24);
+    font-size: prem(24);
+    line-height: 1.5;
+    @include mq(md){
+        margin-top: prem(48);
+        font-size: prem(36);
+    }
+}
+
+.single-blog__mv {
+    margin-top: prem(40);
+    width: 100%;
+}
+
+.single-blog__mv img {
+    width: 100%;
+    aspect-ratio: 335/188;
+    object-fit: cover;
+}
+
+.single-blog__content {
+    margin-top: prem(64);
+    @include mq(md){
+        margin-top: prem(120);
+    }
+
+    h2 {
+        margin-top: prem(64);
+        padding-bottom: prem(24);
+        font-size: prem(20);
+        line-height: 1.5;
+        border-bottom: prem(2) solid #73B2C8;
+        @include mq(md){
+            margin-top: prem(80);
+            padding-bottom: prem(30);
+            font-size: prem(28);
+        }
+    }
+
+    h3 {
+        margin-top: prem(64);
+        padding: prem(20) 0;
+        font-size: prem(18);
+        line-height: 1.5;
+        border-top: 1px solid #73B2C8;
+        border-bottom: 1px solid #73B2C8;
+        @include mq(md){
+            margin-top: prem(80);
+            padding: prem(24) 0;
+            font-size: prem(24);
+        }
+    }
+
+    h4 {
+        margin-top: prem(48);
+        padding: prem(16);
+        font-size: prem(16);
+        line-height: 1.5;
+        background-color: #F3F5F5;
+        @include mq(md){
+            margin-top: prem(64);
+            font-size: prem(20);
+        }
+    }
+
+    h5 {
+        margin-top: prem(40);
+        padding: prem(4) 0 prem(4) prem(16);
+        font-size: prem(15);
+        line-height: 1.5;
+        border-left: prem(4) solid #73B2C8;
+        @include mq(md){
+            margin-top: prem(48);
+            padding: prem(8) 0 prem(8) prem(16);
+            font-size: prem(18);
+        }
+    }
+
+    h6 {
+        margin-top: prem(32);
+        font-size: prem(14);
+        line-height: 1.5;
+        @include mq(md){
+            margin-top: prem(38);
+            font-size: prem(16);
+        }
+    }
+
+    p {
+        margin-top: prem(20);
+        font-size: prem(16);
+        line-height: 1.5;
+        @include mq(md){
+            margin-top: prem(38);
+        }
+    }
+
+    p a {
+        color: #73B2C8;
+        text-decoration: underline #73B2C8;
+    }
+
+    p a[target="_blank"]::after {
+        content: "";
+        margin-right: prem(10);
+        margin-bottom: prem(-3);
+        margin-left: prem(5);
+        width: prem(16);
+        height: prem(16);
+        display: inline-block;
+        background-image: url(./../images/common/link.svg);
+        background-size: contain;
+    }
+
+    ul {
+        margin-top: prem(32);
+        @include mq(md){
+            margin-top: prem(38);
+        }
+    }
+
+    ul li {
+        padding-left: prem(22);
+        font-size: prem(16);
+        line-height: 1.5;
+        text-indent: prem(-18);
+    }
+
+    ul li:not(:first-of-type),
+    ol li:not(:first-of-type) {
+        margin-top: prem(16);
+    }
+
+    ul li::before {
+        content: "";
+        margin-right: prem(10);
+        position: relative;
+        top: prem(-3);
+        width: prem(8);
+        height: prem(8);
+        display: inline-block;
+        background-color: #73B2C8;
+        border-radius: 50%;
+    }
+
+    ol {
+        margin-top: prem(32);
+        counter-reset: number;
+        @include mq(md){
+            margin-top: prem(38);
+        }
+    }
+
+    ol li {
+        padding-left: prem(28);
+        font-size: prem(16);
+        line-height: 1.5;
+        text-indent: prem(-12);
+    }
+
+    ol li::before {
+        counter-increment: number;
+        content: counter(number)".";
+        margin-right: prem(10);
+        display: inline-block;
+        line-height: 1;
+        color: #73B2C8;
+    }
+
+    figure {
+        margin-top: prem(32);
+        width: 100%;
+        @include mq(md){
+            margin-top: prem(48);
+        }
+    }
+
+    figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

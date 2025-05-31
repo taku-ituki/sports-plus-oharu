@@ -1,19 +1,21 @@
 @use "global" as *;
 /* カード全体のラップ（レイアウト、枠線など） */
 .intro-card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  border: 2px solid #ccc;
-  border-radius: 12px;
+  border: rem(2) solid #ccc;
+  border-radius: rem(12);
   padding: 1.5rem;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  background-color: $white;
+  box-shadow: 0 rem(4) rem(8) rgba(0, 0, 0, 0.05);
   counter-increment: program-number;
+  gap: rem(20);
+  display: block;
   @include mq(md) {
-    flex-direction: row;
+    display: flex;
   }
+}
+
+.intro-card:hover {
+  cursor: pointer;
 }
 
 .intro-card:not(:first-child) {
@@ -22,6 +24,14 @@
     margin-top: rem(40);
   }
 }
+
+// .intro-card a {
+//   display: block;
+//   gap: rem(20);
+//   @include mq(md) {
+//     display: flex;
+//   }
+// }
 
 /* 左側画像 */
 .intro-card__image {
@@ -63,21 +73,22 @@
 .intro-card__number::before {
   content: counter(program-number) ".";
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: rem(24);
   color: #333;
-  margin-right: 0.5rem;
+  margin-right: rem(8);
+  @include mq(md) {
+    font-size: rem(28);
+  }
 }
 
 /* タイトルテキスト */
 .intro-card__title {
-  font-size: 1.2rem;
+  font-size: rem(18);
   font-weight: bold;
   margin: 0;
-}
-
-/* 詳細情報リスト（開催日・時間など） */
-.intro-card__details {
-  margin-top: 1rem;
+  @include mq(md) {
+    font-size: rem(20);
+  }
 }
 
 /* 各情報の1行分 */
@@ -90,9 +101,8 @@
 /* 各ラベル（開催日など） */
 .intro-card__label {
   font-weight: bold;
-  min-width: 20%;
+  min-width: 25%;
   color: #333;
-  padding-right: 20px;
 }
 
 /* 各データ（値） */

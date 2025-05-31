@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="" />
     <meta property="og:description" content="" />
     <!-- ファビコン -->
-    <link rel="”icon”" href="#" />
+    <link rel="icon" href="./assets/images/common/favicon.ico" />
     <!-- google フォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -130,7 +130,118 @@
         </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <!-- メインビュー -->
+      <section class="sub-fv sub-fv-layout">
+        <picture class="sub-fv__img">
+          <source srcset="./assets/images/common/faq-sp.jpg" media="(max-width: 767px)" />
+          <img src="./assets/images/common/faq-pc.jpg" alt="メイン画像" />
+        </picture>
+        <h1 class="sub-fv__title">blog<span>ブログ</span></h1>
+      </section>
+      <!-- パンくずリスト -->
+      <div class="breadcrumbs breadcrumbs-blog-layout">
+        <div class="breadcrumbs__inner inner">
+          <span class="breadcrumbs__top"><a href="index.html">TOP</a></span>
+          >
+          <span class="breadcrumbs__page-title">ブログ記事</span>
+        </div>
+      </div>
+      <section class="single-blog single-blog-layout">
+      <div class="single-blog__inner inner">
+        <div class="single-blog__meta">
+          <time class="single-blog__date" datetime="2023-08-14">2023.08.14</time>
+          <p class="single-blog__category">カテゴリ</p>
+        </div>
+        <h1 class="single-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</h1>
+        <div class="single-blog__mv">
+          <img src="./assets/images/common/blog-dumy-mv.jpg" alt="省略">
+        </div>
+        <div class="single-blog__content">
+          <h2>h2タグですh2タグですh2タグですh2タグですh2タグです</h2>
+          <h3>h3タグですh3タグですh3タグですh3タグですh3タグです</h3>
+          <h4>h4タグですh4タグですh4タグですh4タグですh4タグです</h4>
+          <h5>h5タグですh5タグですh5タグですh5タグですh5タグです</h5>
+          <h6>h6タグですh6タグですh6タグですh6タグですh6タグです</h6>
+          <p>テキストテキストテキストテキストテキスト<strong>強調テキスト強調テキスト</strong>テキストテキストテキスト<a href="#">リンクリンクリンクリンクリンク</a>テキストテキストテキスト <a href="#" target="_blank" rel="noopener">外部リンク外部リンク外部リンク外部リンク</a>テキストテキストテキストテキストテキスト</p>
+          <ul>
+            <li>リストリストリストリスト</li>
+            <li>リストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+            <li>リストリストリスト</li>
+            <li>リストリストリストリスト</li>
+            <li>リストリストリストリストリスト</li>
+          </ul>
+          <ol>
+            <li>リストリストリストリスト</li>
+            <li>リストリスト</li>
+            <li>リストリストリスト</li>
+            <li>リストリストリストリスト</li>
+            <li>リストリストリストリストリストリストリストリストリストリスト</li>
+          </ol>
+          <figure>
+            <img src="./assets/images/common/blog-dumy.jpg" alt="省略">
+          </figure>
+        </div>
+      </div>
+    </section>
+      
+    </main>
+    <footer class="footer footer-layout">
+      <div class="footer__inner inner">
+        <div class="footer__box-wrap">
+          <div class="footer__box">
+            <div class="footer__box-left">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__item-link" href="index.html">トップページ</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">実施事業</a>
+                  <ul class="footer__sub-list">
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="program.html">スポーツ講座</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">部活動地域連携</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">授業後スポーツチャレンジ</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">施設案内</a>
+                  <ul class="footer__sub-list">
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">スポーツおおはるとは</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">アクセス</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="">よくある質問</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__box-right">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__item-link" href="entry.html">申込・料金</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="archive-blog.html">ブログ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__logo">
+            <a href="index.html"> <img src="./assets/images/common/logo.gif" alt="ロゴ" /></a>
+          </div>
+        </div>
+      </div>
+      <small class="footer__copy-right">Copyright &copy; 2015 - 2025 Sports plus Oharu.</small>
+    </footer>
   </body>
 </html>

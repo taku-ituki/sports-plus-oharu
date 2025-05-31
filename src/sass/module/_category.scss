@@ -18,7 +18,7 @@
 }
 
 .category__menu {
-  border: rem(1) solid green;
+  border: rem(1) solid $black;
   text-align: center;
   background-color: $white;
   @include mq(md) {
@@ -31,7 +31,7 @@
   padding: rem(5) 0;
   display: block;
   font-size: rem(14);
-   color: $black;
+  color: $black;
   cursor: pointer;
   @include mq(md) {
     max-width: rem(165);
@@ -40,7 +40,7 @@
 }
 
 .category__menu.category__menu--current {
-  background-color: $bg-green;
+  background-color: $accent;
 }
 
 .category__menu.category__menu--current a {

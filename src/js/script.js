@@ -87,6 +87,53 @@ jQuery(function ($) {
     },
   });
 
+
+  //講座のモーダル
+  (function () {
+  const modalTriggers = document.querySelectorAll(".js-modal-trigger");
+  const modalCloses = document.querySelectorAll(".js-modal-close");
+
+  modalTriggers.forEach(trigger => {
+    trigger.addEventListener("click", function (e) {
+      e.preventDefault();
+      const modalId = this.dataset.modalId;
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.add("is-active");
+
+        // スクロール禁止処理（モーダル専用）
+        const scrollY = window.scrollY || window.pageYOffset;
+        modal.dataset.scrollY = scrollY;
+        document.documentElement.style.scrollBehavior = 'auto'; // スムーススクロール防止
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollY}px`;
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.style.width = '100%';
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  modalCloses.forEach(btn => {
+    btn.addEventListener("click", function () {
+      const modal = this.closest(".modal");
+      modal.classList.remove("is-active");
+
+      // スクロール復元処理（モーダル専用）
+      const scrollY = modal.dataset.scrollY || '0';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+      window.scrollTo(0, parseInt(scrollY, 10));
+    });
+  });
+})();
+
+
   /////FAQアコーディオン/////
   // アコーディオンのタイトルがクリックされたときの動き
   // FAQのタイトルがクリックされたら開閉する
@@ -101,11 +148,28 @@ jQuery(function ($) {
   });
 
   //フェードインアニメーション
-  $(window).on("scroll", function () {
-    $(".js-fadeIn").each(function () {
+  $(window)
+    .on("scroll", function () {
+      $(".js-fadeIn").each(function () {
         if ($(this).offset().top < $(window).scrollTop() + $(window).height() * 0.75) {
-            $(this).addClass("is-active");
+          $(this).addClass("is-active");
         }
-    });
-}).trigger("scroll");
+      });
+    })
+    .trigger("scroll");
+
+  //講座・部活動のクリック時モーダル
+  // モーダル処理をjQueryで統一
+  $(".js-modal-trigger").on("click", function (e) {
+    e.preventDefault();
+    const modalId = $(this).data("modal-id");
+    const $modal = $("#" + modalId);
+    if ($modal.length) {
+      $modal.addClass("is-active");
+    }
+  });
+
+  $(".js-modal-close").on("click", function () {
+    $(this).closest(".modal").removeClass("is-active");
+  });
 });

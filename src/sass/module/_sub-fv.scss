@@ -16,6 +16,7 @@
 }
 
 .sub-fv__title {
+  font-family: $en-title;
   font-weight: normal;
   position: absolute;
   top: 57%;
@@ -37,26 +38,15 @@
   }
 }
 
-.sub-fv__title.sub-fv__title-privacy span {
-  margin-left: rem(10);
-  text-transform: uppercase;
+.sub-fv__title span {
+  display: block;
+  font-size: rem(40);
+  margin-top: rem(20);
 }
 
-.sub-fv__title-wrapper.sub-fv__title-wrapper--sitemap span {
+.sub-fv__title.sub-fv__title-privacy {
   margin-left: rem(10);
-  text-transform: uppercase;
-  @include mq(md) {
-    margin-left: rem(20);
-  }
-}
-
-.sub-fv__title.sub-fv__title--page-common span {
-  margin-left: rem(8.8);
-  text-indent: -0.1em;
-  @include mq(md) {
-    margin-left: rem(15);
-    text-indent: 0.1em;
-  }
+  text-transform: capitalize;
 }
 
 .sub-fv__title.sub-fv__title--page-common span:nth-child(2) {

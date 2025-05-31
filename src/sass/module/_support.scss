@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.support__card {
+  margin-top: rem(10);
+}
+
+.support__oharu-link,
+.support__group-link {
+  border: rem(1) solid #ccc;
+  box-shadow: 0 rem(4) rem(8) rgba(0, 0, 0, 0.05);
+  margin-top: rem(30);
+  padding: rem(15);
+}
+
+.support__card-img.support__card-oharu {
+  max-width: rem(300);
+  width: 100%;
+}
+
+.support__card-img.support__card-img--aichi {
+  max-width: rem(300);
+  width: 100%;
+}
+
+.support__card-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.support__card-img.support__card-oharu img {
+  aspect-ratio: 340/85;
+}
+
+.support__card-img.support__card-img--aichi {
+  aspect-ratio: 565/90;
+}
+
+.support__link-title {
+  font-size: rem(20);
+  position: relative;
+}
+
+.support__link-title span {
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, rgb(222, 88, 48) 70%);
+}
+
+.support__link-title::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0px 10px 20px;
+  border-color: transparent transparent transparent $accent;
+}
+
+.support__sub-title {
+  font-size: rem(25);
+  text-align: center;
+  margin-top: rem(30);
+  position: relative;
+}
+
+.support__sub-title span {
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, #a4da00 70%);
+}

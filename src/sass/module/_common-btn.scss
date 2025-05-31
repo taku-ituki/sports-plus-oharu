@@ -19,6 +19,7 @@
   border-radius: rem(5);
   box-shadow: 0 rem(5) 0 $black;
   transition: box-shadow 0.3s, transform 0.3s;
+  background-color: $white;
   @include mq(md) {
     padding: rem(14) rem(55);
     font-size: rem(15);
@@ -36,7 +37,6 @@
 }
 
 //トップページ「アクセス」
-
 .access__btn.common-btn {
   margin-top: rem(40);
   text-align: center;
@@ -47,7 +47,7 @@
   font-size: rem(24);
   text-align: center;
   color: $white;
-  background: $bg-green;
+  background: $bg;
   @include mq(md) {
     margin-top: rem(50);
     font-size: rem(32);

@@ -45,6 +45,7 @@
   min-width: 80px;
   border-radius: 4px;
   align-items: center;
+  text-transform: uppercase;
   @include mq(md) {
     display: flex;
   }
@@ -71,9 +72,7 @@
 }
 
 .entry__step-content {
-  margin-left: rem(16);
-  padding-top: rem(5);
-  padding-bottom: rem(5);
+  padding: rem(10);
 }
 
 .entry__step-heading {
