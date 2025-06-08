@@ -2,10 +2,9 @@
 
 .partnership__text {
   margin-top: rem(20);
-  font-size: rem(14);
+  font-size: rem(18);
   @include mq(md) {
-    margin-top: rem(40);
-    font-size: rem(18);
+    font-size: rem(24);
   }
 }
 
@@ -15,91 +14,137 @@
 
 .partnership__sub-title {
   background: $bg;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* 可読性を高める影 */
+  text-shadow: rem(2) rem(2) rem(5) rgba(0, 0, 0, 0.6); /* 黒っぽい影を追加 */
   color: $white;
   text-align: center;
+  margin-top: rem(40);
+  scroll-margin-top: rem(90); /* 固定ヘッダーの高さ + 余白分 */
+  @include mq(md) {
+    font-size: rem(32);
+    margin-top: rem(80);
+  }
+}
+
+.partnership__list-card.intro-card {
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}
+
+.partnership__toc {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}
+
+.partnership__tok-title {
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(28);
+  }
+}
+
+.partnership__toc-list {
+  margin-top: rem(20);
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.partnership__toc-item a {
+  position: relative;
+  display: inline-block;
+  font-size: rem(18);
+  padding: rem(5) rem(20);
   @include mq(md) {
     font-size: rem(24);
+    padding: rem(10) rem(20);
   }
 }
 
-// .main-view {
-//   width: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   //   gap: 10px;
-//   overflow: hidden;
-//   min-height: rem(400);
-// }
-
-// .row {
-//   display: flex;
-//   width: fit-content;
-//   //   gap: 10px;
-//   animation: scroll-horizontal 20s linear infinite;
-// }
-
-// .row img {
-//   width: 400px;
-//   aspect-ratio: 16 / 9;
-//   object-fit: cover;
-//   display: block;
-// }
-
-.main-view {
-  overflow: hidden;
-  width: 100%;
-  background-color: #000;
-  padding-top: rem(80);
-
-  .scroll-track {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-
-    .row {
-      display: flex;
-      width: fit-content;
-
-      img {
-        width: 400px;
-        height: 200px;
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-        display: block;
-      }
-    }
-
-    .row1 {
-      animation: scroll-left 30s linear infinite;
-    }
-
-    .row2 {
-      animation: scroll-right 40s linear infinite;
-    }
-
-    .row3 {
-      animation: scroll-left 35s linear infinite;
-    }
+.partnership__toc-item a::before {
+  position: absolute;
+  content: "・";
+  top: rem(5);
+  left: 0;
+  @include mq(md) {
+    top: rem(10);
   }
 }
 
-// 左方向へループ
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.partnership__support {
+  margin-top: rem(32);
+  padding: rem(32);
+  background-color: #f4f8ff;
+  border-radius: rem(8);
 }
 
-// 右方向へループ（逆再生）
-@keyframes scroll-right {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+.partnership__support-lead {
+  margin-bottom: rem(24);
+}
+
+.partnership__support-title {
+  font-size: rem(20);
+  font-weight: bold;
+  border-left: rem(4) solid #007acc;
+  padding-left: rem(16);
+  margin-bottom: rem(16);
+  color: #004080;
+}
+
+.partnership__support-text {
+  font-size: rem(16);
+  line-height: 1.75;
+  color: #333;
+}
+
+.partnership__support-list {
+  margin-top: rem(16);
+  padding-left: rem(24);
+}
+
+.partnership__support-item {
+  list-style: disc;
+  margin-bottom: rem(8);
+}
+
+.partnership__difference {
+  background-color: #f4f9ff;
+  padding: rem(48) rem(24);
+}
+
+.partnership__difference-title {
+  font-size: rem(28);
+  margin-bottom: rem(32);
+  border-left: rem(6) solid #007acc;
+  padding-left: rem(16);
+  color: #333;
+}
+
+.partnership__difference-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: rem(32);
+}
+
+.partnership__difference-card {
+  background-color: $white;
+  border: rem(1) solid #dcdcdc;
+  border-radius: rem(8);
+  padding: rem(24);
+  box-shadow: 0 rem(4) rem(8) rgba(0, 0, 0, 0.05);
+}
+
+.partnership__difference-card-title {
+  font-size: rem(20);
+  margin-bottom: rem(16);
+  color: #005b96;
+}
+
+.partnership__difference-card-text {
+  font-size: rem(16);
+  line-height: rem(28);
+  color: #444;
 }

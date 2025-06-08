@@ -134,8 +134,8 @@
       <!-- メインビュー -->
       <section class="sub-fv sub-fv-layout">
         <picture class="sub-fv__img">
-          <source srcset="./assets/images/common/faq-sp.jpg" media="(max-width: 767px)" />
-          <img src="./assets/images/common/faq-pc.jpg" alt="diving" />
+          <source srcset="./assets/images/common/valley.jpg" media="(max-width: 767px)" />
+          <img src="./assets/images/common/valley.jpg" alt="diving" />
         </picture>
         <h1 class="sub-fv__title sub-fv__title--challenge">club partnership<span>部活動地域連携</span></h1>
       </section>
@@ -150,7 +150,17 @@
       <!-- 部活動地域連携 -->
       <section class="partnership partnership-layout">
         <div class="inner partnership__inner">
-          <h2 class="partnership__title section-title">部活動地域連携について</h2>
+          <h2 class="partnership__title section-title">部活動地域連携</h2>
+          <nav class="partnership__toc">
+            <div class="partnership__tok-title">【目次】</div>
+            <ul class="partnership__toc-list">
+              <li class="partnership__toc-item"><a href="#club">部活動地域連携とは？</a></li>
+              <li class="partnership__toc-item"><a href="#area-club" class="toc__link">「部活動」・「クラブチーム」・「地域クラブ」との違い</a></li>
+              <li class="partnership__toc-item"><a href="#ongoing-activities" class="toc__link">実施中の地域クラブ活動</a></li>
+              <li class="partnership__toc-item"><a href="#support-members" class="toc__link">賛助会員の募集</a></li>
+            </ul>
+          </nav>
+          <h3 class="partnership__sub-title" id="club">部活動地域連携とは？</h3>
           <div class="partnership__text">
             <p>
               地域連携とは、これまで学校が主体となってきた部活動を新たに地域が主体となって活動する地域クラブ 活動に移行することです。
@@ -158,16 +168,633 @@
               大治町では令和６年度は月１回の土日に地域指導者による指導を実施しており、令和７年度には全ての土日を地域指導者による指導に移行する予定です。
             </p>
           </div>
+          <h3 class="partnership__sub-title" id="area-club">「部活動」・「クラブチーム」・「地域クラブ」との違い</h3>
           <div class="partnership__img">
             <img src="./assets/images/common/bukatudou.jpg" alt="部活動地域連携とは" />
           </div>
+          <div class="partnership__difference-cards">
+            <div class="partnership__difference-card">
+              <h4 class="partnership__difference-card-title">学校部活動</h4>
+              <p class="partnership__difference-card-text">学校の教員が指導し、学校の施設内で実施される活動。主に放課後や休日に行われ、教員の負担が大きいのが課題です。</p>
+            </div>
 
-          <h3 class="partnership__sub-title">指導者</h3>
-          <div class="partnership__text">
-            <p>地域住民・企業・団体・プロスポーツチームの選手や指導者等、本来の業務に支障のない範囲でご協力をいただいております。</p>
+            <div class="partnership__difference-card">
+              <h4 class="partnership__difference-card-title">クラブチーム</h4>
+              <p class="partnership__difference-card-text">学校外で専門指導者が活動を主導し、競技力向上を目的とした活動。費用や保護者のサポートが求められます。</p>
+            </div>
+
+            <div class="partnership__difference-card">
+              <h4 class="partnership__difference-card-title">地域クラブ活動</h4>
+              <p class="partnership__difference-card-text">地域の指導者が主体となり、地域施設を活用して行う活動。多世代が関われる持続可能な新しい部活動の形です。</p>
+            </div>
+          </div>
+          <h3 class="partnership__sub-title" id="ongoing-activities">実施中の地域クラブ活動</h3>
+          <ul class="partnership__list intro-cards">
+            <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal1">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/baseball.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">野球</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治町営野球場</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">好生館病院軟式野球部</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <!-- 2件目以降も同様に繰り返し -->
+            <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal2">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/hand4.jpg" alt="" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">男子ハンドボール</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校運動場</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">山口拓馬　氏</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal3">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">女子ハンドボール</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校運動場</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">愛知大学女子ハンドボール</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal4">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">男子バスケットボール</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校運動場</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">元豊田合成スコーピオンズスタッフ</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal5">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">女子バスケットボール</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校運動場</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">元豊田合成スコーピオンズスタッフ</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+             <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal5">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">女子バレーボール</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校体育館</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">ウルフドックス　名古屋</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal5">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">男子バレーボール</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校体育館</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">ウルフドックス　名古屋</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal5">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">サッカー</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校運動場</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">水端大晟</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal5">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">男子テニス</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校テニスコート</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">青木秀奏</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+             <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal5">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">女子テニス</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校テニスコート</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">青木秀奏</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+             <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal5">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">男子卓球</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校柔剣道場</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">池田耕介</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal5">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">女子卓球</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校柔剣道場</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">池田耕介</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+             <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal5">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">ソフトボール</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校運動場</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">おやじの会</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+            <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal5">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">陸上</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校運動場</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">RunningDesign　和田宏太</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+             <li class="partnership__list-card intro-card js-modal-trigger" data-modal-id="modal5">
+              <figure class="intro-card__image">
+                <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+              </figure>
+              <div class="intro-card__content">
+                <div class="intro-card__header">
+                  <span class="intro-card__number"></span>
+                  <!-- 自動連番 -->
+                  <h3 class="intro-card__title">吹奏楽</h3>
+                </div>
+                <dl class="intro-card__details">
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催日</dt>
+                    <dd class="intro-card__text">第1・3金曜日</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">時間</dt>
+                    <dd class="intro-card__text">8:45〜11:45</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">開催場所</dt>
+                    <dd class="intro-card__text">大治中学校校舎４階</dd>
+                  </div>
+                  <div class="intro-card__detail">
+                    <dt class="intro-card__label">講師</dt>
+                    <dd class="intro-card__text">伊藤正司</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+          </ul>
+          <!-- モーダル部分（繰り返し可能） -->
+          <div class="modal" id="modal1">
+            <div class="modal__overlay js-modal-close"></div>
+            <div class="modal__content">
+              <button class="modal__close js-modal-close" aria-label="閉じる">×</button>
+              <div class="modal__wrap">
+                <figure class="modal__image">
+                  <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+                </figure>
+                <div class="modal__body">
+                  <p class="modal__text">モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- モーダル部分（繰り返し可能） -->
+          <div class="modal" id="modal2">
+            <div class="modal__overlay js-modal-close"></div>
+            <div class="modal__content">
+              <button class="modal__close js-modal-close" aria-label="閉じる">×</button>
+              <div class="modal__wrap">
+                <figure class="modal__image">
+                  <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+                </figure>
+                <div class="modal__body">
+                  <p class="modal__text">モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- モーダル部分（繰り返し可能） -->
+          <div class="modal" id="modal3">
+            <div class="modal__overlay js-modal-close"></div>
+            <div class="modal__content">
+              <button class="modal__close js-modal-close" aria-label="閉じる">×</button>
+              <div class="modal__wrap">
+                <figure class="modal__image">
+                  <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+                </figure>
+                <div class="modal__body">
+                  <p class="modal__text">モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- モーダル部分（繰り返し可能） -->
+          <div class="modal" id="modal4">
+            <div class="modal__overlay js-modal-close"></div>
+            <div class="modal__content">
+              <button class="modal__close js-modal-close" aria-label="閉じる">×</button>
+              <div class="modal__wrap">
+                <figure class="modal__image">
+                  <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+                </figure>
+                <div class="modal__body">
+                  <p class="modal__text">モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- モーダル部分（繰り返し可能） -->
+          <div class="modal" id="modal5">
+            <div class="modal__overlay js-modal-close"></div>
+            <div class="modal__content">
+              <button class="modal__close js-modal-close" aria-label="閉じる">×</button>
+              <div class="modal__wrap">
+                <figure class="modal__image">
+                  <img src="./assets/images/common/works.jpg" alt="体操教室の様子" />
+                </figure>
+                <div class="modal__body">
+                  <p class="modal__text">モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容モーダル1の内容</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="partnership__sub-title" id="support-members">賛助会員の募集</h3>
+          <div class="partnership__support">
+            <div class="partnership__support-lead">
+              <p class="partnership__support-text">
+                スポーツプラスおおはるの賛助会員になって部活動地域連携のサポーターになっていただき、 企業名等を練習用Tシャツに印刷して生徒へ配布します。<br />
+                生徒たちに応援してくださる地元企業を知る機会として紹介していきます。
+              </p>
+            </div>
+
+            <div class="partnership__support-shirt">
+              <h4 class="partnership__support-title">サポーターTシャツについて</h4>
+              <p class="partnership__support-text">Tシャツの前後を12分割し、協力いただける企業様の名称を印刷します。</p>
+              <ul class="partnership__support-list">
+                <li class="partnership__support-item">【前後】（ひと枠）：縦10cm×横10cm　10万円</li>
+                <li class="partnership__support-item">上部2列・下部2列：各8万円</li>
+                <li class="partnership__support-item">【袖】（ひと枠）：縦5cm×横8cm　5万円</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
+      <footer class="footer footer-layout">
+        <div class="footer__inner inner">
+          <div class="footer__box-wrap">
+            <div class="footer__box">
+              <div class="footer__box-left">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a class="footer__item-link" href="index.html">トップページ</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" href="">実施事業</a>
+                    <ul class="footer__sub-list">
+                      <li class="footer__sub-item">
+                        <a class="footer__sub-item-link" href="program.html">スポーツ講座</a>
+                      </li>
+                      <li class="footer__sub-item">
+                        <a class="footer__sub-item-link" href="partnership.html">部活動地域連携</a>
+                      </li>
+                      <li class="footer__sub-item">
+                        <a class="footer__sub-item-link" href="challenge.html">授業後スポーツチャレンジ</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" href="">施設案内</a>
+                    <ul class="footer__sub-list">
+                      <li class="footer__sub-item">
+                        <a class="footer__sub-item-link" href="aboutus.html">スポーツおおはるとは</a>
+                      </li>
+                      <li class="footer__sub-item">
+                        <a class="footer__sub-item-link" href="access.html">アクセス</a>
+                      </li>
+                      <li class="footer__sub-item">
+                        <a class="footer__sub-item-link" href="faq.html">よくある質問</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__box-right">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a class="footer__item-link" href="entry.html">申込・料金</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" href="archive-blog.html">ブログ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__logo">
+              <a href="index.html"> <img src="./assets/images/common/logo.gif" alt="ロゴ" /></a>
+            </div>
+          </div>
+        </div>
+        <small class="footer__copy-right">Copyright &copy; 2015 - 2025 Sports plus Oharu.</small>
+      </footer>
     </main>
   </body>
 </html>

@@ -1,52 +1,130 @@
 @use "global" as *;
 
+// .mv {
+//   position: relative;
+//   z-index: 1;
+//   height: 100vh;
+//   min-height: rem(400);
+// }
+
+// .mv__title-wrap {
+//   position: absolute;
+//   z-index: 2;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 100%;
+//   color: #fff;
+//   text-align: center;
+// }
+
+// .mv__main-title {
+//   font-size: rem(40);
+//   text-indent: rem(33);
+//   @include mq(md) {
+//     font-size: rem(60);
+//     text-indent: 0;
+//   }
+// }
+
+// .mv__main-title br {
+//   @include mq(md) {
+//     display: none;
+//   }
+// }
+
+// .mv__swiper,
+// .mv__swiper .swiper-img,
+// .mv__swiper .swiper-img img {
+//   height: inherit;
+//   min-height: inherit;
+// }
+
+// .mv__swiper .swiper-img img {
+//   width: 100%;
+//   object-fit: cover;
+// }
+
 .mv {
+  overflow: hidden;
+  width: 100%;
+  background-color: #000;
+  padding-top: rem(80);
   position: relative;
-  z-index: 1;
-  height: 100vh;
-  min-height: rem(400);
 }
 
-.mv__inner {
-  height: inherit;
-  min-height: inherit;
-}
-
-.mv__title-wrap {
+.mv__title {
   position: absolute;
+  max-width: 70%;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: contain;
   z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  color: #fff;
-  text-align: center;
-}
-
-.mv__main-title {
-  font-size: rem(40);
-  text-indent: rem(33);
+  top: 30%;
+  left: 15%;
   @include mq(md) {
-    font-size: rem(60);
-    text-indent: 0;
+    max-width: 50%;
+    top: 25%;
+    left: 23%;
   }
 }
 
-.mv__main-title br {
-  @include mq(md) {
-    display: none;
-  }
-}
-
-
-.mv__swiper,
-.mv__swiper .swiper-img,
-.mv__swiper .swiper-img img {
-  height: inherit;
-  min-height: inherit;
-}
-
-.mv__swiper .swiper-img img {
+.mv__titles img {
   width: 100%;
+  height: 100%;
+}
+
+.mv__scroll-track {
+  display: flex;
+  flex-direction: column;
+}
+
+.mv__scroll-row {
+  display: flex;
+  width: fit-content;
+}
+
+.mv__scroll-row img {
+  width: calc(100 / 3);
+  height:calc(100 / 5);
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+  display: block;
+  @include mq(md) {
+    width: calc(100% / 3);
+    height: calc(100 / 5);
+  }
+}
+
+.mv__scroll-row.mv__scroll-row--row1 {
+  animation: scroll-left 30s linear infinite;
+}
+
+.mv__scroll-row.mv__scroll-row--row2 {
+  animation: scroll-right 40s linear infinite;
+}
+
+.mv__scroll-row.mv__scroll-row--row3 {
+  animation: scroll-left 35s linear infinite;
+}
+
+// 左方向へループ
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+// 右方向へループ（逆再生）
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }

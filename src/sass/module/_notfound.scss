@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.notfound__inner {
+  text-align: center;
+}
+
+.notfound__title {
+  font-size: rem(80);
+  @include mq(md){
+    font-size:rem(160);
+  }
+}
+
+.notfound__btn.common-btn {
+    text-align: center;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}
+

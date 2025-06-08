@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.application__description {
+  margin-top: rem(40);
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}

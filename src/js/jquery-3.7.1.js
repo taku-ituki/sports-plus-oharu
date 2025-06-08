@@ -8728,7 +8728,7 @@ function _typeof(obj) {
                 script.remove();
                 _callback2 = null;
                 if (evt) {
-                  complete(evt.type === "error" ? 404 : 200, evt.type);
+                  complete(evt.type === "error" ? notfound : 200, evt.type);
                 }
               })
             );

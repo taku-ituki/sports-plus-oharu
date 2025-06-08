@@ -16,7 +16,7 @@
   padding: rem(16) rem(100) rem(16) rem(16); // 右側に余白追加して + アイコンと分離
   transition: all 0.5s ease;
   color: $white;
-  background:$bg;
+  background:skyblue;
   @include mq(md) {
     padding: rem(24) rem(100) rem(24)rem(40);
   }

@@ -1,216 +1,216 @@
-@use 'global' as *;
+@use "global" as *;
 
-.single-blog__inner {
-    margin: auto;
-    padding: 0 prem(20);
-    max-width: prem(600);
-    width: 100%;
-    @include mq(md){
-        padding: 0 prem(25);
-        max-width: prem(1200);
-    }
-}
+// .single-blog__inner {
+//   margin: auto;
+//   padding: 0 rem(20);
+//   max-width: rem(600);
+//   width: 100%;
+//   @include mq(md) {
+//     padding: 0 rem(25);
+//     max-width: rem(1200);
+//   }
+// }
 
 .single-blog__meta {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .single-blog__date {
-    font-size: prem(14);
-    line-height: 1;
+  font-size: rem(14);
+  line-height: 1;
 }
 
 .single-blog__category {
-    margin-left: prem(24);
-    padding: prem(4) prem(8);
-    font-size: prem(12);
-    line-height: 1;
-    color: #fff;
-    background-color: #73B2C8;
+  margin-left: rem(24);
+  padding: rem(4) rem(8);
+  font-size: rem(12);
+  line-height: 1;
+  color: #fff;
+  background-color: #73b2c8;
 }
 
 .single-blog__title {
-    margin-top: prem(24);
-    font-size: prem(24);
-    line-height: 1.5;
-    @include mq(md){
-        margin-top: prem(48);
-        font-size: prem(36);
-    }
+  margin-top: rem(24);
+  font-size: rem(24);
+  line-height: 1.5;
+  @include mq(md) {
+    margin-top: rem(48);
+    font-size: rem(36);
+  }
 }
 
 .single-blog__mv {
-    margin-top: prem(40);
-    width: 100%;
+  margin-top: rem(40);
+  width: 100%;
 }
 
 .single-blog__mv img {
-    width: 100%;
-    aspect-ratio: 335/188;
-    object-fit: cover;
+  width: 100%;
+  aspect-ratio: 335/188;
+  object-fit: cover;
 }
 
 .single-blog__content {
-    margin-top: prem(64);
-    @include mq(md){
-        margin-top: prem(120);
-    }
+  margin-top: rem(64);
+  @include mq(md) {
+    margin-top: rem(120);
+  }
 
-    h2 {
-        margin-top: prem(64);
-        padding-bottom: prem(24);
-        font-size: prem(20);
-        line-height: 1.5;
-        border-bottom: prem(2) solid #73B2C8;
-        @include mq(md){
-            margin-top: prem(80);
-            padding-bottom: prem(30);
-            font-size: prem(28);
-        }
+  h2 {
+    margin-top: rem(64);
+    padding-bottom: rem(24);
+    font-size: rem(20);
+    line-height: 1.5;
+    border-bottom: rem(2) solid #73b2c8;
+    @include mq(md) {
+      margin-top: rem(80);
+      padding-bottom: rem(30);
+      font-size: rem(28);
     }
+  }
 
-    h3 {
-        margin-top: prem(64);
-        padding: prem(20) 0;
-        font-size: prem(18);
-        line-height: 1.5;
-        border-top: 1px solid #73B2C8;
-        border-bottom: 1px solid #73B2C8;
-        @include mq(md){
-            margin-top: prem(80);
-            padding: prem(24) 0;
-            font-size: prem(24);
-        }
+  h3 {
+    margin-top: rem(64);
+    padding: rem(20) 0;
+    font-size: rem(18);
+    line-height: 1.5;
+    border-top: 1px solid #73b2c8;
+    border-bottom: 1px solid #73b2c8;
+    @include mq(md) {
+      margin-top: rem(80);
+      padding: rem(24) 0;
+      font-size: rem(24);
     }
+  }
 
-    h4 {
-        margin-top: prem(48);
-        padding: prem(16);
-        font-size: prem(16);
-        line-height: 1.5;
-        background-color: #F3F5F5;
-        @include mq(md){
-            margin-top: prem(64);
-            font-size: prem(20);
-        }
+  h4 {
+    margin-top: rem(48);
+    padding: rem(16);
+    font-size: rem(16);
+    line-height: 1.5;
+    background-color: #f3f5f5;
+    @include mq(md) {
+      margin-top: rem(64);
+      font-size: rem(20);
     }
+  }
 
-    h5 {
-        margin-top: prem(40);
-        padding: prem(4) 0 prem(4) prem(16);
-        font-size: prem(15);
-        line-height: 1.5;
-        border-left: prem(4) solid #73B2C8;
-        @include mq(md){
-            margin-top: prem(48);
-            padding: prem(8) 0 prem(8) prem(16);
-            font-size: prem(18);
-        }
+  h5 {
+    margin-top: rem(40);
+    padding: rem(4) 0 rem(4) rem(16);
+    font-size: rem(15);
+    line-height: 1.5;
+    border-left: rem(4) solid #73b2c8;
+    @include mq(md) {
+      margin-top: rem(48);
+      padding: rem(8) 0 rem(8) rem(16);
+      font-size: rem(18);
     }
+  }
 
-    h6 {
-        margin-top: prem(32);
-        font-size: prem(14);
-        line-height: 1.5;
-        @include mq(md){
-            margin-top: prem(38);
-            font-size: prem(16);
-        }
+  h6 {
+    margin-top: rem(32);
+    font-size: rem(14);
+    line-height: 1.5;
+    @include mq(md) {
+      margin-top: rem(38);
+      font-size: rem(16);
     }
+  }
 
-    p {
-        margin-top: prem(20);
-        font-size: prem(16);
-        line-height: 1.5;
-        @include mq(md){
-            margin-top: prem(38);
-        }
+  p {
+    margin-top: rem(20);
+    font-size: rem(16);
+    line-height: 1.5;
+    @include mq(md) {
+      margin-top: rem(38);
     }
+  }
 
-    p a {
-        color: #73B2C8;
-        text-decoration: underline #73B2C8;
-    }
+  p a {
+    color: #73b2c8;
+    text-decoration: underline #73b2c8;
+  }
 
-    p a[target="_blank"]::after {
-        content: "";
-        margin-right: prem(10);
-        margin-bottom: prem(-3);
-        margin-left: prem(5);
-        width: prem(16);
-        height: prem(16);
-        display: inline-block;
-        background-image: url(./../images/common/link.svg);
-        background-size: contain;
-    }
+  p a[target="_blank"]::after {
+    content: "";
+    margin-right: rem(10);
+    margin-bottom: rem(-3);
+    margin-left: rem(5);
+    width: rem(16);
+    height: rem(16);
+    display: inline-block;
+    background-image: url(./../images/common/link.svg);
+    background-size: contain;
+  }
 
-    ul {
-        margin-top: prem(32);
-        @include mq(md){
-            margin-top: prem(38);
-        }
+  ul {
+    margin-top: rem(32);
+    @include mq(md) {
+      margin-top: rem(38);
     }
+  }
 
-    ul li {
-        padding-left: prem(22);
-        font-size: prem(16);
-        line-height: 1.5;
-        text-indent: prem(-18);
-    }
+  ul li {
+    padding-left: rem(22);
+    font-size: rem(16);
+    line-height: 1.5;
+    text-indent: rem(-18);
+  }
 
-    ul li:not(:first-of-type),
-    ol li:not(:first-of-type) {
-        margin-top: prem(16);
-    }
+  ul li:not(:first-of-type),
+  ol li:not(:first-of-type) {
+    margin-top: rem(16);
+  }
 
-    ul li::before {
-        content: "";
-        margin-right: prem(10);
-        position: relative;
-        top: prem(-3);
-        width: prem(8);
-        height: prem(8);
-        display: inline-block;
-        background-color: #73B2C8;
-        border-radius: 50%;
-    }
+  ul li::before {
+    content: "";
+    margin-right: rem(10);
+    position: relative;
+    top: rem(-3);
+    width: rem(8);
+    height: rem(8);
+    display: inline-block;
+    background-color: #73b2c8;
+    border-radius: 50%;
+  }
 
-    ol {
-        margin-top: prem(32);
-        counter-reset: number;
-        @include mq(md){
-            margin-top: prem(38);
-        }
+  ol {
+    margin-top: rem(32);
+    counter-reset: number;
+    @include mq(md) {
+      margin-top: rem(38);
     }
+  }
 
-    ol li {
-        padding-left: prem(28);
-        font-size: prem(16);
-        line-height: 1.5;
-        text-indent: prem(-12);
-    }
+  ol li {
+    padding-left: rem(28);
+    font-size: rem(16);
+    line-height: 1.5;
+    text-indent: rem(-12);
+  }
 
-    ol li::before {
-        counter-increment: number;
-        content: counter(number)".";
-        margin-right: prem(10);
-        display: inline-block;
-        line-height: 1;
-        color: #73B2C8;
-    }
+  ol li::before {
+    counter-increment: number;
+    content: counter(number) ".";
+    margin-right: rem(10);
+    display: inline-block;
+    line-height: 1;
+    color: #73b2c8;
+  }
 
-    figure {
-        margin-top: prem(32);
-        width: 100%;
-        @include mq(md){
-            margin-top: prem(48);
-        }
+  figure {
+    margin-top: rem(32);
+    width: 100%;
+    @include mq(md) {
+      margin-top: rem(48);
     }
+  }
 
-    figure img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

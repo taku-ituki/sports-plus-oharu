@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .footer {
-  color: $white;
-  background: $title;
-  box-shadow: 0 rem(8) rem(18) rgba(0, 0, 0, 0.16) inset;
+  color: $black;
+  background-color: #fafafa;
+  // box-shadow: 0 rem(8) rem(18) rgba(0, 0, 0, 0.16) inset;
 }
 
 .footer__inner.inner {

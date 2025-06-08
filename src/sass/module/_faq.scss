@@ -21,7 +21,7 @@
   @include mq(md) {
     padding: rem(37) rem(37) rem(16) rem(45);
     margin-top: rem(16);
-    border: rem(1) solid $bg;
+    border: rem(1) solid skyblue;
     @include mq(md) {
       margin-top: rem(19);
       padding-bottom: rem(33);
