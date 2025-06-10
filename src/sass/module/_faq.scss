@@ -4,7 +4,9 @@
 }
 
 .faq__inner.inner {
-  width: 70%;
+  @include mq(md) {
+    width: 80%;
+  }
 }
 
 /*アコーディオン全体*/

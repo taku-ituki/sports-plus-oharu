@@ -32,11 +32,11 @@
   <body>
     <header class="header layout-header">
       <div class="header__inner">
-        <div class="header__logo">
+        <h1 class="header__logo">
           <a href="index.html">
             <img src="./assets/images/common/logo.gif" alt="ロゴ" />
           </a>
-        </div>
+        </h1>
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-modal-wrap">
@@ -57,13 +57,13 @@
               <p>施設案内</p>
               <ul class="header__nav-modal">
                 <li class="header__nav-modal-item">
-                  <a href="aboutus.html"><span>スポーツプラスおおはるとは</span></a>
-                </li>
-                <li class="header__nav-modal-item">
                   <a href="access.html"><span>アクセス</span></a>
                 </li>
                 <li class="header__nav-modal-item">
                   <a href="faq.html"><span>よくある質問</span></a>
+                </li>
+                <li class="header__nav-modal-item">
+                  <a href="support.html"><span>賛助団体</span></a>
                 </li>
               </ul>
             </li>
@@ -71,7 +71,10 @@
               <a href="entry.html"><span>申込・料金</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="archive-blog.html"><span>ブログ</span></a>
+              <a href="archive-blog.html"><span>活動紹介</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="application.html"><span>各種申請用紙</span></a>
             </li>
             <li class="header__nav-item header__nav-item--access">
               <a href="mailto:spplus-oharu@clovernet.ne.jp">お問い合わせ</a>
@@ -93,7 +96,7 @@
                     <a href="program.html">スポーツ講座</a>
                   </li>
                   <li class="header__drawer-accordion-item">
-                    <a href="#">部活動地域連携</a>
+                    <a href="partnership.html">部活動地域連携</a>
                   </li>
                   <li class="header__drawer-accordion-item">
                     <a href="challenge.html">授業後スポーツチャレンジ</a>
@@ -104,13 +107,13 @@
                 <p class="header__drawer-accordion-title js-drawer-accordion">施設案内</p>
                 <ul class="header__drawer-accordion-list">
                   <li class="header__drawer-accordion-item">
-                    <a href="aboutus.html">スポーツプラスおおはるとは</a>
-                  </li>
-                  <li class="header__drawer-accordion-item">
                     <a href="access.html">アクセス</a>
                   </li>
                   <li class="header__drawer-accordion-item">
                     <a href="faq.html">よくある質問</a>
+                  </li>
+                  <li class="header__drawer-accordion-item">
+                    <a href="support.html">賛助団体</a>
                   </li>
                 </ul>
               </li>
@@ -118,7 +121,10 @@
                 <a href="entry.html">申込・料金</a>
               </li>
               <li class="header__drawer-item">
-                <a href="archive-blog.html">ブログ</a>
+                <a href="archive-blog.html">活動紹介</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="application.html">各種申請用紙</a>
               </li>
               <li class="header__drawer-item header__drawer-item--access">
                 <a href="mailto:spplus-oharu@clovernet.ne.jp">お問い合わせ</a>
@@ -137,54 +143,56 @@
           <source srcset="./assets/images/common/faq-sp.jpg" media="(max-width: 767px)" />
           <img src="./assets/images/common/faq-pc.jpg" alt="メイン画像" />
         </picture>
-        <h1 class="sub-fv__title">blog<span>ブログ</span></h1>
+        <h1 class="sub-fv__title">activities<span>活動紹介</span></h1>
       </section>
       <!-- パンくずリスト -->
       <div class="breadcrumbs breadcrumbs-blog-layout">
         <div class="breadcrumbs__inner inner">
           <span class="breadcrumbs__top"><a href="index.html">TOP</a></span>
           >
-          <span class="breadcrumbs__page-title">ブログ記事</span>
+          <span class="breadcrumbs__page-title">活動紹介記事</span>
         </div>
       </div>
       <section class="single-blog single-blog-layout">
-      <div class="single-blog__inner inner">
-        <div class="single-blog__meta">
-          <time class="single-blog__date" datetime="2023-08-14">2023.08.14</time>
-          <p class="single-blog__category">カテゴリ</p>
+        <div class="single-blog__inner inner">
+          <div class="single-blog__meta">
+            <time class="single-blog__date" datetime="2023-08-14">2023.08.14</time>
+            <p class="single-blog__category">カテゴリ</p>
+          </div>
+          <h1 class="single-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</h1>
+          <div class="single-blog__mv">
+            <img src="./assets/images/common/blog-dumy-mv.jpg" alt="省略" />
+          </div>
+          <div class="single-blog__content">
+            <h2>h2タグですh2タグですh2タグですh2タグですh2タグです</h2>
+            <h3>h3タグですh3タグですh3タグですh3タグですh3タグです</h3>
+            <h4>h4タグですh4タグですh4タグですh4タグですh4タグです</h4>
+            <h5>h5タグですh5タグですh5タグですh5タグですh5タグです</h5>
+            <h6>h6タグですh6タグですh6タグですh6タグですh6タグです</h6>
+            <p>
+              テキストテキストテキストテキストテキスト<strong>強調テキスト強調テキスト</strong>テキストテキストテキスト<a href="#">リンクリンクリンクリンクリンク</a>テキストテキストテキスト
+              <a href="#" target="_blank" rel="noopener">外部リンク外部リンク外部リンク外部リンク</a>テキストテキストテキストテキストテキスト
+            </p>
+            <ul>
+              <li>リストリストリストリスト</li>
+              <li>リストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
+              <li>リストリストリスト</li>
+              <li>リストリストリストリスト</li>
+              <li>リストリストリストリストリスト</li>
+            </ul>
+            <ol>
+              <li>リストリストリストリスト</li>
+              <li>リストリスト</li>
+              <li>リストリストリスト</li>
+              <li>リストリストリストリスト</li>
+              <li>リストリストリストリストリストリストリストリストリストリスト</li>
+            </ol>
+            <figure>
+              <img src="./assets/images/common/blog-dumy.jpg" alt="省略" />
+            </figure>
+          </div>
         </div>
-        <h1 class="single-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</h1>
-        <div class="single-blog__mv">
-          <img src="./assets/images/common/blog-dumy-mv.jpg" alt="省略">
-        </div>
-        <div class="single-blog__content">
-          <h2>h2タグですh2タグですh2タグですh2タグですh2タグです</h2>
-          <h3>h3タグですh3タグですh3タグですh3タグですh3タグです</h3>
-          <h4>h4タグですh4タグですh4タグですh4タグですh4タグです</h4>
-          <h5>h5タグですh5タグですh5タグですh5タグですh5タグです</h5>
-          <h6>h6タグですh6タグですh6タグですh6タグですh6タグです</h6>
-          <p>テキストテキストテキストテキストテキスト<strong>強調テキスト強調テキスト</strong>テキストテキストテキスト<a href="#">リンクリンクリンクリンクリンク</a>テキストテキストテキスト <a href="#" target="_blank" rel="noopener">外部リンク外部リンク外部リンク外部リンク</a>テキストテキストテキストテキストテキスト</p>
-          <ul>
-            <li>リストリストリストリスト</li>
-            <li>リストリストリストリストリストリストリストリストリストリストリストリストリストリスト</li>
-            <li>リストリストリスト</li>
-            <li>リストリストリストリスト</li>
-            <li>リストリストリストリストリスト</li>
-          </ul>
-          <ol>
-            <li>リストリストリストリスト</li>
-            <li>リストリスト</li>
-            <li>リストリストリスト</li>
-            <li>リストリストリストリスト</li>
-            <li>リストリストリストリストリストリストリストリストリストリスト</li>
-          </ol>
-          <figure>
-            <img src="./assets/images/common/blog-dumy.jpg" alt="省略">
-          </figure>
-        </div>
-      </div>
-    </section>
-      
+      </section>
     </main>
     <footer class="footer footer-layout">
       <div class="footer__inner inner">
@@ -231,7 +239,7 @@
                   <a class="footer__item-link" href="entry.html">申込・料金</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link" href="archive-blog.html">ブログ</a>
+                  <a class="footer__item-link" href="archive-blog.html">活動紹介</a>
                 </li>
               </ul>
             </div>

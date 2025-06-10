@@ -41,8 +41,11 @@
 
 .sub-fv__title span {
   display: block;
-  font-size: rem(40);
+  font-size: rem(35);
   margin-top: rem(20);
+  @include mq(md){
+    font-size: rem(40);
+  }
 }
 
 .sub-fv__title.sub-fv__title-privacy {
