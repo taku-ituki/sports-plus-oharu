@@ -888,9 +888,9 @@ function _typeof(obj) {
           // Check for inherited disabledness on relevant non-disabled elements:
           // * listed form-associated elements in a disabled fieldset
           //   https://html.spec.whatwg.org/multipage/forms.html#category-listed
-          //   https://html.spec.whatwg.org/multipage/forms.html#concept-fe-disabled
+          //   https://html.spec.whatwg.org/multipage/forms.html#about-fe-disabled
           // * option elements in a disabled optgroup
-          //   https://html.spec.whatwg.org/multipage/forms.html#concept-option-disabled
+          //   https://html.spec.whatwg.org/multipage/forms.html#about-option-disabled
           // All such elements have a "form" property.
           if (elem.parentNode && elem.disabled === false) {
             // Option elements defer to a parent optgroup if present

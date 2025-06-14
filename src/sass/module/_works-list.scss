@@ -8,22 +8,7 @@
   }
 }
 
-//フェードインアニメーション
-.works-list__item.is-active {
-  animation: fadeIn 1s ease-out forwards;
-}
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-//
 
 .works-list__item:nth-of-type(even) {
   @include mq(md) {
@@ -97,7 +82,7 @@
   font-weight: 500;
   letter-spacing: 0.08em;
   color: $white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: rem(1) rem(1) rem(3) rgba(0, 0, 0, 0.3);
   @include mq(md) {
     font-size: rem(25);
   }
@@ -118,18 +103,4 @@
   margin-top: rem(40);
 }
 
-// .works-list__item-btn {
-//   padding: rem(10) rem(37);
-//   display: inline-block;
-//   font-size: rem(14);
-//   line-height: 1;
-//   letter-spacing: 0.1em;
-//   text-transform: uppercase;
-//   color: #fff;
-//   border: 1px solid #fff;
-//   border-radius: rem(5);
-//   @include mq(md) {
-//     padding: rem(14) rem(55);
-//     font-size: rem(15);
-//   }
-// }
+

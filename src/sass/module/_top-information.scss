@@ -14,7 +14,6 @@
 
 .top-information__news-nav-category {
   display: flex;
-  // gap: rem(40);
 }
 
 .top-information__news-nav-category a {
@@ -22,15 +21,14 @@
   position: relative;
   text-align: center;
   cursor: pointer;
-  padding-right: rem(25);
+  padding-right: rem(10);
+  padding-left: rem(10);
+  @include mq(md){
+    padding-right: rem(25);
   padding-left: rem(25);
+  }
 }
 
-// .top-information__news-nav-category a:not(:first-child) {
-//   @include mq(md) {
-//     padding-left: rem(25); 
-//   }
-// }
 
 //カテゴリーホバー時の線//
 //初期の線

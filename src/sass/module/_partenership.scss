@@ -1,8 +1,14 @@
 @use "global" as *;
+.partnership__sub-title.partnership__sub-title--color {
+  background: skyblue;
+}
 
 .partnership__text {
-  margin-top: rem(20);
   font-size: rem(18);
+  padding: rem(40) rem(20);
+  background: skyblue;
+  color: $white;
+  text-shadow: rem(2) rem(2) rem(5) rgba(0, 0, 0, 0.6); /* 黒っぽい影を追加 */
   @include mq(md) {
     font-size: rem(24);
   }
@@ -17,13 +23,15 @@
   text-shadow: rem(2) rem(2) rem(5) rgba(0, 0, 0, 0.6); /* 黒っぽい影を追加 */
   color: $white;
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(20);
   scroll-margin-top: rem(90); /* 固定ヘッダーの高さ + 余白分 */
   @include mq(md) {
     font-size: rem(32);
     margin-top: rem(80);
   }
 }
+
+
 
 .partnership__list-card.intro-card {
   margin-top: rem(30);

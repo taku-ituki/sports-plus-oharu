@@ -17,11 +17,12 @@
     <meta property="og:site_name" content="" />
     <meta property="og:description" content="" />
     <!-- ファビコン -->
-    <link rel="”icon”" href="#" />
+    <link rel="icon" href="./assets/images/common/favicon.ico" />
     <!-- google フォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
+
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/jquery-3.7.1.js"></script>
@@ -30,6 +31,7 @@
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
+    <!-- header PC-->
     <header class="header layout-header">
       <div class="header__inner">
         <h1 class="header__logo">
@@ -159,7 +161,113 @@
         </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <!-- メインビュー -->
+      <section class="sub-fv sub-fv-layout">
+        <picture class="sub-fv__img">
+          <source srcset="./assets/images/common/entry.jpg" media="(max-width: 767px)" />
+          <img src="./assets/images/common/entry.jpg" alt="diving" />
+        </picture>
+        <h2 class="sub-fv__title sub-fv__title--entry">enrollment<span>入会案内</span></h2>
+      </section>
+      <!-- パンくずリスト -->
+      <div class="breadcrumbs breadcrumbs-blog-layout">
+        <div class="breadcrumbs__inner inner">
+          <span class="breadcrumbs__top"><a href="index.html">TOP</a></span>
+          >
+          <span class="breadcrumbs__page-title">入会案内</span>
+        </div>
+      </div>
+      <section class="enrollment enrollment-layout">
+        <h2 class="enrollment-title">入会案内</h2>
+        <div class="enrollment-list">
+          <a href="entry.html" class="enrollment-card">
+            <div class="enrollment-card-image">
+              <img src="./assets/images/common/entry.jpg" alt="ご入会までの流れ" />
+            </div>
+            <div class="enrollment-card-body">
+              <h3 class="enrollment-card-title">長期講座・短期講座</h3>
+              <p class="enrollment-card-text">ご入会までの手順を詳しくご紹介します。</p>
+            </div>
+          </a>
+          <a href="price.html" class="enrollment-card">
+            <div class="enrollment-card-image">
+              <img src="./assets/images/common/entry.jpg" alt="料金案内" />
+            </div>
+            <div class="enrollment-card-body">
+              <h3 class="enrollment-card-title">料金案内</h3>
+              <p class="enrollment-card-text">各種コースの料金についてご案内します。</p>
+            </div>
+          </a>
+
+          <a href="faq.html" class="enrollment-card">
+            <div class="enrollment-card-image">
+              <img src="./assets/images/common/entry.jpg" alt="よくあるご質問" />
+            </div>
+            <div class="enrollment-card-body">
+              <h3 class="enrollment-card-title">よくあるご質問</h3>
+              <p class="enrollment-card-text">お客様から多く寄せられる質問にお答えします。</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer-layout">
+      <div class="footer__inner inner">
+        <div class="footer__box-wrap">
+          <div class="footer__box">
+            <div class="footer__box-left">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__item-link" href="index.html">トップページ</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">実施事業</a>
+                  <ul class="footer__sub-list">
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="program.html">スポーツ講座</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="partnership.html">部活動地域連携</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="challenge.html">授業後スポーツチャレンジ</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">施設案内</a>
+                  <ul class="footer__sub-list">
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="aboutus.html">スポーツおおはるとは</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="access.html">アクセス</a>
+                    </li>
+                    <li class="footer__sub-item">
+                      <a class="footer__sub-item-link" href="faq.html">よくあるご質問 </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__box-right">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__item-link" href="entry.html">入会案内</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="archive-blog.html">活動紹介</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__logo">
+            <a href="index.html"> <img src="./assets/images/common/logo.gif" alt="ロゴ" /></a>
+          </div>
+        </div>
+      </div>
+      <small class="footer__copy-right">Copyright &copy; 2015 - 2025 Sports plus Oharu.</small>
+    </footer>
   </body>
 </html>
