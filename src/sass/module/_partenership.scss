@@ -1,12 +1,13 @@
 @use "global" as *;
 .partnership__sub-title.partnership__sub-title--color {
-  background: skyblue;
+  background: $skyblue;
+  padding-top: rem(30);
 }
 
 .partnership__text {
   font-size: rem(18);
   padding: rem(40) rem(20);
-  background: skyblue;
+  background: $skyblue;
   color: $white;
   text-shadow: rem(2) rem(2) rem(5) rgba(0, 0, 0, 0.6); /* 黒っぽい影を追加 */
   @include mq(md) {
@@ -30,8 +31,6 @@
     margin-top: rem(80);
   }
 }
-
-
 
 .partnership__list-card.intro-card {
   margin-top: rem(30);
@@ -63,7 +62,7 @@
 
 .partnership__toc-item a {
   position: relative;
-  display: inline-block;
+  display: block;
   font-size: rem(18);
   padding: rem(5) rem(20);
   @include mq(md) {
@@ -82,6 +81,10 @@
   }
 }
 
+.partnership__toc-item a:hover {
+  text-decoration: underline; /* ホバー時に下線表示 */
+}
+
 .partnership__support {
   margin-top: rem(32);
   padding: rem(32);
@@ -96,7 +99,7 @@
 .partnership__support-title {
   font-size: rem(20);
   font-weight: bold;
-  border-left: rem(4) solid #007acc;
+  border-left: rem(4) solid $partnership-blue;
   padding-left: rem(16);
   margin-bottom: rem(16);
   color: #004080;
@@ -105,7 +108,7 @@
 .partnership__support-text {
   font-size: rem(16);
   line-height: 1.75;
-  color: #333;
+  color: $black333;
 }
 
 .partnership__support-list {
@@ -126,9 +129,9 @@
 .partnership__difference-title {
   font-size: rem(28);
   margin-bottom: rem(32);
-  border-left: rem(6) solid #007acc;
+  border-left: rem(6) solid $partnership-blue;
   padding-left: rem(16);
-  color: #333;
+  color: $black333;
 }
 
 .partnership__difference-cards {
@@ -154,5 +157,18 @@
 .partnership__difference-card-text {
   font-size: rem(16);
   line-height: rem(28);
-  color: #444;
+  color: $black;
+}
+
+.partnership__btn.common-btn {
+  text-align: center;
+}
+
+.partnership__btn-link.common-btn__link {
+  padding: rem(14) rem(20);
+}
+
+.partnership__bg-color {
+  padding-bottom: rem(30);
+  background: $skyblue;
 }

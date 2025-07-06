@@ -1,7 +1,7 @@
 @use "global" as *;
 
-.faq-layout {
-  margin-top: rem(20);
+.challenge-info-layout {
+  margin-top: rem(40);
   @include mq(md) {
     margin-top: rem(80);
   }

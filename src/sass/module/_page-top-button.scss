@@ -1,0 +1,47 @@
+@use 'global' as *;
+
+button {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: rem(20);
+  bottom: rem(20);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  border: 0;
+  background: none;
+  transition: .2s;
+  letter-spacing: rem(3);
+  z-index: 1000;
+}
+
+button span:before {
+    position: absolute;
+    top: rem(-27);
+    left: rem(18);
+    transform: rotate(-45deg);
+    display: block;
+    width: rem(16);
+    height: rem(16);
+    content: "";
+    border: rem(1) solid #000;
+    border-width: rem(1) rem(1) 0 0;
+}
+
+button span:after {
+    position: absolute;
+    width: rem(42);
+    height: rem(42);
+    border: rem(1) solid #000;
+    content: "";
+    border-radius: 100%;
+    top: rem(-43);
+    left: rem(5);
+}
+
+.is-active {
+  opacity: 1;
+  visibility: visible;
+}

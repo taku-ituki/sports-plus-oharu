@@ -12,6 +12,25 @@
   font-size: rem(24);
 }
 
+//ホバー時にテキストにホバー表示（擬似要素では不可能）
+
+.top-information__news-title {
+  margin-top: rem(12);
+  font-size: rem(16);
+  line-height: 1.5;
+  position: relative;
+  text-decoration: none; /* 最初は下線なし */
+  text-underline-offset: rem(4); /* 下線と文字の間にスペースを作る */
+  @include mq(md) {
+    margin-top: 0;
+    margin-left: rem(60);
+  }
+}
+
+.top-information__news-item a:hover .top-information__news-title {
+  text-decoration: underline; /* ホバー時に下線表示 */
+}
+
 .top-information__news-nav-category {
   display: flex;
 }
@@ -23,19 +42,18 @@
   cursor: pointer;
   padding-right: rem(10);
   padding-left: rem(10);
-  @include mq(md){
+  @include mq(md) {
     padding-right: rem(25);
-  padding-left: rem(25);
+    padding-left: rem(25);
   }
 }
-
 
 //カテゴリーホバー時の線//
 //初期の線
 .top-information__news-nav-category a::before {
   left: 0;
   width: 100%;
-  background-color: #ff7f50;
+  background-color:$accent;
   content: "";
   display: block;
   position: absolute;
@@ -103,26 +121,7 @@
   //
   font-size: rem(14);
   line-height: 1;
-  color: #fff;
-  background-color: #73b2c8;
+  color: $white;
+  background-color: $bg-blue;
   text-align: center;
-}
-
-//ホバー時にテキストにホバー表示（擬似要素では不可能）
-
-.top-information__news-title {
-  margin-top: rem(12);
-  font-size: rem(16);
-  line-height: 1.5;
-  position: relative;
-  text-decoration: none; /* 最初は下線なし */
-  text-underline-offset: rem(4); /* 下線と文字の間にスペースを作る */
-  @include mq(md) {
-    margin-top: 0;
-    margin-left: rem(60);
-  }
-}
-
-.top-information__news-item a:hover .top-information__news-title {
-  text-decoration: underline; /* ホバー時に下線表示 */
 }

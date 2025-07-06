@@ -14,7 +14,7 @@
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
-    <meta property="og:site_name" content="" />
+    <meta property="og:site_name" content="スポーツプラス大治" />
     <meta property="og:description" content="" />
     <!-- ファビコン -->
     <link rel="icon" href="./assets/images/common/favicon.ico" />
@@ -30,21 +30,22 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
+  <!-- ページトップボタン -->
+  <button class="js-top-button"><span></span>TOP</button>
   <body>
     <!-- ローディングアニメーション -->
-    <!-- <div class="loading js-loading">
+    <div class="loading js-loading">
       <div class="loading__img">
-        <img src="./assets/images/common/logo.gif" alt="ロゴ" loading="lazy" />
+        <img src="./assets/images/common/logo.svg" alt="ロゴ" loading="lazy" />
       </div>
-    </div> -->
-    <!-- header PC-->
+    </div>
     <header class="header layout-header">
       <div class="header__inner">
-        <h1 class="header__logo">
+        <div class="header__logo">
           <a href="index.html">
-            <img src="./assets/images/common/logo.gif" alt="ロゴ" />
+            <img src="./assets/images/common/logo.svg" alt="ロゴ" />
           </a>
-        </h1>
+        </div>
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-modal-wrap">
@@ -57,7 +58,7 @@
                   <a href="partnership.html"><span>部活動地域連携</span></a>
                 </li>
                 <li class="header__nav-modal-item">
-                  <a href="challenge.html"><span>授業後スポーツチャレンジ</span></a>
+                  <a href="challenge.html"><span>スポーツチャレンジ</span></a>
                 </li>
               </ul>
             </li>
@@ -68,10 +69,7 @@
                   <a href="access.html"><span>アクセス</span></a>
                 </li>
                 <li class="header__nav-modal-item">
-                  <a href="faq.html"><span>よくあるご質問 </span></a>
-                </li>
-                <li class="header__nav-modal-item">
-                  <a href="support.html"><span>賛助団体</span></a>
+                  <a href="faq.html"><span>よくあるご質問</span></a>
                 </li>
               </ul>
             </li>
@@ -85,15 +83,12 @@
                   <a href="partnership.html"><span>部活動地域連携</span></a>
                 </li>
                 <li class="header__nav-modal-item">
-                  <a href="challenge.html"><span>授業後スポーツチャレンジ</span></a>
+                  <a href="challenge.html"><span>スポーツチャレンジ</span></a>
                 </li>
               </ul>
             </li>
             <li class="header__nav-item">
               <a href="archive-blog.html"><span>活動紹介</span></a>
-            </li>
-            <li class="header__nav-item">
-              <a href="application.html"><span>各種申請用紙</span></a>
             </li>
             <li class="header__nav-item header__nav-item--access">
               <a href="mailto:spplus-oharu@clovernet.ne.jp">お問い合わせ</a>
@@ -115,10 +110,10 @@
                     <a href="program.html">スポーツ講座</a>
                   </li>
                   <li class="header__drawer-accordion-item">
-                    <a href="partnership.html">部活動地域連携</a>
+                    <a href="#">部活動地域連携</a>
                   </li>
                   <li class="header__drawer-accordion-item">
-                    <a href="challenge.html">授業後スポーツチャレンジ</a>
+                    <a href="challenge.html">スポーツチャレンジ</a>
                   </li>
                 </ul>
               </li>
@@ -129,10 +124,7 @@
                     <a href="access.html">アクセス</a>
                   </li>
                   <li class="header__drawer-accordion-item">
-                    <a href="faq.html">よくあるご質問 </a>
-                  </li>
-                  <li class="header__drawer-accordion-item">
-                    <a href="support.html">賛助団体</a>
+                    <a href="faq.html"><span>よくあるご質問</span></a>
                   </li>
                 </ul>
               </li>
@@ -146,16 +138,15 @@
                     <a href="partnership.html"><span>部活動地域連携</span></a>
                   </li>
                   <li class="header__nav-modal-item">
-                    <a href="challenge.html"><span>授業後スポーツチャレンジ</span></a>
+                    <a href="challenge.html"><span>スポーツチャレンジ</span></a>
                   </li>
                 </ul>
               </li>
-
               <li class="header__drawer-item">
                 <a href="archive-blog.html">活動紹介</a>
               </li>
               <li class="header__drawer-item">
-                <a href="application.html">各種申請用紙</a>
+                <a href="faq.html">よくあるご質問</a>
               </li>
               <li class="header__drawer-item header__drawer-item--access">
                 <a href="mailto:spplus-oharu@clovernet.ne.jp">お問い合わせ</a>
@@ -168,33 +159,6 @@
       </div>
     </header>
     <main>
-      <!-- メインビュー -->
-      <!-- <section class="mv">
-        <div class="mv__inner">
-          <div class="mv__title-wrap">
-            <h2 class="mv__main-title">動いてつながる、<br />笑顔がひろがる</h2>
-          </div>
-          <div class="mv__swiper swiper js-mv-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper-img">
-                  <img src="./assets/images/common/mv01.jpg" alt="省略" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-img">
-                  <img src="./assets/images/common/mv02.jpg" alt="省略" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-img">
-                  <img src="./assets/images/common/mv03.jpg" alt="省略" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
       <!-- メインビューのセクション -->
       <div class="mv">
         <div class="mv__inner mv__scroll-inner">
@@ -225,18 +189,17 @@
             </div>
           </div>
           <div class="mv__title">
-            <img src="./assets/images/common/main-icon2.png" alt="メンビューのアイコン" />
+            <img src="./assets/images/common/main.png" alt="メンビューのアイコン" />
           </div>
         </div>
       </div>
-
       <section class="top-information top-information-layout">
         <div class="top-information__inner inner">
           <h2 class="top-information__title section-title">お知らせ</h2>
           <!-- お知らせのカテゴリー切り替え -->
           <div class="top-information__news-nav">
             <nav class="top-information__news-nav-category">
-              <a href="#">最新</a>
+              <a href="#">一覧</a>
               <a href="#">お知らせ</a>
               <a href="#">募集</a>
             </nav>
@@ -249,7 +212,7 @@
                   <time class="top-information__news-date" datetime="2023-05-10">2023.05.10</time>
                   <p class="top-information__news-category">お知らせ</p>
                 </div>
-                <p class="top-information__news-title">授業後スポーツチャレンジの申込状況につきましては、大治南小低学年が満員となっていましたが、残り１名の空きがあります。訂正し、お詫びします。現在、満員なのは、大治小高学年と大治南小高学年です。【令和7年6月8日】</p>
+                <p class="top-information__news-title">スポーツチャレンジの申込状況につきましては、大治南小低学年が満員となっていましたが、残り１名の空きがあります。訂正し、お詫びします。現在、満員なのは、大治小高学年と大治南小高学年です。【令和7年6月8日】</p>
               </a>
             </li>
             <li class="top-information__news-item">
@@ -281,30 +244,29 @@
             国が提唱している地域住民のための新しいタイプのスポーツクラブ（総合型地域スポーツクラブ）です。 子どもから高齢者まで幅広い年齢層が自分にあった種目を選択でき、初心者から上級者までそれぞれの志向・レベルに合わせて参加できます。
             地域住民の健康・体力づくりだけではなく、交流を深める場・豊かなコミュニティ形成の場にもなっています。
           </p>
-          <div class="about__items js-fadeIn">
-            <div class="about__item">
+          <ul class="about__list js-fadeIn">
+            <li class="about__item">
               <div class="about__item-img">
                 <img src="./assets/images/common/family.jpg" alt="スポーツクラブアイコン" class="about__icon" />
               </div>
               <h3 class="about__item-title">幅広い年齢層が選べる<br />スポーツクラブ</h3>
               <p class="about__text">子どもから高齢者まで、自分にあった種目を選べて、初心者から上級者まで参加できます。</p>
-            </div>
-
-            <div class="about__item">
+            </li>
+            <li class="about__item">
               <div class="about__item-img">
                 <img src="./assets/images/common/run.jpg" alt="健康アイコン" class="about__icon" />
               </div>
               <h3 class="about__item-title">健康・体力づくりの場</h3>
               <p class="about__text">地域住民の健康・体力づくりを目的とし、誰もが楽しく継続できる運動環境を提供します。</p>
-            </div>
-            <div class="about__item">
+            </li>
+            <li class="about__item">
               <div class="about__item-img">
                 <img src="./assets/images/common/frend.jpg" alt="コミュニティアイコン" class="about__icon" />
               </div>
               <h3 class="about__item-title">交流を深めるコミュニティ</h3>
               <p class="about__text">スポーツを通じて地域住民同士の交流を深め、豊かな地域コミュニティを育みます。</p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- 事業内容 -->
@@ -346,24 +308,10 @@
               </div>
               <div class="works-list__item-content-bg">
                 <div class="works-list__item-content">
-                  <h3 class="works-list__item-title">授業後スポーツチャレンジ</h3>
+                  <h3 class="works-list__item-title">スポーツチャレンジ</h3>
                   <p class="works-list__item-text">子どもたちの体力やコミュニケーション力向上を目指して、球技を中心に様々なレクリエーションをします！</p>
                   <div class="works-list__item-btn-wrap common-btn">
                     <a class="works-list__item-btn common-btn__link" href="challenge.html">もっと詳しく</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="works-list__item js-fadeIn">
-              <div class="works-list__item-img">
-                <img src="./assets/images/common/works.jpg" alt="省略" />
-              </div>
-              <div class="works-list__item-content-bg">
-                <div class="works-list__item-content">
-                  <h3 class="works-list__item-title">タイトルが入ります。</h3>
-                  <p class="works-list__item-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                  <div class="works-list__item-btn-wrap common-btn">
-                    <a class="works-list__item-btn common-btn__link" href="#">もっと詳しく</a>
                   </div>
                 </div>
               </div>
@@ -451,10 +399,10 @@
                       <a class="footer__sub-item-link" href="program.html">スポーツ講座</a>
                     </li>
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="partnership.html">部活動地域連携</a>
+                      <a class="footer__sub-item-link" href="">部活動地域連携</a>
                     </li>
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="challenge.html">授業後スポーツチャレンジ</a>
+                      <a class="footer__sub-item-link" href="">スポーツチャレンジ</a>
                     </li>
                   </ul>
                 </li>
@@ -462,13 +410,10 @@
                   <a class="footer__item-link" href="">施設案内</a>
                   <ul class="footer__sub-list">
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="aboutus.html">スポーツおおはるとは</a>
+                      <a class="footer__sub-item-link" href="">アクセス</a>
                     </li>
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="access.html">アクセス</a>
-                    </li>
-                    <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="faq.html">よくあるご質問 </a>
+                      <a class="footer__sub-item-link" href="">よくあるご質問 </a>
                     </li>
                   </ul>
                 </li>
@@ -486,7 +431,7 @@
             </div>
           </div>
           <div class="footer__logo">
-            <a href="index.html"> <img src="./assets/images/common/logo.gif" alt="ロゴ" /></a>
+            <a href="index.html"> <img src="./assets/images/common/logo.svg" alt="ロゴ" /></a>
           </div>
         </div>
       </div>

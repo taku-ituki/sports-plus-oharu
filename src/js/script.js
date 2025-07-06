@@ -88,50 +88,51 @@ jQuery(function ($) {
   });
 
 
-  //講座のモーダル
-  (function () {
-  const modalTriggers = document.querySelectorAll(".js-modal-trigger");
-  const modalCloses = document.querySelectorAll(".js-modal-close");
+//   //講座のモーダル
+//   (function () {
+//   const modalTriggers = document.querySelectorAll(".js-modal-trigger");
+//   const modalCloses = document.querySelectorAll(".js-modal-close");
 
-  modalTriggers.forEach(trigger => {
-    trigger.addEventListener("click", function (e) {
-      e.preventDefault();
-      const modalId = this.dataset.modalId;
-      const modal = document.getElementById(modalId);
-      if (modal) {
-        modal.classList.add("is-active");
+//   modalTriggers.forEach(trigger => {
+//     trigger.addEventListener("click", function (e) {
+//       e.preventDefault();
+//       const modalId = this.dataset.modalId;
+//       const modal = document.getElementById(modalId);
+//       if (modal) {
+//         modal.classList.add("is-active");
 
-        // スクロール禁止処理（モーダル専用）
-        const scrollY = window.scrollY || window.pageYOffset;
-        modal.dataset.scrollY = scrollY;
-        document.documentElement.style.scrollBehavior = 'auto'; // スムーススクロール防止
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${scrollY}px`;
-        document.body.style.left = '0';
-        document.body.style.right = '0';
-        document.body.style.width = '100%';
-        document.body.style.overflow = 'hidden';
-      }
-    });
-  });
+//         // スクロール禁止処理（モーダル専用）
+//         const scrollY = window.scrollY || window.pageYOffset;
+//         modal.dataset.scrollY = scrollY;
+//         document.documentElement.style.scrollBehavior = 'auto'; // スムーススクロール防止
+//         document.body.style.position = 'fixed';
+//         document.body.style.top = `-${scrollY}px`;
+//         document.body.style.left = '0';
+//         document.body.style.right = '0';
+//         document.body.style.width = '100%';
+//         document.body.style.overflow = 'hidden';
+//       }
+//     });
+//   });
 
-  modalCloses.forEach(btn => {
-    btn.addEventListener("click", function () {
-      const modal = this.closest(".modal");
-      modal.classList.remove("is-active");
+//   modalCloses.forEach(btn => {
+//     btn.addEventListener("click", function () {
+//       const modal = this.closest(".modal");
+//       modal.classList.remove("is-active");
 
-      // スクロール復元処理（モーダル専用）
-      const scrollY = modal.dataset.scrollY || '0';
-      document.body.style.position = '';
-      document.body.style.top = '';
-      document.body.style.left = '';
-      document.body.style.right = '';
-      document.body.style.width = '';
-      document.body.style.overflow = '';
-      window.scrollTo(0, parseInt(scrollY, 10));
-    });
-  });
-})();
+//       // スクロール復元処理（モーダル専用）
+//       const scrollY = modal.dataset.scrollY || '0';
+//       document.body.style.position = '';
+//       document.body.style.top = '';
+//       document.body.style.left = '';
+//       document.body.style.right = '';
+//       document.body.style.width = '';
+//       document.body.style.overflow = '';
+//       window.scrollTo(0, parseInt(scrollY, 10));
+//     });
+//   });
+// })();
+
 
 
   /////FAQアコーディオン/////
@@ -171,5 +172,52 @@ jQuery(function ($) {
 
   $(".js-modal-close").on("click", function () {
     $(this).closest(".modal").removeClass("is-active");
+  });
+
+  //トップページへ戻るボタン
+const button = document.querySelector('.js-top-button');
+button.addEventListener('click', () => {
+  window.scroll({ 
+    top: 0, 
+    behavior: "smooth"
+  });
+});
+
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 100){
+    button.classList.add('is-active');
+  }else{
+    button.classList.remove('is-active');
+  }
+});
+
+//informationのタブ切り替え
+  $(document).ready(function () {
+    // クエリパラメータから "tab" の値を取得
+    var params = new URLSearchParams(window.location.search);
+    var defaultTab = 'license-link'; // デフォルトタブ（ライセンス講習）のID
+    var selectedTab = params.get("tab") || defaultTab; // クエリパラメータがない場合、デフォルトタブを使用
+
+    // すべてのタブとコンテンツを非表示にしてリセット
+    $(".js-info-content-tab").removeClass("active");
+    $(".js-info-content-card").hide();
+
+    // URLパラメータ、またはデフォルトタブに基づき、該当のタブとコンテンツを表示
+    $(".js-info-content-tab[data-id='" + selectedTab + "']").addClass("active");
+    $("#" + selectedTab).show();
+
+    // タブクリック時の動作
+    $(".js-info-content-tab").click(function () {
+      // クリックされたタブのIDを取得
+      var tabId = $(this).data("id");
+
+      // すべてのタブとコンテンツを非表示にしてリセット
+      $(".js-info-content-tab").removeClass("active");
+      $(".js-info-content-card").hide();
+
+      // クリックされたタブをアクティブにし、対応するコンテンツを表示
+      $(this).addClass("active");
+      $("#" + tabId).show();
+    });
   });
 });

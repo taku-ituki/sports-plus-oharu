@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.challenge__title.section-title {
+  background: $skyblue;
+}
+
+
+.challenge__intro {
+  font-size: rem(24);
+  margin-top: rem(40);
+  color: $white;
+  text-shadow: rem(2) rem(2) rem(5) rgba(0, 0, 0, 0.6); /* 黒っぽい影を追加 */
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}
+
+.challenge__img-list {
+  padding-bottom: rem(20);
+  margin-top: rem(20);
+  display: grid;
+  gap: rem(20);
+  @include mq(md) {
+    padding-bottom: rem(40);
+    margin-top: rem(40);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(20);
+  }
+}
+
+.challenge__item-img {
+  aspect-ratio: 280 / 188; /* 横280px、縦188pxの比率を維持 */
+  width: 100%; /* 必要に応じて幅を設定（親に合わせる場合） */
+}
+
+.challenge__item-img img {
+  width: 100%; /* 親の幅に合わせて伸縮 */
+  height: 100%; /* アスペクト比を維持した枠にフィット */
+  object-fit: cover; /* 枠いっぱいに画像を表示しつつ切り取り */
+}

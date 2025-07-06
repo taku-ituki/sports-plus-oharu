@@ -65,7 +65,7 @@
   left: 15%;
   @include mq(md) {
     max-width: 50%;
-    top: 25%;
+    top: 34%;
     left: 23%;
   }
 }
@@ -87,7 +87,7 @@
 
 .mv__scroll-row img {
   width: calc(100 / 3);
-  height:calc(100 / 5);
+  height: calc(100 / 5);
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
@@ -128,3 +128,5 @@
     transform: translateX(0%);
   }
 }
+
+

@@ -14,24 +14,12 @@
   }
 }
 
-.intro-card:hover {
-  cursor: pointer;
-}
-
 .intro-card:not(:first-child) {
   margin-top: rem(20);
   @include mq(md) {
     margin-top: rem(40);
   }
 }
-
-// .intro-card a {
-//   display: block;
-//   gap: rem(20);
-//   @include mq(md) {
-//     display: flex;
-//   }
-// }
 
 /* 左側画像 */
 .intro-card__image {
@@ -74,7 +62,7 @@
   content: counter(program-number) ".";
   font-weight: bold;
   font-size: rem(24);
-  color: #333;
+  color: $black333;
   margin-right: rem(8);
   @include mq(md) {
     font-size: rem(28);
@@ -87,7 +75,7 @@
   font-weight: bold;
   margin: 0;
   @include mq(md) {
-    font-size: rem(20);
+    font-size: rem(25);
   }
 }
 
@@ -102,7 +90,7 @@
 .intro-card__label {
   font-weight: bold;
   min-width: 25%;
-  color: #333;
+  color: $black333;
 }
 
 /* 各データ（値） */
@@ -114,4 +102,3 @@
 // .partnership__list-card.intro-card{
 //   background: $bg;
 // }
-

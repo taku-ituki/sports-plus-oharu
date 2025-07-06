@@ -20,3 +20,12 @@
 .membership-info__desc a{
     border-bottom: rem(1) solid $black;
 }
+
+
+.entry-status__btn.common-btn{
+  text-align: center;
+  margin-top:rem(20);
+  @include mq(md){
+    margin-top:rem(40);
+  }
+}

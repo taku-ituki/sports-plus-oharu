@@ -31,7 +31,7 @@
   text-transform: capitalize;
   line-height: 1;
   text-indent: 0.1em;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* 黒っぽい影を追加 */
+  text-shadow: rem(2) rem(2) rem(5) rgba(0, 0, 0, 0.6); /* 黒っぽい影を追加 */
   @include mq(md) {
     font-size: rem(80);
     top: 59%;

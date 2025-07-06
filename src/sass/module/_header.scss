@@ -9,12 +9,10 @@
 }
 
 .header__inner {
-  // padding-left: rem(15);
   height: inherit;
   display: flex;
   justify-content: space-between;
   @include mq("md") {
-    // padding-left: rem(35);
   }
 }
 
@@ -74,7 +72,7 @@
   font-size: rem(15);
   font-weight: 500;
   line-height: 1;
-  color: $header-nav;
+  color: $black333;
 }
 
 //spanで単語の真下にホバー線//
@@ -93,7 +91,7 @@
   transform-origin: center;
   width: 100%;
   height: rem(1);
-  background-color: $header-nav;
+  background-color: $black333;
   transition: transform 0.3s ease;
 }
 
@@ -116,7 +114,7 @@
   transform-origin: center;
   width: 100%;
   height: rem(1);
-  background-color: $header-nav;
+  background-color: $black333;
   transition: transform 0.3s ease;
 }
 
@@ -156,7 +154,7 @@
   font-size: rem(15);
   font-weight: 500;
   line-height: 1;
-  color: $header-nav;
+  color: $black333;
 }
 
 .header__nav-modal-item a::before {
@@ -166,19 +164,11 @@
   right: rem(40);
   width: rem(8);
   height: rem(8);
-  border-top: rem(2) solid $header-nav;
-  border-right: rem(2) solid $header-nav;
+  border-top: rem(2) solid $black333;
+  border-right: rem(2) solid $black333;
   transform: translateY(-50%) rotate(45deg);
   transition: transform 0.3s ease; // transformに限定して滑らかに
 }
-
-//「>」ホバー時に右へ動く
-// .header__nav-modal-item a:hover::before {
-//   transform: translateY(-50%) translateX(rem(4)) rotate(45deg);
-//   @include mq("md") {
-//     opacity: 0.8;
-//   }
-// }
 
 .header__nav-item.header__nav-item--access a {
   padding: 0 rem(50);
@@ -186,7 +176,7 @@
   position: relative;
   color: $white;
   text-align: center;
-  background-color:$accent;
+  background-color: $accent;
 }
 
 .header__nav-item.header__nav-item--access a::before {
@@ -371,7 +361,7 @@
   width: rem(12);
   height: rem(2);
   display: block;
-  background: $header-nav;
+  background: $black333;
   transition: 0.3s;
 }
 

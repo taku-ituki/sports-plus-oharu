@@ -27,7 +27,7 @@
   font-size: rem(12);
   line-height: 1;
   color: #fff;
-  background-color: #73b2c8;
+  background-color: $bg-blue;
 }
 
 .single-blog__title {
@@ -62,7 +62,7 @@
     padding-bottom: rem(24);
     font-size: rem(20);
     line-height: 1.5;
-    border-bottom: rem(2) solid #73b2c8;
+    border-bottom: rem(2) solid $bg-blue;
     @include mq(md) {
       margin-top: rem(80);
       padding-bottom: rem(30);
@@ -75,8 +75,8 @@
     padding: rem(20) 0;
     font-size: rem(18);
     line-height: 1.5;
-    border-top: 1px solid #73b2c8;
-    border-bottom: 1px solid #73b2c8;
+    border-top: rem(1) solid $bg-blue;
+    border-bottom: rem(1) solid $bg-blue;
     @include mq(md) {
       margin-top: rem(80);
       padding: rem(24) 0;
@@ -101,7 +101,7 @@
     padding: rem(4) 0 rem(4) rem(16);
     font-size: rem(15);
     line-height: 1.5;
-    border-left: rem(4) solid #73b2c8;
+    border-left: rem(4) solid $bg-blue;
     @include mq(md) {
       margin-top: rem(48);
       padding: rem(8) 0 rem(8) rem(16);
@@ -129,8 +129,8 @@
   }
 
   p a {
-    color: #73b2c8;
-    text-decoration: underline #73b2c8;
+    color: $bg-blue;
+    text-decoration: underline;
   }
 
   p a[target="_blank"]::after {
@@ -172,7 +172,7 @@
     width: rem(8);
     height: rem(8);
     display: inline-block;
-    background-color: #73b2c8;
+    background-color: $bg-blue;
     border-radius: 50%;
   }
 
@@ -197,7 +197,7 @@
     margin-right: rem(10);
     display: inline-block;
     line-height: 1;
-    color: #73b2c8;
+    color: $bg-blue;
   }
 
   figure {
