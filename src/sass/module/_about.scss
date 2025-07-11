@@ -14,6 +14,7 @@
   font-size: rem(24);
   margin-top: rem(40);
   color: $white;
+  text-align: center;
   text-shadow: rem(2) rem(2) rem(5) rgba(0, 0, 0, 0.6); /* 黒っぽい影を追加 */
   @include mq(md) {
     margin-top: rem(60);

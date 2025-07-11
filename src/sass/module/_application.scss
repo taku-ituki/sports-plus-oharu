@@ -6,3 +6,34 @@
     font-size: rem(18);
   }
 }
+
+.application__section {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}
+
+.application__sub-title {
+  position: relative;
+  font-size: rem(24);
+  border-bottom: rem(1) solid;
+  color: blueviolet;
+}
+
+.application__list {
+  margin-top: rem(20);
+  font-size:rem(17);
+}
+
+.application__item a{
+  text-decoration: underline;
+}
+
+.application__item a:hover{
+  text-decoration: none;
+}
+
+.application__item {
+  margin-top: rem(15);
+}

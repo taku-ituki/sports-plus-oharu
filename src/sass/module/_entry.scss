@@ -1,4 +1,12 @@
 @use "global" as *;
+
+.entry__link {
+  display: inline-block;
+  font-weight: $bold;
+  text-decoration: underline;
+  color: $accent;
+}
+
 .entry__step {
   position: relative;
   margin-top: rem(20);
@@ -75,10 +83,6 @@
 
 .entry__step-content {
   padding: rem(10);
-}
-
-.entry__step-heading {
-  font-size: rem(14);
 }
 
 .entry__step-text {

@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.access-table {
+  display: block;
+  width: 100%;
+  border-collapse: collapse; /* 枠線が重なって1本になるようにする */
+}
+
+.access-table__row {
+  display: block; /* スマホでは1行をブロック表示 */
+  @include mq(md) {
+    display: table-row;
+  }
+}
+
+.access-table__label {
+  display: block;
+  padding: rem(8) rem(12);
+  white-space: nowrap;
+  text-align: left;
+  @include mq(md) {
+    display: table-cell;
+    vertical-align: top;
+    width: rem(120); /* ラベル幅を固定して整える */
+  }
+}
+
+.access-table__data {
+  display: block;
+  padding: rem(8) rem(12);
+  line-height: 1.6;
+  @include mq(md) {
+    display: table-cell;
+  }
+}
+
+//「営業時間」と時間帯を横並びに
+.access-table__time {
+  display: flex; /* 横並びにする */
+  gap: rem(20); /* 間に適度なスペースを入れる */
+  line-height: 1.5; /* 行間の調整 */
+}
+
+.access-table__day {
+  width: rem(80); /* 固定幅にして、曜日欄の長さを統一 */
+  flex-shrink: 0; /* 縮まないように固定 */
+  @include mq(md) {
+    width: rem(96);
+  }
+}
+
+.access-table__hour {
+  flex: 1; /* 時間部分は自動で幅を取る */
+}
+
+.access-table__address {
+  display: flex;
+  flex-direction: column;
+}
+
+.access-table.access__table--challenge {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}

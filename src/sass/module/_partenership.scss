@@ -1,4 +1,8 @@
 @use "global" as *;
+.partnership [id] {
+  scroll-margin-top: rem(90);
+}
+
 .partnership__sub-title.partnership__sub-title--color {
   background: $skyblue;
   padding-top: rem(30);
@@ -37,52 +41,6 @@
   @include mq(md) {
     margin-top: rem(60);
   }
-}
-
-.partnership__toc {
-  margin-top: rem(40);
-  @include mq(md) {
-    margin-top: rem(60);
-  }
-}
-
-.partnership__tok-title {
-  font-size: rem(20);
-  @include mq(md) {
-    font-size: rem(28);
-  }
-}
-
-.partnership__toc-list {
-  margin-top: rem(20);
-  @include mq(md) {
-    font-size: rem(18);
-  }
-}
-
-.partnership__toc-item a {
-  position: relative;
-  display: block;
-  font-size: rem(18);
-  padding: rem(5) rem(20);
-  @include mq(md) {
-    font-size: rem(24);
-    padding: rem(10) rem(20);
-  }
-}
-
-.partnership__toc-item a::before {
-  position: absolute;
-  content: "・";
-  top: rem(5);
-  left: 0;
-  @include mq(md) {
-    top: rem(10);
-  }
-}
-
-.partnership__toc-item a:hover {
-  text-decoration: underline; /* ホバー時に下線表示 */
 }
 
 .partnership__support {
@@ -171,4 +129,8 @@
 .partnership__bg-color {
   padding-bottom: rem(30);
   background: $skyblue;
+}
+
+.partnership__btn.common-btn{
+  text-shadow: none;
 }

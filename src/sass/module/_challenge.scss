@@ -1,17 +1,42 @@
 @use "global" as *;
 
-.challenge__title.section-title {
-  background: $skyblue;
+//ページ内リンク位置調整
+.challenge [id] {
+  scroll-margin-top: rem(90);
 }
-
 
 .challenge__intro {
   font-size: rem(24);
   margin-top: rem(40);
   color: $white;
   text-shadow: rem(2) rem(2) rem(5) rgba(0, 0, 0, 0.6); /* 黒っぽい影を追加 */
+  padding-bottom: rem(25);
   @include mq(md) {
     margin-top: rem(60);
+    padding-bottom: rem(35);
+  }
+}
+
+//背景色だけ画面幅いっぱいに
+.challenge__intro-wrapper {
+  background-color:$skyblue;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw; 
+}
+
+
+.challenge__title.section-title{
+  background:$skyblue;
+  font-size:rem(24);
+  @include mq(md){
+    font-size:rem(40);
+  }
+}
+
+.challenge__title.section-title br{
+  @include mq(md){
+    display: none;
   }
 }
 
@@ -38,4 +63,12 @@
   width: 100%; /* 親の幅に合わせて伸縮 */
   height: 100%; /* アスペクト比を維持した枠にフィット */
   object-fit: cover; /* 枠いっぱいに画像を表示しつつ切り取り */
+}
+
+.challenge__item{
+  scroll-margin-top: rem(90);
+  margin-top:rem(40);
+  @include mq(md){
+   margin-top:rem(80);
+  }
 }
