@@ -13,8 +13,8 @@ jQuery(function ($) {
   }
   $(document).ready(loading);
   $(window).on("load", loading);
-  //
-  // ハンバーガーメニュー
+
+  //ハンバーガーメニュー
   $(function () {
     $(".js-hamburger").click(function () {
       $(this).toggleClass("is-open");
@@ -35,7 +35,7 @@ jQuery(function ($) {
       }
     });
   });
-  //
+
   // ヘッダーのアコーディオン
   $(".js-drawer-accordion").on("click", function () {
     $(this).next().slideToggle();
@@ -45,7 +45,7 @@ jQuery(function ($) {
 
   //  ヘッダーのドロワー展開時に背面のスクロールを止める
   var drawer = document.querySelector(".js-drawer");
-  var overlay = document.querySelector(".js-header-overlay");
+  var overlay = document.querySelector(".js-overlay");
 
   function openDrawer() {
     drawer.classList.add("is-open");
@@ -87,54 +87,6 @@ jQuery(function ($) {
     },
   });
 
-
-//   //講座のモーダル
-//   (function () {
-//   const modalTriggers = document.querySelectorAll(".js-modal-trigger");
-//   const modalCloses = document.querySelectorAll(".js-modal-close");
-
-//   modalTriggers.forEach(trigger => {
-//     trigger.addEventListener("click", function (e) {
-//       e.preventDefault();
-//       const modalId = this.dataset.modalId;
-//       const modal = document.getElementById(modalId);
-//       if (modal) {
-//         modal.classList.add("is-active");
-
-//         // スクロール禁止処理（モーダル専用）
-//         const scrollY = window.scrollY || window.pageYOffset;
-//         modal.dataset.scrollY = scrollY;
-//         document.documentElement.style.scrollBehavior = 'auto'; // スムーススクロール防止
-//         document.body.style.position = 'fixed';
-//         document.body.style.top = `-${scrollY}px`;
-//         document.body.style.left = '0';
-//         document.body.style.right = '0';
-//         document.body.style.width = '100%';
-//         document.body.style.overflow = 'hidden';
-//       }
-//     });
-//   });
-
-//   modalCloses.forEach(btn => {
-//     btn.addEventListener("click", function () {
-//       const modal = this.closest(".modal");
-//       modal.classList.remove("is-active");
-
-//       // スクロール復元処理（モーダル専用）
-//       const scrollY = modal.dataset.scrollY || '0';
-//       document.body.style.position = '';
-//       document.body.style.top = '';
-//       document.body.style.left = '';
-//       document.body.style.right = '';
-//       document.body.style.width = '';
-//       document.body.style.overflow = '';
-//       window.scrollTo(0, parseInt(scrollY, 10));
-//     });
-//   });
-// })();
-
-
-
   /////FAQアコーディオン/////
   // アコーディオンのタイトルがクリックされたときの動き
   // FAQのタイトルがクリックされたら開閉する
@@ -175,27 +127,27 @@ jQuery(function ($) {
   });
 
   //トップページへ戻るボタン
-const button = document.querySelector('.js-top-button');
-button.addEventListener('click', () => {
-  window.scroll({ 
-    top: 0, 
-    behavior: "smooth"
+  const button = document.querySelector(".js-top-button");
+  button.addEventListener("click", () => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
   });
-});
 
-window.addEventListener('scroll', () => {
-  if(window.scrollY > 100){
-    button.classList.add('is-active');
-  }else{
-    button.classList.remove('is-active');
-  }
-});
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      button.classList.add("is-active");
+    } else {
+      button.classList.remove("is-active");
+    }
+  });
 
-//informationのタブ切り替え
+  //informationのタブ切り替え
   $(document).ready(function () {
     // クエリパラメータから "tab" の値を取得
     var params = new URLSearchParams(window.location.search);
-    var defaultTab = 'license-link'; // デフォルトタブ（ライセンス講習）のID
+    var defaultTab = "license-link"; // デフォルトタブ（ライセンス講習）のID
     var selectedTab = params.get("tab") || defaultTab; // クエリパラメータがない場合、デフォルトタブを使用
 
     // すべてのタブとコンテンツを非表示にしてリセット
@@ -219,5 +171,39 @@ window.addEventListener('scroll', () => {
       $(this).addClass("active");
       $("#" + tabId).show();
     });
+  });
+
+  // ======== ページネーション =========
+  const $pagination = $(".news__pagination");
+  const $items = $pagination.find(".news__pagination__page");
+  const $prev = $pagination.find(".news__pagination__prev");
+  const $next = $pagination.find(".news__pagination__next");
+
+  function changeActive($target) {
+    $items.removeClass("pagination__page--current");
+    $target.addClass("pagination__page--current");
+  }
+
+  function moveActive(direction) {
+    const $current = $items.filter(".news__pagination__page--current");
+    const index = $items.index($current);
+    const nextIndex = Math.min($items.length - 1, Math.max(0, index + direction));
+    $items.removeClass("pagination__page--current");
+    $items.eq(nextIndex).addClass("pagination__page--current");
+  }
+
+  $items.on("click", function (e) {
+    e.preventDefault();
+    changeActive($(this));
+  });
+
+  $prev.on("click", function (e) {
+    e.preventDefault();
+    moveActive(-1);
+  });
+
+  $next.on("click", function (e) {
+    e.preventDefault();
+    moveActive(1);
   });
 });

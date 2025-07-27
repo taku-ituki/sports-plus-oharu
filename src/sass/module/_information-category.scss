@@ -1,0 +1,75 @@
+@use "global" as *;
+
+.information-category {
+  margin-top: rem(60);
+  @include mq(md) {
+  }
+  font-size: rem(24);
+}
+
+.news__nav.information-category {
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.information-category__nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(15);
+  row-gap: rem(20);
+  @include mq(md) {
+    display: flex;
+    gap: rem(25);
+  }
+}
+
+.information-category__nav a {
+  display: block;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+//カテゴリーホバー時の線//
+//初期の線
+.information-category__nav a::before {
+  left: 0;
+  width: 100%;
+  background-color: $accent;
+  content: "";
+  display: block;
+  position: absolute;
+  padding-top: rem(3);
+  padding-bottom: rem(3);
+  bottom: rem(-5);
+}
+
+.information-category__nav a:hover::before {
+  left: 50%;
+  width: 0;
+  opacity: 0.5;
+  transition: left, 0.3s ease, width 0.3s ease;
+}
+
+//ホバー時の線
+.information-category__nav a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 0;
+  opacity: 0.5;
+  bottom: 0;
+}
+
+.information-category__nav a:hover::after {
+  left: 0;
+  width: 100%;
+  background-color: $bg;
+  padding-top: rem(3);
+  padding-bottom: rem(3);
+  transition: right, 0.5s ease, width 0.5s ease;
+  opacity: 0.5;
+}

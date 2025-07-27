@@ -6,16 +6,16 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex" />
     <!-- meta情報 -->
-    <title>総合型地域スポーツクラブ | 大治町</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <title>活動報告ブログ | スポーツプラスおおはる</title>
+    <meta name="description" content="スポーツプラスおおはるが実施するスポーツ講座やイベントの活動内容をご紹介。地域の皆さまとのふれあいの様子をブログでお届けします。" />
+    <meta name="keywords" content="スポーツプラスおおはる, 活動報告, 地域スポーツ, 大治町, 講座, イベント" />
     <!-- ogp -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:title" content="活動報告ブログ | スポーツプラスおおはる" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://example.com/blog/article01" />
+    <meta property="og:image" content="https://example.com/assets/images/blog/default.jpg" />
     <meta property="og:site_name" content="スポーツプラスおおはる" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="スポーツプラスおおはるの活動の様子をご紹介。各種講座やイベントの雰囲気を写真付きでお届けします。" />
     <!-- ファビコン -->
     <link rel="icon" href="./assets/images/common/favicon.ico" />
     <!-- google フォント -->
@@ -29,16 +29,16 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
-  <!-- ページトップボタン -->
-  <button class="js-top-button"><span></span>TOP</button>
   <body>
+    <!-- ページトップボタン -->
+    <button class="top-button js-top-button"><span></span>TOP</button>
     <header class="header layout-header">
       <div class="header__inner">
-        <h1 class="header__logo">
+        <div class="header__logo">
           <a href="index.html">
             <img src="./assets/images/common/logo.svg" alt="ロゴ" />
           </a>
-        </h1>
+        </div>
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-modal-wrap">
@@ -73,7 +73,7 @@
               <a href="entry.html"><span>入会案内</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="archive-blog.html"><span>活動紹介</span></a>
+              <a href="archive-blog.html"><span>活動報告</span></a>
             </li>
             <li class="header__nav-item">
               <a href="application.html"><span>各種申請用紙</span></a>
@@ -123,7 +123,7 @@
                 <a href="entry.html"><span>入会案内</span></a>
               </li>
               <li class="header__drawer-item">
-                <a href="archive-blog.html">活動紹介</a>
+                <a href="archive-blog.html">活動報告</a>
               </li>
               <li class="header__drawer-item">
                 <a href="application.html">各種申請用紙</a>
@@ -133,8 +133,6 @@
               </li>
             </ul>
           </nav>
-          <!-- ドロワー　下要素スクロール禁止 -->
-          <div class="header__overlay js-header-overlay"></div>
         </div>
       </div>
     </header>
@@ -145,14 +143,14 @@
           <source srcset="./assets/images/common/faq-sp.jpg" media="(max-width: 767px)" />
           <img src="./assets/images/common/faq-pc.jpg" alt="メイン画像" />
         </picture>
-        <h1 class="sub-fv__title">activities<span>活動紹介</span></h1>
+        <h1 class="sub-fv__title">activities<span>活動報告</span></h1>
       </section>
       <!-- パンくずリスト -->
       <div class="breadcrumbs breadcrumbs-blog-layout">
         <div class="breadcrumbs__inner inner">
           <span class="breadcrumbs__top"><a href="index.html">TOP</a></span>
           >
-          <span class="breadcrumbs__page-title">活動紹介記事</span>
+          <span class="breadcrumbs__page-title">活動報告記事</span>
         </div>
       </div>
       <section class="single-blog single-blog-layout">
@@ -193,6 +191,8 @@
         </div>
       </section>
     </main>
+    <!-- ドロワー　下要素スクロール禁止 -->
+    <div class="overlay js-overlay"></div>
     <footer class="footer footer-layout">
       <div class="footer__inner inner">
         <div class="footer__box-wrap">
@@ -203,30 +203,27 @@
                   <a class="footer__item-link" href="index.html">トップページ</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link" href="">実施事業</a>
+                  <div class="footer__item-link">実施事業</div>
                   <ul class="footer__sub-list">
                     <li class="footer__sub-item">
                       <a class="footer__sub-item-link" href="program.html">スポーツ講座</a>
                     </li>
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="">部活動地域連携</a>
+                      <a class="footer__sub-item-link" href="partnership.html">部活動地域連携</a>
                     </li>
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="">スポーツチャレンジ</a>
+                      <a class="footer__sub-item-link" href="challenge.html">スポーツチャレンジ</a>
                     </li>
                   </ul>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link" href="">施設案内</a>
+                  <div class="footer__item-link">施設案内</div>
                   <ul class="footer__sub-list">
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="">スポーツおおはるとは</a>
+                      <a class="footer__sub-item-link" href="access.html">アクセス</a>
                     </li>
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="">アクセス</a>
-                    </li>
-                    <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="">よくあるご質問 </a>
+                      <a class="footer__sub-item-link" href="faq.html">よくあるご質問 </a>
                     </li>
                   </ul>
                 </li>
@@ -238,7 +235,7 @@
                   <a class="footer__item-link" href="entry.html">入会案内</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link" href="archive-blog.html">活動紹介</a>
+                  <a class="footer__item-link" href="archive-blog.html">活動報告</a>
                 </li>
               </ul>
             </div>

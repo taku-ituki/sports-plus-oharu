@@ -23,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://deno.land/x/embed_pdf@v1.3.0/mod.js" type="module"></script>
     <script src="./assets/js/jquery-3.7.1.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -30,7 +31,7 @@
   </head>
   <body>
     <!-- ページトップボタン -->
-  <button class="js-top-button"><span></span>TOP</button>
+    <button class="top-button js-top-button"><span></span>TOP</button>
     <header class="header layout-header">
       <div class="header__inner">
         <div class="header__logo">
@@ -63,24 +64,19 @@
                 <li class="header__nav-modal-item">
                   <a href="faq.html"><span>よくあるご質問 </span></a>
                 </li>
-              </ul>
-            </li>
-            <li class="header__nav-modal-wrap">
-              <p>入会案内</p>
-              <ul class="header__nav-modal">
                 <li class="header__nav-modal-item">
-                  <a href="entry.html"><span>長期講座・短期講座</span></a>
-                </li>
-                <li class="header__nav-modal-item">
-                  <a href="challenge.html"><span>部活動地域連携</span></a>
-                </li>
-                <li class="header__nav-modal-item">
-                  <a href="challenge.html"><span>スポーツチャレンジ</span></a>
+                  <a href="support.html"><span>賛助団体</span></a>
                 </li>
               </ul>
             </li>
             <li class="header__nav-item">
-              <a href="archive-blog.html"><span>活動紹介</span></a>
+              <a href="entry.html"><span>入会案内</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="archive-blog.html"><span>活動報告</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="application.html"><span>各種申請用紙</span></a>
             </li>
             <li class="header__nav-item header__nav-item--access">
               <a href="mailto:spplus-oharu@clovernet.ne.jp">お問い合わせ</a>
@@ -102,7 +98,7 @@
                     <a href="program.html">スポーツ講座</a>
                   </li>
                   <li class="header__drawer-accordion-item">
-                    <a href="challenge.html">部活動地域連携</a>
+                    <a href="partnership.html">部活動地域連携</a>
                   </li>
                   <li class="header__drawer-accordion-item">
                     <a href="challenge.html">スポーツチャレンジ</a>
@@ -118,33 +114,25 @@
                   <li class="header__drawer-accordion-item">
                     <a href="faq.html">よくあるご質問 </a>
                   </li>
-                </ul>
-              </li>
-              <li class="header__nav-modal-wrap">
-                <p>入会案内</p>
-                <ul class="header__nav-modal">
-                  <li class="header__nav-modal-item">
-                    <a href="entry.html"><span>長期講座・短期講座</span></a>
-                  </li>
-                  <li class="header__nav-modal-item">
-                    <a href="partnership.html"><span>部活動地域連携</span></a>
-                  </li>
-                  <li class="header__nav-modal-item">
-                    <a href="challenge.html"><span>スポーツチャレンジ</span></a>
+                  <li class="header__drawer-accordion-item">
+                    <a href="support.html">賛助団体</a>
                   </li>
                 </ul>
               </li>
-
               <li class="header__drawer-item">
-                <a href="archive-blog.html">活動紹介</a>
+                <a href="entry.html"><span>入会案内</span></a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="archive-blog.html">活動報告</a>
+              </li>
+              <li class="header__drawer-item">
+                <a href="application.html">各種申請用紙</a>
               </li>
               <li class="header__drawer-item header__drawer-item--access">
                 <a href="mailto:spplus-oharu@clovernet.ne.jp">お問い合わせ</a>
               </li>
             </ul>
           </nav>
-          <!-- ドロワー　下要素スクロール禁止 -->
-          <div class="header__overlay js-header-overlay"></div>
         </div>
       </div>
     </header>
@@ -152,9 +140,10 @@
       <!-- メインビュー -->
       <section class="sub-fv sub-fv-layout">
         <picture class="sub-fv__img">
-          <source srcset="./assets/images/common/faq-sp.jpg" media="(max-width: 767px)" />
-          <img src="./assets/images/common/faq-pc.jpg" alt="diving" />
+          <source srcset="./assets/images/common/badminton.jpg" media="(max-width: 767px)" />
+          <img src="./assets/images/common/badminton.jpg" alt="diving" />
         </picture>
+        <div class="sub-fv__overlay"></div>
         <h1 class="sub-fv__title">sports challenge<span>スポーツチャレンジ</span></h1>
       </section>
       <!-- パンくずリスト -->
@@ -168,18 +157,33 @@
       <!-- 目次 -->
       <section class="challenge challenge-layout">
         <div class="challenge__inner inner">
-          <nav class="challenge__toc toc">
-            <div class="challenge__tok-title tok__title">【目次】</div>
-            <ul class="challenge__toc-list toc__list">
-              <li class="challenge__toc-item toc__item"><a href="#challenge">「スポーツチャレンジ」とは</a></li>
-              <li class="challenge__toc-item toc__item"><a href="#oharu" class="challenge-toc__link">「大治小学校」募集要項</a></li>
-              <li class="challenge__toc-item toc__item"><a href="#oharu-south" class="challenge-toc__link">「大治南小学校」募集要項</a></li>
-              <li class="challenge__toc-item toc__item"><a href="#oharu-west" class="challenge-toc__link">「大治西小学校」募集要項</a></li>
-              <li class="challenge__toc-item toc__item"><a href="#spring" class="challenge-toc__link">「春休みスポーツチャレンジ」募集要項</a></li>
-              <li class="challenge__toc-item toc__item"><a href="#summer" class="challenge-toc__link">「夏休みスポーツチャレンジ」募集要項</a></li>
-              <li class="challenge__toc-item toc__item"><a href="#challenge-date" class="challenge-toc__link">「申込状況・日程」</a></li>
+          <nav class="toc">
+            <div class="toc__title">【目次】</div>
+            <ul class="toc__list">
+              <li class="toc__item">
+                <a href="#challenge" class="toc__link">「スポーツチャレンジ」とは</a>
+              </li>
+              <li class="toc__item">
+                <a href="#oharu" class="toc__link">「大治小学校」募集要項</a>
+              </li>
+              <li class="toc__item">
+                <a href="#oharu-south" class="toc__link">「大治南小学校」募集要項</a>
+              </li>
+              <li class="toc__item">
+                <a href="#oharu-west" class="toc__link">「大治西小学校」募集要項</a>
+              </li>
+              <li class="toc__item">
+                <a href="#spring" class="toc__link">「春休みスポーツチャレンジ」募集要項</a>
+              </li>
+              <li class="toc__item">
+                <a href="#summer" class="toc__link">「夏休みスポーツチャレンジ」募集要項</a>
+              </li>
+              <li class="toc__item">
+                <a href="#challenge-date" class="toc__link">「申込状況・日程」</a>
+              </li>
             </ul>
           </nav>
+
           <!-- スポーツチャレンジとは -->
           <div class="challenge__intro-wrapper">
             <div class="challenge__intro inner">
@@ -205,51 +209,45 @@
           </div>
           <!-- 大治小学校 -->
           <div class="challenge__item" id="oharu">
-          <h2  class="challenge__title section-title">「大治小学校」<br>募集要項</h2>
-            <figure class="challenge__date-img">
-              <iframe src="./assets/images/common/challenge.pdf" class="entry-status__pdf-frame" title="大治小学校スポーツチャレンジ申込状況PDF"> このブラウザはPDF表示に対応していません。 </iframe>
-              <figcaption class="challenge__date-caption">※申し込み状況（PDF資料）</figcaption>
-            </figure>
+            <h2 class="challenge__title section-title">「大治小学校」<br />募集要項</h2>
+            <div class="challenge__pdf pdf">
+              <embed-pdf src="./assets/images/common/challenge.pdf" class="pdf__url"></embed-pdf>
+            </div>
           </div>
           <!-- 大治南小学校 -->
           <div class="challenge__item" id="oharu-south">
-            <h2 class="challenge__title section-title">「大治南小学校」<br>募集要項</h2>
-            <figure class="challenge__date-img">
-              <iframe src="./assets/images/common/challenge.pdf" class="entry-status__pdf-frame" title="大治小学校スポーツチャレンジ申込状況PDF"> このブラウザはPDF表示に対応していません。 </iframe>
-              <figcaption class="challenge__date-caption">※申し込み状況（PDF資料）</figcaption>
-            </figure>
+            <h2 class="challenge__title section-title">「大治南小学校」<br />募集要項</h2>
+            <div class="challenge__pdf pdf">
+              <embed-pdf src="./assets/images/common/challenge.pdf" class="pdf__url"></embed-pdf>
+            </div>
           </div>
           <!-- 大治西小学校 -->
           <div class="challenge__item" id="oharu-west">
-            <h2 class="challenge__title section-title">「大治西小学校」<br>募集要項</h2>
-            <figure class="challenge__date-img">
-              <iframe src="./assets/images/common/challenge.pdf" class="entry-status__pdf-frame" title="大治小学校スポーツチャレンジ申込状況PDF"> このブラウザはPDF表示に対応していません。 </iframe>
-              <figcaption class="challenge__date-caption">※申し込み状況（PDF資料）</figcaption>
-            </figure>
+            <h2 class="challenge__title section-title">「大治西小学校」<br />募集要項</h2>
+            <div class="challenge__pdf pdf">
+              <embed-pdf src="./assets/images/common/challenge.pdf" class="pdf__url"></embed-pdf>
+            </div>
           </div>
           <!-- 春休みスポーツチャレンジ -->
           <div class="challenge__item" id="spring">
-            <h2 class="challenge__title section-title">「春休みスポーツチャレンジ」<br>募集要項</h2>
-            <figure class="challenge__date-img">
-              <iframe src="./assets/images/common/challenge.pdf" class="entry-status__pdf-frame" title="大治小学校スポーツチャレンジ申込状況PDF"> このブラウザはPDF表示に対応していません。 </iframe>
-              <figcaption class="challenge__date-caption">※申し込み状況（PDF資料）</figcaption>
-            </figure>
+            <h2 class="challenge__title section-title">「春休みスポーツチャレンジ」<br />募集要項</h2>
+            <div class="challenge__pdf pdf">
+              <embed-pdf src="./assets/images/common/challenge.pdf" class="pdf__url"></embed-pdf>
+            </div>
           </div>
           <!-- 春休みスポーツチャレンジ -->
           <div class="challenge__item" id="summer">
-            <h2 class="challenge__title section-title">「夏休みスポーツチャレンジ」<br>募集要項</h2>
-            <figure class="challenge__date-img">
-              <iframe src="./assets/images/common/challenge.pdf" class="entry-status__pdf-frame" title="大治小学校スポーツチャレンジ申込状況PDF"> このブラウザはPDF表示に対応していません。 </iframe>
-              <figcaption class="challenge__date-caption">※申し込み状況（PDF資料）</figcaption>
-            </figure>
+            <h2 class="challenge__title section-title">「夏休みスポーツチャレンジ」<br />募集要項</h2>
+            <div class="challenge__pdf pdf">
+              <embed-pdf src="./assets/images/common/challenge.pdf" class="pdf__url"></embed-pdf>
+            </div>
           </div>
           <!-- 申込状況・日程 -->
           <div class="challenge__item" id="challenge-date">
             <h2 class="challenge__title section-title">申込状況・日程</h2>
-            <figure class="challenge__date-img">
-              <iframe src="./assets/images/common/challenge.pdf" class="entry-status__pdf-frame" title="講座別申し込み状況PDF"> このブラウザはPDF表示に対応していません。 </iframe>
-              <figcaption class="challenge__date-caption">※講座別の申し込み状況（PDF資料）</figcaption>
-            </figure>
+            <div class="challenge__pdf pdf">
+              <embed-pdf src="./assets/images/common/challenge.pdf" class="pdf__url"></embed-pdf>
+            </div>
           </div>
           <!-- 申し込み・お問い合わせ -->
           <div class="challenge__info">
@@ -297,6 +295,8 @@
         <!-- //inner -->
       </section>
     </main>
+    <!-- ドロワー　下要素スクロール禁止 -->
+    <div class="overlay js-overlay"></div>
     <footer class="footer footer-layout">
       <div class="footer__inner inner">
         <div class="footer__box-wrap">
@@ -307,7 +307,7 @@
                   <a class="footer__item-link" href="index.html">トップページ</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link">実施事業</a>
+                  <div class="footer__item-link">実施事業</div>
                   <ul class="footer__sub-list">
                     <li class="footer__sub-item">
                       <a class="footer__sub-item-link" href="program.html">スポーツ講座</a>
@@ -321,7 +321,7 @@
                   </ul>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link">施設案内</a>
+                  <div class="footer__item-link">施設案内</div>
                   <ul class="footer__sub-list">
                     <li class="footer__sub-item">
                       <a class="footer__sub-item-link" href="access.html">アクセス</a>
@@ -339,13 +339,13 @@
                   <a class="footer__item-link" href="entry.html">入会案内</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link" href="archive-blog.html">活動紹介</a>
+                  <a class="footer__item-link" href="archive-blog.html">活動報告</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="footer__logo">
-            <a href="index.html"><img src="./assets/images/common/logo.svg" alt="ロゴ" /></a>
+            <a href="index.html"> <img src="./assets/images/common/logo.svg" alt="ロゴ" /></a>
           </div>
         </div>
       </div>

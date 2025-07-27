@@ -72,3 +72,11 @@
    margin-top:rem(80);
   }
 }
+
+
+.challenge__pdf{
+  margin-top:rem(20);
+  @include mq(md){
+     margin-top:rem(40); 
+  }
+}

@@ -1,12 +1,5 @@
 @use "global" as *;
 
-//共通部分
-
-.inner.access__inner {
-  padding: 0 rem(30);
-  @include mq(md) {
-  }
-}
 
 .access__wrap {
   display: flex;
@@ -143,7 +136,7 @@
 }
 
 .access__item-title {
-  font-size: rem(24);
+  font-size: rem(20);
   @include mq(md) {
     font-size: rem(32);
   }

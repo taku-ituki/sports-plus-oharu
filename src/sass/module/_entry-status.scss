@@ -1,31 +1,17 @@
 @use "global" as *;
 
-.entry-status__img {
+.entry-status__btn.common-btn {
+  text-align: center;
   margin-top: rem(20);
   @include mq(md) {
     margin-top: rem(40);
   }
 }
 
-.entry-status__pdf-frame {
-  width: 100%;
-  height: rem(300);
-  @include mq(md) {
-    width: 100%;
-    height: rem(600);
-  }
-}
 
-
-.membership-info__desc a{
-    border-bottom: rem(1) solid $black;
-}
-
-
-.entry-status__btn.common-btn{
-  text-align: center;
+.entry-status__pdf{
   margin-top:rem(20);
   @include mq(md){
-    margin-top:rem(40);
+     margin-top:rem(40); 
   }
 }

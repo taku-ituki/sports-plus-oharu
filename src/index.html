@@ -6,16 +6,17 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex" />
     <!-- meta情報 -->
-    <title>総合型地域スポーツクラブ | 大治町</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <title>スポーツプラスおおはる | 総合型地域スポーツクラブ（大治町）</title>
+    <meta name="description" content="スポーツプラスおおはるは大治町を拠点とした総合型地域スポーツクラブです。子どもから高齢者まで誰もがスポーツを楽しめる環境を提供しています" />
+    <meta name="keywords" content="スポーツプラスおおはる" />
     <!-- ogp -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:title" content="スポーツプラスおおはる | 総合型地域スポーツクラブ（大治町）" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://example.com/assets/images/common/logo.svg" />
     <meta property="og:site_name" content="スポーツプラスおおはる" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="スポーツプラスおおはるは、大治町を拠点とした総合型地域スポーツクラブ。子どもから高齢者までが参加できる、地域密着型のスポーツクラブです。" />
+
     <!-- ファビコン -->
     <link rel="icon" href="./assets/images/common/favicon.ico" />
     <!-- google フォント -->
@@ -32,7 +33,7 @@
   </head>
   <body>
     <!-- ページトップボタン -->
-    <button class="js-top-button"><span></span>TOP</button>
+    <button class="top-button js-top-button"><span></span>TOP</button>
     <!-- ローディングアニメーション -->
     <div class="loading js-loading">
       <div class="loading__img">
@@ -80,7 +81,7 @@
               <a href="entry.html"><span>入会案内</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="archive-blog.html"><span>活動紹介</span></a>
+              <a href="archive-blog.html"><span>活動報告</span></a>
             </li>
             <li class="header__nav-item">
               <a href="application.html"><span>各種申請用紙</span></a>
@@ -130,7 +131,7 @@
                 <a href="entry.html"><span>入会案内</span></a>
               </li>
               <li class="header__drawer-item">
-                <a href="archive-blog.html">活動紹介</a>
+                <a href="archive-blog.html">活動報告</a>
               </li>
               <li class="header__drawer-item">
                 <a href="application.html">各種申請用紙</a>
@@ -140,8 +141,6 @@
               </li>
             </ul>
           </nav>
-          <!-- ドロワー　下要素スクロール禁止 -->
-          <div class="header__overlay js-header-overlay"></div>
         </div>
       </div>
     </header>
@@ -184,8 +183,8 @@
         <div class="top-information__inner inner">
           <h2 class="top-information__title section-title">お知らせ</h2>
           <!-- お知らせのカテゴリー切り替え -->
-          <div class="top-information__news-nav">
-            <nav class="top-information__news-nav-category">
+          <div class="top-information__news-nav information-category">
+            <nav class="top-information__news-nav-category information-category__nav">
               <a href="#">一覧</a>
               <a href="#">お知らせ</a>
               <a href="#">募集</a>
@@ -370,6 +369,8 @@
         </div>
       </section>
     </main>
+    <!-- ドロワー　下要素スクロール禁止 -->
+    <div class="overlay js-overlay"></div>
     <footer class="footer footer-layout">
       <div class="footer__inner inner">
         <div class="footer__box-wrap">
@@ -380,7 +381,7 @@
                   <a class="footer__item-link" href="index.html">トップページ</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link" href="">実施事業</a>
+                  <div class="footer__item-link">実施事業</div>
                   <ul class="footer__sub-list">
                     <li class="footer__sub-item">
                       <a class="footer__sub-item-link" href="program.html">スポーツ講座</a>
@@ -389,18 +390,18 @@
                       <a class="footer__sub-item-link" href="partnership.html">部活動地域連携</a>
                     </li>
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="">スポーツチャレンジ</a>
+                      <a class="footer__sub-item-link" href="challenge.html">スポーツチャレンジ</a>
                     </li>
                   </ul>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link" href="">施設案内</a>
+                  <div class="footer__item-link">施設案内</div>
                   <ul class="footer__sub-list">
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="">アクセス</a>
+                      <a class="footer__sub-item-link" href="access.html">アクセス</a>
                     </li>
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="">よくあるご質問 </a>
+                      <a class="footer__sub-item-link" href="faq.html">よくあるご質問 </a>
                     </li>
                   </ul>
                 </li>
@@ -412,7 +413,7 @@
                   <a class="footer__item-link" href="entry.html">入会案内</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link" href="archive-blog.html">活動紹介</a>
+                  <a class="footer__item-link" href="archive-blog.html">活動報告</a>
                 </li>
               </ul>
             </div>

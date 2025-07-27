@@ -1,10 +1,10 @@
 @use "global" as *;
 
 .header {
-  height: rem(64);
+  height: rem(65);
   background-color: $white;
   @include mq("md") {
-    height: rem(80);
+    height: rem(90);
   }
 }
 
@@ -121,7 +121,6 @@
 .header__nav-modal-item:hover > a span::after {
   transform: translateX(-50%) scaleX(1);
 }
-//
 
 .header__nav-modal-wrap > p {
   transition: 0.3s;
@@ -280,7 +279,8 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: $text-green;
+  // background-color: $text-green;
+  background: $bg;
   overflow-y: scroll;
   scrollbar-width: none;
 }
@@ -389,27 +389,8 @@
   line-height: 1;
   letter-spacing: 0.05em;
 }
-////sp終了
 
-// ドロワー展開時に背面のスクロールを止める
-.header__overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0); /* 透明の背景色 */
-  z-index: 700; /* ドロワーメニューよりも背面に配置 */
-  display: none; /* 最初は非表示にする */
-  transition: 0.3s;
-}
 
-.header.is-open {
-  background-color: pink;
-}
 
-.header.is-open .header__overlay {
-  display: block; /* ドロワーメニューが開いているときに表示する */
-  transition: 0.3s;
-}
-//
+
+

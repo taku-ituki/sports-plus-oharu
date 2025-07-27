@@ -43,3 +43,15 @@
   text-align: center;
 }
 
+.challenge__btn-wrap.common-btn{
+  text-align: center;
+  margin-top:rem(30);
+  @include mq(md){
+    margin-top:rem(60);
+  }
+}
+
+
+.challenge__btn-wrap .common-btn__link{
+  padding: rem(20) rem(40);
+}

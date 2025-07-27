@@ -1,0 +1,21 @@
+@use 'global' as *;
+
+// ドロワー展開時に背面のスクロールを止める
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0); /* 透明の背景色 */
+    z-index: 700; /* ドロワーメニューよりも背面に配置 */
+    display: none; /* 最初は非表示にする */
+    transition: 0.3s;
+  }
+  
+  .header.is-open .overlay {
+    display: block; /* ドロワーメニューが開いているときに表示する */
+    transition: 0.3s;
+  }
+  
+  

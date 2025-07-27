@@ -5,12 +5,6 @@
   margin-top: rem(30);
 }
 
-.top-information__news-nav {
-  margin-top: rem(60);
-  @include mq(md) {
-  }
-  font-size: rem(24);
-}
 
 //ホバー時にテキストにホバー表示（擬似要素では不可能）
 
@@ -29,65 +23,6 @@
 
 .top-information__news-item a:hover .top-information__news-title {
   text-decoration: underline; /* ホバー時に下線表示 */
-}
-
-.top-information__news-nav-category {
-  display: flex;
-}
-
-.top-information__news-nav-category a {
-  display: block;
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-  padding-right: rem(10);
-  padding-left: rem(10);
-  @include mq(md) {
-    padding-right: rem(25);
-    padding-left: rem(25);
-  }
-}
-
-//カテゴリーホバー時の線//
-//初期の線
-.top-information__news-nav-category a::before {
-  left: 0;
-  width: 100%;
-  background-color:$accent;
-  content: "";
-  display: block;
-  position: absolute;
-  padding-top: rem(3);
-  padding-bottom: rem(3);
-  bottom: 0;
-}
-
-.top-information__news-nav-category a:hover::before {
-  left: 50%;
-  width: 0;
-  opacity: 0.5;
-  transition: left, 0.3s ease, width 0.3s ease;
-}
-
-//ホバー時の線
-.top-information__news-nav-category a::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 50%;
-  width: 0;
-  opacity: 0.5;
-  bottom: 0;
-}
-
-.top-information__news-nav-category a:hover::after {
-  left: 0;
-  width: 100%;
-  background-color: $bg;
-  padding-top: rem(3);
-  padding-bottom: rem(3);
-  transition: right, 0.5s ease, width 0.5s ease;
-  opacity: 0.5;
 }
 
 //お知らせ記事CSS//

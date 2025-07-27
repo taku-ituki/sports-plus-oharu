@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-button {
+.top-button {
   position: fixed;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@ button {
   z-index: 1000;
 }
 
-button span:before {
+.top-button span:before {
     position: absolute;
     top: rem(-27);
     left: rem(18);
@@ -30,7 +30,7 @@ button span:before {
     border-width: rem(1) rem(1) 0 0;
 }
 
-button span:after {
+.top-button span:after {
     position: absolute;
     width: rem(42);
     height: rem(42);

@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="robots" content="noindex" />
     <!-- meta情報 -->
-    <title>総合型地域スポーツクラブ | 大治町</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <title>活動報告ブログ一覧 | スポーツプラスおおはる</title>
+    <meta name="description" content="スポーツプラスおおはるの活動報告ブログ一覧ページです。地域で開催されたスポーツ講座・イベント・大会の様子を写真付きでご覧いただけます。" />
+    <meta name="keywords" content="スポーツプラスおおはる, 活動報告, ブログ一覧, 地域スポーツ, 大治町, イベント" />
+
     <!-- ogp -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:title" content="活動報告ブログ一覧 | スポーツプラスおおはる" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/blog/" />
+    <meta property="og:image" content="https://example.com/assets/images/common/ogp.jpg" />
     <meta property="og:site_name" content="スポーツプラスおおはる" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="大治町の総合型地域スポーツクラブ「スポーツプラスおおはる」の活動記録を一覧でご覧いただけます。講座やイベントの最新情報も掲載中。" />
     <!-- ファビコン -->
     <link rel="icon" href="./assets/images/common/favicon.ico" />
     <!-- google フォント -->
@@ -29,16 +26,16 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
-  <!-- ページトップボタン -->
-  <button class="js-top-button"><span></span>TOP</button>
   <body>
+    <!-- ページトップボタン -->
+    <button class="top-button js-top-button"><span></span>TOP</button>
     <header class="header layout-header">
       <div class="header__inner">
-        <h1 class="header__logo">
+        <div class="header__logo">
           <a href="index.html">
             <img src="./assets/images/common/logo.svg" alt="ロゴ" />
           </a>
-        </h1>
+        </div>
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-modal-wrap">
@@ -73,7 +70,7 @@
               <a href="entry.html"><span>入会案内</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="archive-blog.html"><span>活動紹介</span></a>
+              <a href="archive-blog.html"><span>活動報告</span></a>
             </li>
             <li class="header__nav-item">
               <a href="application.html"><span>各種申請用紙</span></a>
@@ -123,7 +120,7 @@
                 <a href="entry.html"><span>入会案内</span></a>
               </li>
               <li class="header__drawer-item">
-                <a href="archive-blog.html">活動紹介</a>
+                <a href="archive-blog.html">活動報告</a>
               </li>
               <li class="header__drawer-item">
                 <a href="application.html">各種申請用紙</a>
@@ -133,8 +130,6 @@
               </li>
             </ul>
           </nav>
-          <!-- ドロワー　下要素スクロール禁止 -->
-          <div class="header__overlay js-header-overlay"></div>
         </div>
       </div>
     </header>
@@ -142,243 +137,25 @@
       <!-- メインビュー -->
       <section class="sub-fv sub-fv-layout">
         <picture class="sub-fv__img">
-          <source srcset="./assets/images/common/faq-sp.jpg" media="(max-width: 767px)" />
-          <img src="./assets/images/common/faq-pc.jpg" alt="メイン画像" />
+          <source srcset="./assets/images/common/challenge-view.jpg" media="(max-width: 767px)" />
+          <img src="./assets/images/common/challenge-view.jpg" alt="メイン画像" />
         </picture>
-        <h1 class="sub-fv__title">activities<span>活動紹介</span></h1>
+        <div class="sub-fv__overlay"></div>
+        <h1 class="sub-fv__title">activities<span>活動報告</span></h1>
       </section>
       <!-- パンくずリスト -->
       <div class="breadcrumbs breadcrumbs-blog-layout">
         <div class="breadcrumbs__inner inner">
           <span class="breadcrumbs__top"><a href="index.html">TOP</a></span>
           >
-          <span class="breadcrumbs__page-title">活動紹介一覧</span>
+          <span class="breadcrumbs__page-title">活動報告一覧</span>
         </div>
       </div>
-      <!-- <section class="archive-blog">
-        <div class="archive-blog__inner inner">
-          <h2 class="archive-blog__title section-title">活動紹介一覧</h2>
-          <div class="archive-blog__flex">
-            <div class="archive-blog__list">
-              <article class="archive-blog__item">
-                <a class="archive-blog__link" href="single.html">
-                  <div class="archive-blog__content">
-                    <div class="archive-blog__meta">
-                      <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
-                      <p class="archive-blog__category">カテゴリ</p>
-                    </div>
-                    <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトルタイトル</h3>
-                  </div>
-                  <div class="archive-blog__img">
-                    <img src="./assets/images/common/dumy-archive-blog01.jpg" alt="省略" />
-                  </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a class="archive-blog__link" href="#">
-                  <div class="archive-blog__content">
-                    <div class="archive-blog__meta">
-                      <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
-                      <p class="archive-blog__category">カテゴリ</p>
-                    </div>
-                    <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
-                  </div>
-                  <div class="archive-blog__img">
-                    <img src="./assets/images/common/dumy-archive-blog02.jpg" alt="省略" />
-                  </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a class="archive-blog__link" href="#">
-                  <div class="archive-blog__content">
-                    <div class="archive-blog__meta">
-                      <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
-                      <p class="archive-blog__category">カテゴリ</p>
-                    </div>
-                    <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトル</h3>
-                  </div>
-                  <div class="archive-blog__img">
-                    <img src="./assets/images/common/dumy-archive-blog01.jpg" alt="省略" />
-                  </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a class="archive-blog__link" href="#">
-                  <div class="archive-blog__content">
-                    <div class="archive-blog__meta">
-                      <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
-                      <p class="archive-blog__category">カテゴリ</p>
-                    </div>
-                    <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
-                  </div>
-                  <div class="archive-blog__img">
-                    <img src="./assets/images/common/dumy-archive-blog02.jpg" alt="省略" />
-                  </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a class="archive-blog__link" href="#">
-                  <div class="archive-blog__content">
-                    <div class="archive-blog__meta">
-                      <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
-                      <p class="archive-blog__category">カテゴリ</p>
-                    </div>
-                    <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトル</h3>
-                  </div>
-                  <div class="archive-blog__img">
-                    <img src="./assets/images/common/dumy-archive-blog01.jpg" alt="省略" />
-                  </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a class="archive-blog__link" href="#">
-                  <div class="archive-blog__content">
-                    <div class="archive-blog__meta">
-                      <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
-                      <p class="archive-blog__category">カテゴリ</p>
-                    </div>
-                    <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
-                  </div>
-                  <div class="archive-blog__img">
-                    <img src="./assets/images/common/dumy-archive-blog02.jpg" alt="省略" />
-                  </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a class="archive-blog__link" href="#">
-                  <div class="archive-blog__content">
-                    <div class="archive-blog__meta">
-                      <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
-                      <p class="archive-blog__category">カテゴリ</p>
-                    </div>
-                    <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトル</h3>
-                  </div>
-                  <div class="archive-blog__img">
-                    <img src="./assets/images/common/dumy-archive-blog01.jpg" alt="省略" />
-                  </div>
-                </a>
-              </article>
-              <article class="archive-blog__item">
-                <a class="archive-blog__link" href="#">
-                  <div class="archive-blog__content">
-                    <div class="archive-blog__meta">
-                      <time class="archive-blog__date" datetime="2023-07-25">2023.07.25</time>
-                      <p class="archive-blog__category">カテゴリ</p>
-                    </div>
-                    <h3 class="archive-blog__title">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
-                  </div>
-                  <div class="archive-blog__img">
-                    <img src="./assets/images/common/dumy-archive-blog02.jpg" alt="省略" />
-                  </div>
-                </a>
-              </article>
-            </div>
-            <aside class="archive-blog__sidebar">
-              <ul class="archive-blog__sidebar-list">
-                <li class="archive-blog__sidebar-item">
-                  <h3 class="archive-blog__sidebar-title">ランキング</h3>
-                  <ul class="archive-blog__ranking-list">
-                    <li class="archive-blog__ranking-item">
-                      <article class="archive-blog__ranking">
-                        <a class="archive-blog__ranking-link" href="#">
-                          <p class="archive-blog__ranking-title">タイトルタイトルタイトルタイトルタイトルタイトル</p>
-                          <div class="archive-blog__ranking-img-wrap">
-                            <div class="archive-blog__ranking-img">
-                              <img src="./assets/images/common/dumy-archive-blog01.jpg" alt="省略" />
-                            </div>
-                            <p class="archive-blog__ranking-number">1</p>
-                          </div>
-                        </a>
-                      </article>
-                    </li>
-                    <li class="archive-blog__ranking-item">
-                      <article class="archive-blog__ranking">
-                        <a class="archive-blog__ranking-link" href="#">
-                          <p class="archive-blog__ranking-title">タイトルタイトルタイトルタイトルタイトルタイトル</p>
-                          <div class="archive-blog__ranking-img-wrap">
-                            <div class="archive-blog__ranking-img">
-                              <img src="./assets/images/common/dumy-archive-blog02.jpg" alt="省略" />
-                            </div>
-                            <p class="archive-blog__ranking-number">2</p>
-                          </div>
-                        </a>
-                      </article>
-                    </li>
-                    <li class="archive-blog__ranking-item">
-                      <article class="archive-blog__ranking">
-                        <a class="archive-blog__ranking-link" href="#">
-                          <p class="archive-blog__ranking-title">タイトルタイトルタイトルタイトルタイトルタイトル</p>
-                          <div class="archive-blog__ranking-img-wrap">
-                            <div class="archive-blog__ranking-img">
-                              <img src="./assets/images/common/dumy-archive-blog01.jpg" alt="省略" />
-                            </div>
-                            <p class="archive-blog__ranking-number">3</p>
-                          </div>
-                        </a>
-                      </article>
-                    </li>
-                    <li class="archive-blog__ranking-item">
-                      <article class="archive-blog__ranking">
-                        <a class="archive-blog__ranking-link" href="#">
-                          <p class="archive-blog__ranking-title">タイトルタイトルタイトルタイトルタイトルタイトル</p>
-                          <div class="archive-blog__ranking-img-wrap">
-                            <div class="archive-blog__ranking-img">
-                              <img src="./assets/images/common/dumy-archive-blog02.jpg" alt="省略" />
-                            </div>
-                            <p class="archive-blog__ranking-number">4</p>
-                          </div>
-                        </a>
-                      </article>
-                    </li>
-                  </ul>
-                </li>
-                <li class="archive-blog__sidebar-item">
-                  <h3 class="archive-blog__sidebar-title">カテゴリー</h3>
-                  <ul class="archive-blog__category-list">
-                    <li class="archive-blog__category-item">
-                      <a class="archive-blog__category-link" href="#">講座</a>
-                    </li>
-                    <li class="archive-blog__category-item">
-                      <a class="archive-blog__category-link" href="#">部活動地域連携</a>
-                    </li>
-                    <li class="archive-blog__category-item">
-                      <a class="archive-blog__category-link" href="#">スポーツチャレンジ</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="archive-blog__sidebar-item">
-                  <h3 class="archive-blog__sidebar-title">タグ</h3>
-                  <ul class="archive-blog__tag-list">
-                    <li class="archive-blog__tag-item">
-                      <a class="archive-blog__tag-link" href="#">#コーディング</a>
-                    </li>
-                    <li class="archive-blog__tag-item">
-                      <a class="archive-blog__tag-link" href="#">#デザイン</a>
-                    </li>
-                    <li class="archive-blog__tag-item">
-                      <a class="archive-blog__tag-link" href="#">#キーワード</a>
-                    </li>
-                    <li class="archive-blog__tag-item">
-                      <a class="archive-blog__tag-link" href="#">#キーワード</a>
-                    </li>
-                    <li class="archive-blog__tag-item">
-                      <a class="archive-blog__tag-link" href="#">#キーワード</a>
-                    </li>
-                    <li class="archive-blog__tag-item">
-                      <a class="archive-blog__tag-link" href="#">#キーワード</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </section> -->
       <div class="news news-layout">
         <div class="news__inner inner">
           <!-- お知らせのカテゴリー切り替え -->
-          <div class="top-information__news-nav">
-            <nav class="top-information__news-nav-category">
+          <div class="news__nav information-category">
+            <nav class="news__nav-category information-category__nav">
               <a href="#">最新</a>
               <a href="#">講座</a>
               <a href="#">部活動地域連携</a>
@@ -446,8 +223,29 @@
             </li>
           </ul>
         </div>
+         <!-- ページナビ -->
+        <nav class="news__pagination">
+          <div class="wp-pagenavi news__pagination-nav">
+            <a rel="prev" href="#" class="previouspostslink news__pagination-arrow">
+              <span>Previous</span>
+            </a>
+            <a href="#" class="page current"><span>1</span></a>
+            <a href="#" class="page smaller">2</a>
+            <a href="#" class="page smaller">3</a>
+            <a href="#" class="page larger">4</a>
+            <a href="#" class="page larger">5</a>
+            <a href="#" class="page larger">6</a> 
+            <a rel="next" href="#" class="nextpostslink news__pagination-arrow">
+              <span>Next</span>
+            </a>
+          </div>
+        </nav>
+        
+        
       </div>
     </main>
+    <!-- ドロワー　下要素スクロール禁止 -->
+    <div class="overlay js-overlay"></div>
     <footer class="footer footer-layout">
       <div class="footer__inner inner">
         <div class="footer__box-wrap">
@@ -458,27 +256,27 @@
                   <a class="footer__item-link" href="index.html">トップページ</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link" href="">実施事業</a>
+                  <div class="footer__item-link">実施事業</div>
                   <ul class="footer__sub-list">
                     <li class="footer__sub-item">
                       <a class="footer__sub-item-link" href="program.html">スポーツ講座</a>
                     </li>
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="">部活動地域連携</a>
+                      <a class="footer__sub-item-link" href="partnership.html">部活動地域連携</a>
                     </li>
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="">スポーツチャレンジ</a>
+                      <a class="footer__sub-item-link" href="challenge.html">スポーツチャレンジ</a>
                     </li>
                   </ul>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link" href="">施設案内</a>
+                  <div class="footer__item-link">施設案内</div>
                   <ul class="footer__sub-list">
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="">アクセス</a>
+                      <a class="footer__sub-item-link" href="access.html">アクセス</a>
                     </li>
                     <li class="footer__sub-item">
-                      <a class="footer__sub-item-link" href="">よくあるご質問 </a>
+                      <a class="footer__sub-item-link" href="faq.html">よくあるご質問 </a>
                     </li>
                   </ul>
                 </li>
@@ -490,7 +288,7 @@
                   <a class="footer__item-link" href="entry.html">入会案内</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__item-link" href="archive-blog.html">活動紹介</a>
+                  <a class="footer__item-link" href="archive-blog.html">活動報告</a>
                 </li>
               </ul>
             </div>

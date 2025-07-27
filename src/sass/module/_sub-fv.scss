@@ -60,3 +60,13 @@
 .sub-fv__title.sub-fv__title--faq {
   text-transform: uppercase;
 }
+
+.sub-fv__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); // ← ここで黒のマスク（40%の透過）
+  z-index: 1; // 背景画像より前、文字より後ろにする
+}

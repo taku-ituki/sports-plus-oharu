@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.wp-pagenavi {
+  display: flex;
+  gap: 6px;
+}
+
+.wp-pagenavi .news__pagination-arrow,
+.wp-pagenavi .page {
+  display: inline-block;
+  padding: 0.5rem 0.7rem;
+  background-color: #eee;
+  text-decoration: none;
+  color: black;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.wp-pagenavi .news__pagination-arrow:hover,
+.wp-pagenavi .page:hover,
+.wp-pagenavi .news__pagination-arrow:focus,
+.wp-pagenavi .page:focus {
+  background-color: #ddd;
+}
+
+.wp-pagenavi .current {
+  background-color:$accent;
+  color: $white;
+  pointer-events: none;
+}
+.wp-pagenavi .previouspostslink::before {
+  content: "<";
+}
+
+.wp-pagenavi .nextpostslink::before {
+  content: ">";
+}
+
+.wp-pagenavi .news__pagination-arrow span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
