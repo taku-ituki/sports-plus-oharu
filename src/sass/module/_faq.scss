@@ -30,6 +30,13 @@
 }
 
 
+.faq__sub-title br{
+ @include mq(md){
+  display: none;
+ }
+}
+
+
 
 .faq__sub-title::before,
 .faq__sub-title::after {
