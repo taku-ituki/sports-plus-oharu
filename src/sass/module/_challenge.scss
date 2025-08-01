@@ -6,7 +6,7 @@
 }
 
 .challenge__intro {
-  font-size: rem(24);
+  font-size: rem(18);
   margin-top: rem(40);
   color: $white;
   text-shadow: rem(2) rem(2) rem(5) rgba(0, 0, 0, 0.6); /* 黒っぽい影を追加 */
@@ -14,6 +14,7 @@
   @include mq(md) {
     margin-top: rem(60);
     padding-bottom: rem(35);
+    font-size: rem(24);
   }
 }
 

@@ -3,7 +3,7 @@
 .intro-card {
   border: rem(2) solid #ccc;
   border-radius: rem(12);
-  padding: 1.5rem;
+  padding: rem(24);
   background: $bg;
   box-shadow: 0 rem(4) rem(8) rgba(0, 0, 0, 0.05);
   counter-increment: program-number;
@@ -54,7 +54,6 @@
 .intro-card__header {
   display: flex;
   align-items: baseline;
-  margin-bottom: 1rem;
 }
 
 /* 自動連番の表示（before使用） */
@@ -79,11 +78,15 @@
   }
 }
 
+.intro-card__details {
+  margin-top: rem(16);
+}
+
 /* 各情報の1行分 */
 .intro-card__detail {
   display: flex;
   gap: 1rem;
-  margin-top: 0.5rem;
+  margin-top: rem(8);
 }
 
 /* 各ラベル（開催日など） */
@@ -99,7 +102,3 @@
   color: #444;
   font-size: rem(18);
 }
-
-// .partnership__list-card.intro-card{
-//   background: $bg;
-// }

@@ -1,9 +1,8 @@
-@use 'global' as *;
-
+@use "global" as *;
 
 .toc {
   counter-reset: section; /* 連番カウンターの初期化 */
-  padding: 1rem;
+  padding: rem(16);
 }
 
 .toc__title {
@@ -11,17 +10,17 @@
   color: $purple;
   text-align: center;
   margin-top: rem(20);
-  font-size:rem(24);
+  font-size: rem(24);
   @include mq(md) {
     font-size: rem(40);
-}
+  }
 }
 
 .toc__list {
   list-style: none;
   margin-top: rem(20);
-  @include mq(md){
-    margin-top:rem(40);
+  @include mq(md) {
+    margin-top: rem(40);
   }
 }
 
@@ -29,8 +28,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: rem(16);
+  margin-bottom: rem(16);
   counter-increment: section; /* 各項目でカウントを進める */
 }
 
@@ -38,9 +37,8 @@
   content: counter(section, decimal-leading-zero); /* 01, 02, 03... の形式で表示 */
   width: 2.25rem;
   height: 2.25rem;
-  background-color: #8e2de2;
+  background-color: $purple;
   color: $white;
-  font-size: 1rem;
   font-weight: bold;
   border-radius: 50%;
   display: flex;
@@ -51,18 +49,17 @@
 
 .toc__link {
   font-size: rem(18);
-  color: #333;
+  color:$black333;
   text-decoration: underline;
   text-decoration-thickness: rem(2); // 下線の太さ
   text-decoration-color: transparent; // 通常時は透明（非表示）
   text-underline-offset: rem(4); // 下線と文字の間隔
   transition: text-decoration-color 0.3s ease;
-  @include mq(md){
-
-  
+  @include mq(md) {
+    font-size: rem(24);
   }
 }
 
-.toc__link:hover{
-  text-decoration-color: #8e2de2;
+.toc__link:hover {
+  text-decoration-color: $purple;
 }

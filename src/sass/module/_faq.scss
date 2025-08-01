@@ -13,56 +13,53 @@
   }
 }
 
-.faq__title.section-title{
- background: #4682b4;
+.faq__title.section-title {
+  background: #4682b4;
 }
 
-.faq__sub-title{
-  color:#4682b4;
-  font-size:rem(20);
-  margin-top:rem(50);
+.faq__sub-title {
+  color: #4682b4;
+  font-size: rem(20);
+  margin-top: rem(50);
   text-align: center;
   display: flex;
-    justify-content: center;
-  @include mq(md){
-    font-size:rem(30);
+  justify-content: center;
+  @include mq(md) {
+    font-size: rem(30);
   }
 }
 
-
-.faq__sub-title br{
- @include mq(md){
-  display: none;
- }
+.faq__sub-title br {
+  @include mq(md) {
+    display: none;
+  }
 }
-
-
 
 .faq__sub-title::before,
 .faq__sub-title::after {
-    content: "";
-    width: rem(3);
-    height: rem(40);
-    background: #DE8430;
-    @include mq(md){
-        height: rem(60);
-    }
+  content: "";
+  width: rem(3);
+  height: rem(40);
+  background: #de8430;
+  @include mq(md) {
+    height: rem(60);
+  }
 }
 
 .faq__sub-title::before {
-    margin-right: rem(30);
-    transform: rotate(-30deg);
-    @include mq(md){
-        margin-right: rem(50);
-    }
+  margin-right: rem(30);
+  transform: rotate(-30deg);
+  @include mq(md) {
+    margin-right: rem(50);
+  }
 }
 
 .faq__sub-title::after {
-    margin-left: rem(30);
-    transform: rotate(30deg);
-    @include mq(md){
-        margin-left: rem(50);
-    }
+  margin-left: rem(30);
+  transform: rotate(30deg);
+  @include mq(md) {
+    margin-left: rem(50);
+  }
 }
 
 /*アコーディオン全体*/
@@ -73,7 +70,7 @@
 
 /*アコーディオンで現れるエリア*/
 .faq__accordion-box {
-  display: none; // ← 追加：最初は非表示
+  display: none;
   background: #f9f9f9;
   padding: rem(19) rem(19);
   @include mq(md) {
