@@ -20,23 +20,22 @@
 
 //背景色だけ画面幅いっぱいに
 .challenge__intro-wrapper {
-  background-color:$skyblue;
+  background-color: $skyblue;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  width: 100vw; 
+  width: 100vw;
 }
 
-
-.challenge__title.section-title{
-  background:$skyblue;
-  font-size:rem(24);
-  @include mq(md){
-    font-size:rem(40);
+.challenge__title.section-title {
+  background: $skyblue;
+  font-size: rem(24);
+  @include mq(md) {
+    font-size: rem(40);
   }
 }
 
-.challenge__title.section-title br{
-  @include mq(md){
+.challenge__title.section-title br {
+  @include mq(md) {
     display: none;
   }
 }
@@ -66,18 +65,17 @@
   object-fit: cover; /* 枠いっぱいに画像を表示しつつ切り取り */
 }
 
-.challenge__item{
+.challenge__item {
   scroll-margin-top: rem(90);
-  margin-top:rem(40);
-  @include mq(md){
-   margin-top:rem(80);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
   }
 }
 
-
-.challenge__pdf{
-  margin-top:rem(20);
-  @include mq(md){
-     margin-top:rem(40); 
+.challenge__pdf {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(40);
   }
 }

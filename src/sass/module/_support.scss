@@ -12,27 +12,17 @@
   padding: rem(15);
 }
 
-.support__card-img.support__card-oharu {
-  max-width: rem(300);
-  width: 100%;
-}
 
-.support__card-img.support__card-img--aichi {
+.support__card-img {
   max-width: rem(300);
-  width: 100%;
+  width:100%;
+  aspect-ratio: 340/85;
 }
 
 .support__card-img img {
   width: 100%;
-  object-fit: cover;
-}
-
-.support__card-img.support__card-oharu img {
-  aspect-ratio: 340/85;
-}
-
-.support__card-img.support__card-img--aichi {
-  aspect-ratio: 565/90;
+  height: 100%;
+  object-fit: contain;
 }
 
 .support__link-title {

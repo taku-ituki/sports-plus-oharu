@@ -1,0 +1,82 @@
+{
+  "WordPress Loop": {
+    "prefix": "wp loop",
+    "body": ["<?php if (have_posts()) : ?>", "\t<h1 class=\"page_head\"><?php the_title(); ?></h1>", "\t<?php while (have_posts()) : the_post(); ?>", "\t\t<div class=\"article\">", "\t\t\t<?php the_content(); ?>", "\t\t</div>", "\t<?php endwhile; ?>", "<?php endif; ?>"],
+    "description": "WordPress Loop"
+  },
+  "get header": {
+    "prefix": "gh",
+    "body": ["<?php get_header(); ?>"],
+    "description": "<?php get_header(); ?>"
+  },
+  "wp header": {
+    "prefix": "wph",
+    "body": ["<?php wp_head(); ?>"],
+    "description": "<?php wp_head(); ?>"
+  },
+  "get footer": {
+    "prefix": "gf",
+    "body": ["<?php get_footer(); ?>"],
+    "description": "<?php get_footer(); ?>"
+  },
+  "wp footer": {
+    "prefix": "wpf",
+    "body": ["<?php wp_footer(); ?>"],
+    "description": "<?php wp_footer(); ?>"
+  },
+  "php body": {
+    "prefix": "pb",
+    "body": ["<body <?php body_class(); ?>>", "<?php wp_body_open(); ?>"],
+    "description": "<body> with body_class and wp_body_open"
+  },
+  "php01": {
+    "prefix": "php",
+    "body": ["<?php $1 ?>"],
+    "description": "phpのタグ生成"
+  },
+  "Get thumbnail": {
+    "prefix": "thumbnail",
+    "body": ["<?php echo the_post_thumbnail_url('画像サイズ'); ?>"],
+    "description": "サムネイルURL出力"
+  },
+  "Get time": {
+    "prefix": "timeY",
+    "body": ["<?php the_time('Y.m.d');?>"],
+    "description": "the_time('Y.m.d')"
+  },
+  "if": {
+    "prefix": "if",
+    "body": ["<?php if($1): ?>"],
+    "description": "if文"
+  },
+  "else": {
+    "prefix": "else",
+    "body": ["<?php else: ?>"],
+    "description": "else文"
+  },
+  "endif": {
+    "prefix": "endif",
+    "body": ["<?php endif; ?>"],
+    "description": "endif文"
+  },
+  "echo": {
+    "prefix": "echo",
+    "body": ["<?php echo $1; ?>"],
+    "description": "echo文"
+  },
+  "field": {
+    "prefix": "field",
+    "body": ["<?php the_field('$1');?>"],
+    "description": "カスタムフィールド"
+  },
+  "echo get_theme_file_uri();": {
+    "prefix": "egt",
+    "body": ["<?php echo get_theme_file_uri(); ?>"],
+    "description": "get_theme_file_uri"
+  },
+  "the_content": {
+    "prefix": "sc",
+    "body": ["<?php echo do_shortcode('[ショートコードの文字列]'); ?>"],
+    "description": "ショートコード出力"
+  }
+}
